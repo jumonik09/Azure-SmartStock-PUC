@@ -1,6 +1,7 @@
 # Introdução
 
-Texto descritivo com a visão geral do projeto abordado. Inclui o contexto, o problema, os objetivos, a justificativa e o público-alvo do projeto.
+<p> Percebe-se que no contexto organizacional, é de suma importância uma gestão de estoque eficaz para o êxito de qualquer empreendimento. Atualmente os estabelecimentos como por exemplo, lojas de roupas, lojas de materiais de construção e supermercados, percebe-se os desafios contínuos com o propósito de assegurar que os produtos mantenham disponíveis e com capacidades adequadas para atender à demanda dos consumidores e consequentemente otimizar os custos e minimizar riscos associados   aos estoques correlacionados a estocagem excessiva ou pela insuficiência de produtos.</p>
+<p> Diante da crescente necessidade de otimização nos processos empresariais, a implementação de um sistema de gestão de estoque eficiente, estratégico e sustentável torna-se essencial. Um sistema bem projetado pode desempenhar um papel crucial na redução de desperdícios e na melhoria do controle de produtos, contribuindo para uma gestão mais eficaz e econômica. Este trabalho se propõe a analisar e desenvolver um sistema de estoque de um supermercado que atenda a essas demandas, oferecendo soluções que minimizem perdas e maximizem a eficiência operacional.</p>
 
 ## Problema
 Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
