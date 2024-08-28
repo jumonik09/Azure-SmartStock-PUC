@@ -1,25 +1,23 @@
-# TÍTULO DO PROJETO
+# Smart STock
 
-`CURSO`
+`Análise e Desenvolvimento de Sistemas`
 
-`DISCIPLINA`
+`PROJETO: DESENVOLVIMENTO DE UMA APLICAÇÃO INTERATIVA`
 
-`SEMESTRE`
-
-Descrever resumidamente, em um ou dois parágrafos, o projeto que está sendo desenvolvido.
+`2° período`
+ <p>Este trabalho se propõe a analisar e desenvolver um sistema de estoque de um supermercado que atenda a essas demandas, oferecendo soluções que minimizem perdas e maximizem a eficiência operacional.</p>
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Jéssica Cristina Araújo Lima de Melo
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Camilla Penteado Zatz
+* Juliana Monik Moraes Silva
+* Michael Benyamin Gorenstein Brasil
+* Samara Raissa dos Santos Américo Guimarães
+* Victor Rodrigues Magalhães
 
-## Orientador
+ ## Orientador
 
-* Nome completo do professor 1
+* Carlos Alberto Marques Pietrobon
 
 ## Instruções de utilização
 
