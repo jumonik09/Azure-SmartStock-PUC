@@ -250,29 +250,20 @@
 
 ## Histórias de Usuários
 
-Com base na análise das personas forma identificadas as seguintes histórias de usuários:
+Com base na análise das personas foram identificadas as seguintes histórias de usuários:
 
 | EU COMO... `PERSONA` | QUERO/PRECISO ... `FUNCIONALIDADE` | PARA ... `MOTIVO/VALOR` |
-| -------------------- | ------------------------------------------------------------- |
------------------------------------------------------- |
-| Ana Clara | Uma forma de identificar se uma agência é realmente confiável | Me sentir mais segura ao contratar seus
-serviços |
-| Ana Clara | Ter um mecanismo eficiente e rápido de comunicação | Que eu possa sanar todas as minhas dúvidas
-rapidamente |
-
-Apresente aqui as histórias de usuário que são relevantes para o projeto de sua solução. As Histórias de Usuário
-consistem em uma ferramenta poderosa para a compreensão e elicitação dos requisitos funcionais e não funcionais da sua
-aplicação. Se possível, agrupe as histórias de usuário por contexto, para facilitar consultas recorrentes à essa parte
-do documento.
-
-> **Links Úteis**:
-> - [Histórias de usuários com exemplos e template](https://www.atlassian.com/br/agile/project-management/user-stories)
-> - [Como escrever boas histórias de usuário (User
-Stories)](https://medium.com/vertice/como-escrever-boas-users-stories-hist%C3%B3rias-de-usu%C3%A1rios-b29c75043fac)
-> - [User Stories: requisitos que humanos
-entendem](https://www.luiztools.com.br/post/user-stories-descricao-de-requisitos-que-humanos-entendem/)
-> - [Histórias de Usuários: mais exemplos](https://www.reqview.com/doc/user-stories-example.html)
-> - [9 Common User Story Mistakes](https://airfocus.com/blog/user-story-mistakes/)
+| -------------------- | ---------------------------------- |------------------------ |
+| Paulo(Analista de Compras) | Visualizar um relatório de estoque dos produtos. | Identificar a demanda necessária e levantar os itens com o fornecedor. |
+| Paulo(Analista de Compras) | Visualizar relatórios sobre os fornecedores. | Negociar melhores condições e registrar no sistema a Ordem de Compra e enviar para aprovação. |
+| Júlia(Analista de Estoque) | Visualizar um relatório de estoque dos produtos. | Identificar todos os produtos em estoque, priorizando aqueles com validade próxima do vencimento para evitar desperdícios. |
+| Júlia(Analista de Estoque) | Cadastrar Fichas de Reabastecimento de Estoque. | Gerar as fichas e enviá-las para aprovação visando organizar a exposição de todos os itens de forma adequada. |
+| Mariana(Estoquista) | Receber fichas de reabastecimento de estoque claras. | Garantir a organização dos produtos corretamente e manter a loja abastecida de acordo com as necessidades. |
+| Mariana(Estoquista) | Concluir e atualizar a Ficha no sistema com as informações sobre os produtos que foram reabastecidos. | Manter o estoque sempre atualizado e evitar problemas de falta de produtos e organização. |
+| Silvana(Gerente de Loja) | Visualizar as solicitações para aprovação da Ordens de Compra e Fichas e Reabastecimento de Estoque. | Conferir as informações e aprovar ou recusar as solicitações. |
+| Silvana(Gerente de Loja) | Receber um alerta na tela do sistema quando um produto atingir um nível crítico de estoque ou estiver próximo da data de validade. | Garantir que seja reabastecido a tempo e assim atender as demandas dos clientes solicitando a compra de novos produtos. |
+| Lucas(Administrador do Sistema) | Configurar as permissões de acesso para diferentes perfis de usuário. | Assegurar que cada colaborador tenha acesso apenas às funcionalidades necessárias para suas funções. |
+| Lucas(Administrador do Sistema) | Monitorar e testar as permissões. | Garantir que um usuário não acesse informações de outro. |
 
 ## Requisitos
 
