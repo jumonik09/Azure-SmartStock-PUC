@@ -277,7 +277,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-02  | O sistema deve permitir a visualização de uma lista detalhada de todos os produtos cadastrados.                                                                   | ALTA       |
 | RF-03  | O sistema deve permitir a edição de itens cadastrados.                                                                                                           | ALTA       |
 | RF-04  | O sistema deve remover a exclusão de produtos cadastrados.                                                                                                        | MÉDIA      |
-| RF-05  | O sistema deve atualizar o estoque com base nas compras e saídas do estoque (explicar reposição ou cliente tirou produto).                                         | ALTA       |
+| RF-05  | O sistema deve atualizar o estoque com base nas compras e saídas do estoque.                                         | ALTA       |
 | RF-06  | O sistema deve permitir a visualização e geração de relatórios detalhados sobre o inventário e o desempenho de vendas.                                             | ALTA       |
 | RF-07  | O sistema deve permitir o registro e análise do histórico de compras e vendas para facilitar o planejamento de reabastecimento.                                    | ALTA       |
 | RF-08  | O sistema deve permitir a autenticação e autorização de usuários para acesso ao sistema de gestão de estoque, com diferentes níveis de permissão para gestores e colaboradores. | MÉDIA      |
@@ -286,10 +286,14 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos não Funcionais
 
-| ID | Descrição do Requisito | Prioridade |
-| ------- | ----------------------------------------------------------------- | ---------- |
-| RNF-001 | A aplicação deve ser responsiva | MÉDIA |
-| RNF-002 | A aplicação deve processar requisições do usuário em no máximo 3s | BAIXA |
+| ID      | Descrição do Requisito                                                                                                                                                   | Prioridade |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| RNF-01  | O sistema deve ter uma interface simples e fácil de usar, com design básico para facilitar a navegação para os funcionários da empresa.                                    | ALTA       |
+| RNF-02  | O sistema deve ter uma estrutura de código clara e bem documentada, para facilitar a compreensão e manutenção por estudantes.                                              | ALTA       |
+| RNF-03  | O sistema deve ser responsivo o suficiente para ser usado em diferentes tamanhos de tela, como monitores e laptops.                                                        | MÉDIA      |
+| RNF-04  | O sistema deve carregar rapidamente, com um tempo de resposta menor ou igual a 3 segundos.                                                                                 | MÉDIA      |
+| RNF-05  | O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras.                                                              | ALTA       |
+| RNF-06  | Apenas usuários autenticados devem ter acesso ao sistema, com diferentes níveis de permissão conforme o perfil.                                                            | ALTA       |
 
 Com base nas Histórias de Usuário, enumere os requisitos da sua solução. Classifique esses requisitos em dois grupos:
 
