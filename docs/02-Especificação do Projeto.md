@@ -271,16 +271,18 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 
 ### Requisitos Funcionais
 
-| ID | Descrição do Requisito | Prioridade |
-| ------ |
----------------------------------------------------------------------------------------------------------------------------------
-| ---------- |
-| RF-001 | A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência | ALTA
-|
-| RF-002 | A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de
-intercâmbio | ALTA |
-| RF-003 | A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as
-com base em suas notas | ALTA |
+| ID     | Descrição do Requisito                                                                                                                                           | Prioridade |
+|--------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
+| RF-01  | O sistema deve permitir o cadastro de produtos, incluindo atributos como nome, descrição, preço e quantidade em estoque.                                          | ALTA       |
+| RF-02  | O sistema deve permitir a visualização de uma lista detalhada de todos os produtos cadastrados.                                                                   | ALTA       |
+| RF-03  | O sistema deve permitir a edição de itens cadastrados.                                                                                                           | ALTA       |
+| RF-04  | O sistema deve remover a exclusão de produtos cadastrados.                                                                                                        | MÉDIA      |
+| RF-05  | O sistema deve atualizar o estoque com base nas compras e saídas do estoque (explicar reposição ou cliente tirou produto).                                         | ALTA       |
+| RF-06  | O sistema deve permitir a visualização e geração de relatórios detalhados sobre o inventário e o desempenho de vendas.                                             | ALTA       |
+| RF-07  | O sistema deve permitir o registro e análise do histórico de compras e vendas para facilitar o planejamento de reabastecimento.                                    | ALTA       |
+| RF-08  | O sistema deve permitir a autenticação e autorização de usuários para acesso ao sistema de gestão de estoque, com diferentes níveis de permissão para gestores e colaboradores. | MÉDIA      |
+| RF-09  | O sistema deve fornecer um alerta básico quando o estoque de um produto estiver abaixo de um limite definido.                                                     | ALTA       |
+| RF-10  | O sistema deve fornecer um alerta básico quando um lote de produto estiver 10 dias próximo a data de vencimento.                                                  | ALTA       |
 
 ### Requisitos não Funcionais
 
