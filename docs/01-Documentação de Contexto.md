@@ -4,25 +4,12 @@
 <p> Diante da crescente necessidade de otimização nos processos empresariais, a implementação de um sistema de gestão de estoque eficiente, estratégico e sustentável torna-se essencial. Um sistema bem projetado pode desempenhar um papel crucial na redução de desperdícios e na melhoria do controle de produtos, contribuindo para uma gestão mais eficaz e econômica. Este trabalho se propõe a analisar e desenvolver um sistema de estoque de um supermercado que atenda a essas demandas, oferecendo soluções que minimizem perdas e maximizem a eficiência operacional.</p>
 
 ## Problema
-Nesse momento você deve apresentar o problema que a sua aplicação deve  resolver. No entanto, não é a hora de comentar sobre a aplicação.
-
-Descreva também o contexto em que essa aplicação será usada, se  houver: empresa, tecnologias, etc. Novamente, descreva apenas o que de  fato existir, pois ainda não é a hora de apresentar requisitos  detalhados ou projetos.
-
-Nesse momento, o grupo pode optar por fazer uso  de ferramentas como Design Thinking, que permite um olhar de ponta a ponta para o problema.
-
-> **Links Úteis**:
-> - [Objetivos, Problema de pesquisa e Justificativa](https://medium.com/@versioparole/objetivos-problema-de-pesquisa-e-justificativa-c98c8233b9c3)
-> - [Matriz Certezas, Suposições e Dúvidas](https://medium.com/educa%C3%A7%C3%A3o-fora-da-caixa/matriz-certezas-suposi%C3%A7%C3%B5es-e-d%C3%BAvidas-fa2263633655)
-> - [Brainstorming](https://www.euax.com.br/2018/09/brainstorming/)
+<p> Um problema crítico e crônico de supermercados é a má administração e controle de inventário. Em muitos supermercados, a ausência de uma solução eficaz pode levar a desequilíbrios significativos entre a oferta e a demanda, resultando em prateleiras vazias de produtos populares ou excesso de itens que não são vendidos. Esse desajuste não apenas causa perda de receita, mas também gera insatisfação dos clientes, que enfrentam frustração ao encontrar produtos esgotados ou de baixa qualidade devido ao excesso de itens antigos. Além disso, a falta de visibilidade do estoque compromete a capacidade de responder rapidamente às variações no comportamento de compra dos consumidores e dificulta a identificação de tendências emergentes, o que pode levar a decisões desinformadas e ao desperdício de produtos que não são vendidos.
 
 ## Objetivos
 
-Aqui você deve descrever os objetivos do trabalho indicando que o objetivo geral é desenvolver um software para solucionar o problema apresentado acima. 
-
-Apresente também alguns (pelo menos 2) objetivos específicos dependendo de onde você vai querer concentrar a sua prática investigativa, ou como você vai aprofundar no seu trabalho.
- 
-> **Links Úteis**:
-> - [Objetivo geral e objetivo específico: como fazer e quais verbos utilizar](https://blog.mettzer.com/diferenca-entre-objetivo-geral-e-objetivo-especifico/)
+<p> O presente trabalho tem por objetivo propor uma solução automatizada para a gestão eficiente do estoque em supermercados, que será uma ferramenta de controle web de acesso controlado, possibilitando uma melhor visão da entrada e saída de produtos, emitindo relatórios dessas atividades e alertando os "gerentes" de situações que necessitarão de ações, a fim de aumentar o lucro e diminuir o custo do negócio.
+Além disso, buscamos alinhar a nossa solução com o item 9 da lista de Objetivos de Desenvolvimento Sustentável da ONU, na qual buscam construir infraestruturas resilientes, promovendo a industrialização inclusiva e sustentável e fomentando a inovação. Esse objetivo da ONU está alinhado com o nosso à medida que, com uso do nosso sistema, os supermercados poderão evitar excesso de itens que não são vendidos, desperdício no qual vai contra os ideais sustentáveis.
 
 # Justificativa
 
