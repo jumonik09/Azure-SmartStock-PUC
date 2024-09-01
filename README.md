@@ -10,6 +10,7 @@
 ## Integrantes
 
 * Camilla Penteado Zatz
+*Jéssica C. A. L. de Melo
 * Juliana Monik Moraes Silva
 * Michael Benyamin Gorenstein Brasil
 * Samara Raissa dos Santos Américo Guimarães
@@ -53,4 +54,4 @@ O link e o usuário/senha descritos acima são apenas exemplos de como tais info
 
 # Apresentação
 
-<li><a href="presentation/README.md"> Apresentação da solução</a></li>
+<li><a href="https://docs.google.com/presentation/d/19u-ZhKSh2r_bnJPsrx_YyTV8yxSoec9UtDd0SHDnEg0/edit?usp=sharing"> Apresentação da solução</a></li>
