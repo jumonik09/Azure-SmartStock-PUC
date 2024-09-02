@@ -1,4 +1,4 @@
-# Smart STock
+# Smart Stock
 
 `Análise e Desenvolvimento de Sistemas`
 
@@ -10,7 +10,7 @@
 ## Integrantes
 
 * Camilla Penteado Zatz
-*Jéssica C. A. L. de Melo
+* Jéssica C. A. L. de Melo
 * Juliana Monik Moraes Silva
 * Michael Benyamin Gorenstein Brasil
 * Samara Raissa dos Santos Américo Guimarães
