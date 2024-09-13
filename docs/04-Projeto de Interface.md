@@ -19,16 +19,47 @@
 <p>Para auxiliar na diagramação da página e esboçar o produto final, foi projetado o wireframe de baixa fidelidade com o propósito de criar o design de interface.</p> 
 
 
+## Tela do Login
 
 
+A tela de Login permitirá que o usuário acesse o sistema e complete seu cadastro com as informações solicitadas. As credenciais registradas ajudarão na identificação do usuário no sistema. Os componentes da tela são:
 
-____________________________________________________________________
+<figure>
+  <img src="img/login-ss.jpg"> <figcaption>Tela de Login </figcaption>
+</figure>
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+<em> Login:</em>  Um formulário com campos de entrada (input) onde o usuário pode inserir seu e-mail e senha.
+Entrar: Após preencher e enviar o e-mail e a senha, o botão "Entrar" permitirá ao usuário realizar o login e ser direcionado para as demais interações do website.
+Além disso, o sistema está integrado com um banco de dados que armazena as credenciais dos usuários de forma segura, garantindo uma autenticação eficiente e proteção das informações pessoais.
 
-Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
 
- Apresente as principais interfaces da plataforma. Discuta como ela foi elaborada de forma a atender os requisitos funcionais, não funcionais e histórias de usuário abordados nas <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a>.
+## Relatório de Estoque
+
+
+O wireframe da página de controle de estoque é um esboço que mostra a estrutura e os principais elementos da página. Ele ajuda a planejar como o controle de estoque será exibido e usado.
+
+<em> Lista de Itens:</em>  Exibe produtos com nome, quantidade e preço.
+<em> Filtros:</em>  Permitem buscar por categoria, data e outros critérios.
+<em> Botões de Ações:</em>  Incluem "Adicionar Novo Item", "Atualizar Estoque" e "Excluir".
+
+<figure>
+  <img src="img/controle-de-estoque.png"> <figcaption>Relatório de Estoque</figcaption>
+</figure>
+
+## Gestão de Usuário 
+
+
+A  página de gestão de usuário é um esboço que mostra como a página será organizada e os principais recursos que ela terá e  ajuda a planejar a gestão de usuários de forma clara e prática.
+
+<em> Lista de Usuário:</em> Exibe todos os usuários com nome, e-mail e status.
+<em> Botões de Ação:</em> Como "Adicionar Novo Usuário" e "Excluir".
+<em> Detalhes do Usuário:</em> Mostra informações de cada usuário.
+
+<figure>
+  <img src="img/gestaodeusuario.png"> <figcaption>Gestão de Usuário </figcaption>
+</figure>
+
+
 
 ## Diagrama de Fluxo
 
