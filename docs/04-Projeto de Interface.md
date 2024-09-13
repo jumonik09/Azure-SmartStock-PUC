@@ -1,6 +1,18 @@
 
 # Projeto de Interface
 
+<p> Os fluxos de usuário são ferramentas essenciais para mapear o caminho que os visitantes seguem para concluir tarefas em um website. Eles são fundamentais na criação do site e na análise das interações que ocorrem durante a jornada do usuário. O diagrama de fluxo a seguir ilustra o percurso do usuário na aplicação desenvolvida para este projeto.</p>
+
+
+
+<figure>
+  <img src="img/wire_frame.png"> <figcaption>Figura -Demonstração do Fluxo do Usuário</figcaption>
+</figure>
+
+
+
+
+
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
 Visão geral da interação do usuário pelas telas do sistema e protótipo interativo das telas com as funcionalidades que fazem parte do sistema (wireframes).
