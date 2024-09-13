@@ -10,8 +10,19 @@
 </figure>
 
 
+## Protótipo
+
+### Protótipo de baixa fidelidade
+<p> Com o propósito da criação do design de interface, foi projetado o wireframe de baixa fidelidade para auxiliar na diagramação da página, com o intuito de esboçar, dessa forma, o produto final. </p>
 
 
+<p>Para auxiliar na diagramação da página e esboçar o produto final, foi projetado o wireframe de baixa fidelidade com o propósito de criar o design de interface.</p> 
+
+
+
+
+
+____________________________________________________________________
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
 
