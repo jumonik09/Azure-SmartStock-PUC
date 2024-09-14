@@ -33,7 +33,7 @@ Entrar: Após preencher e enviar o e-mail e a senha, o botão "Entrar" permitir�
 Além disso, o sistema está integrado com um banco de dados que armazena as credenciais dos usuários de forma segura, garantindo uma autenticação eficiente e proteção das informações pessoais.<em>
 
 
-## Relatório de Estoque
+## Controle de Estoque
 
 
 O wireframe da página de controle de estoque é um esboço que mostra a estrutura e os principais elementos da página. Ele ajuda a planejar como o controle de estoque será exibido e usado.
@@ -43,7 +43,7 @@ O wireframe da página de controle de estoque é um esboço que mostra a estrutu
 <em> Botões de Ações:</em>  Incluem "Adicionar Novo Item", "Atualizar Estoque" e "Excluir".
 
 <figure>
-  <img src="img/controle-de-estoque.png"> <figcaption>Relatório de Estoque</figcaption>
+  <img src="img/controle-de-estoque.png"> <figcaption>Controle de Estoque</figcaption>
 </figure>
 
 ## Gestão de Usuário 
