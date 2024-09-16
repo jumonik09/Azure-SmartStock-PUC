@@ -1,12 +1,12 @@
 # Template Padrão da Aplicação
 
 # Identidade Visual
-<p>HEX da Paleta de cores</p>
+##HEX da Paleta de cores
 <p>#8c52ff</p>
 <p>#ffbd59</p>
 <p>#292929</p>
 <p>#ffffff</p>
-<p>Tipografia</p>
+##Tipografia
 <p>Logos e Títulos: Horizon</p>
 <p>Corpo: Inter</p>
 
