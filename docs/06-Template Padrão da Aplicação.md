@@ -6,7 +6,6 @@
 <p>#ffbd59</p>
 <p>#292929</p>
 <p>#ffffff</p>
-<p> </p>
 <p>Tipografia</p>
 <p>Logos e Títulos: Horizon</p>
 <p>Corpo: Inter</p>
