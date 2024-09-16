@@ -90,3 +90,9 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <figure>
   <img src="img/cadastro-de-produto.jpg"> <figcaption>Cadastro de Produto</figcaption>
 </figure>
+
+## Diagrama de Fluxo
+
+![Diagrama de Fluxo](https://github.com/user-attachments/assets/992f0e5c-7498-4f5a-a569-83f3d48dc7b5)
+
+
