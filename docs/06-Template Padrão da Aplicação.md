@@ -1,7 +1,7 @@
 # Template Padrão da Aplicação
 
 # Identidade Visual
-##HEX da Paleta de cores
+##HEX da Paleta de cores##
 <p>#8c52ff</p>
 <p>#ffbd59</p>
 <p>#292929</p>
