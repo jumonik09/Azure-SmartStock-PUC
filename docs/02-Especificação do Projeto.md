@@ -334,6 +334,6 @@ funcionais?](https://analisederequisitos.com.br/requisitos-funcionais-e-requisit
   principais funcionalidades do sistema e como essas aplicabilidades interagem com os usuários.</p>
 
 <figure>
-  <img src="img/Diagrama _caso_de_uso.jpeg" width="350">
+  <img src="img/Diagrama _caso_de_uso _alterado.jpeg" width="350">
   <figcaption> Figura - Diagrama de Caso de Uso </figcaption>
 </figure>
