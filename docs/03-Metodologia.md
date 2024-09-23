@@ -58,17 +58,24 @@ Coloque  informações sobre detalhes da implementação do Scrum seguido pelo g
 
 ### Ferramentas
 
-As ferramentas empregadas no projeto são:
 
-- Editor de código.
-- Ferramentas de comunicação
-- Ferramentas de desenho de tela (_wireframing_)
+As ferramentas utilizadas são os softwares:
 
-O editor de código foi escolhido porque ele possui uma integração com o
-sistema de versão. As ferramentas de comunicação utilizadas possuem
-integração semelhante e por isso foram selecionadas. Por fim, para criar
-diagramas utilizamos essa ferramenta por melhor captar as
-necessidades da nossa solução.
+• GITHUB: ferramenta de gestão de código fonte;
+
+· FIGMA: ferramenta utilizada para criação de wireframes com a finalidade de planejar protótipos de baixa qualidade.
+
+· LUCIDCHART: ferramenta de diagramação online que permite criar diversos tipos de diagramas. Nesta etapa, foram elaborados o Diagrama de Caso de Uso, o Diagrama de Classes e o Diagrama de Entidade-Relacionamento.
+
+
+| AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
+|-------------------------------------|------------------------------------|----------------------------------------|
+| Ferramente de Gestão de Código        | Github                          | https://github.com/ICEI-PUC-Minas-PMV-ADS/PMV-ADS-2024-2-E2-Proj-Smart-Stock| Documentos do projeto               | GitHub                             |                            | Figma                              | http://....                            |
+|Projeto de interface e wireframes    | Figma              |https://www.figma.com/design/C08lggIBwVW4fyLHmZVPjx/Untitled?node-id=0-1&node-type=canvas&t=2GSWQQ9GQg1Jb48t-0
+|Ferramente de Diagramação   | Diagrama Caso de Uso           |https://lucid.app/lucidchart/610345b9-5c7b-4c48-8acb-da8e5638e064/edit?invitationId=inv_384f7e54-52cc-407c-bc7c-1bcc5fd1b0ea&page=.Q4MUjXso07N#
+|Ferramente de Diagramação   | Diagrama de Classes         |https://lucid.app/lucidchart/9342c5b3-9a26-4988-802a-5d5ad34c5663/edit?invitationId=inv_59132baf-9384-4cf4-bd59-81f3d47307fe&page=HWEp-vi-RSFO#
+|Ferramente de Diagramação   |Modelo Entidade Relacionamento  |https://lucid.app/lucidchart/9342c5b3-9a26-4988-802a-5d5ad34c5663/edit?invitationId=inv_59132baf-9384-4cf4-bd59-81f3d47307fe&page=E.mb4kc.4tQh#
+|Ferramente de Diagramação   |Projeto da Base de Dados | em construção
 
 Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
  
