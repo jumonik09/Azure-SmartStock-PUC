@@ -1,9 +1,10 @@
 
 # Metodologia
 
-<span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Documentação de Especificação</a></span>
+ Oliveira e Seabra (2015) explicam que as metodologias de desenvolvimento são desenvolvidas por meio da aplicação coordenada de métodos, ferramentas e processos, com o objetivo de produzir um software eficiente e seus artefatos relacionados. Essas metodologias visam otimizar a utilização de recursos, reduzindo custos, prazos e aprimorando a qualidade do produto final.
+ De acordo com Garcia et al. (2022), as metodologias de desenvolvimento de software são compostas por diferentes abordagens que podem ser aplicadas na criação de sistemas de processamento de informações. Os autores destacam que a escolha da metodologia mais apropriada é fundamental para o sucesso do projeto, como no caso do desenvolvimento de um site para gestão de estoque, pois a escolha correta influencia diretamente o andamento e o resultado final do trabalho.
 
-Descreva aqui a metodologia de trabalho do grupo para atacar o problema. Definições sobre os ambiente de trabalho utilizados pela  equipe para desenvolver o projeto. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).
+Considerando a relevância das metodologias na condução e execução de um projeto de desenvolvimento de um site para gestão de estoque, esta seção detalhará como a equipe se organizará, como as atividades serão distribuídas e realizadas, além das ferramentas que serão utilizadas no desenvolvimento e na manutenção do código e dos demais artefatos do sistema de controle de estoque.
 
 ## Controle de Versão
 
