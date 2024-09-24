@@ -5,6 +5,7 @@
 
 
 
+
 <figure>
   <img src="img/wire_frame.png"> <figcaption>Figura -Demonstração do Fluxo do Usuário</figcaption>
 </figure>
@@ -64,7 +65,8 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 ## Gerenciamento de Estoque 
 
 <figure>
-  <img src="img/gerenciamento-de-estoque.jpg"> <figcaption>Gerenciamento de Estoque</figcaption>
+  <img src="img/gerenciamento-de-estoque.jpg">
+  <figcaption>Gerenciamento de Estoque</figcaption>
 </figure>
 
 <p>Um wireframe de controle de estoque para uma página de back-end tem como objetivo organizar visualmente os elementos necessários para gerenciar o estoque de produtos. Ele inclui seções básicas como:</p>
@@ -76,8 +78,10 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 ## Relatório de Estoque
 
 <figure>
-  <img src="img/relatoriodeestoque.jpg"> <figcaption>Relatório de Estoque</figcaption>
+  <img src="img/relatoriodeestoque.jpg"><figcaption> Relatório de Estoque</figcaption>
 </figure>
+
+
 
 <p> Um wireframe para a página de controle de estoque em um sistema back-end, voltado para relatórios de estoque, incorpora seções essenciais para a apresentação, análise dos dados e operações CRUD (Create, Read, Update e Delete).</p>
 
@@ -88,17 +92,14 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <p> Um wireframe para a página de controle de estoque em um sistema back-end, focado no cadastro de produtos, organiza de maneira clara e eficiente os campos necessários para a gestão. Este wireframe apresenta uma estrutura simplificada, que inclui os principais elementos para a inserção, visualização e modificação de informações dos produtos. Ao definir esses campos de forma ordenada, o wireframe facilita a administração do estoque e aprimora a eficiência no processo de cadastro e controle de produtos.</p>
 
 <figure>
-  <img src="img/cadastro-de-produto.jpg"> <figcaption>Cadastro de Produto</figcaption>
+  <img src="img/cadastro-de-produto.jpg"> <figcaption> Cadastro de Produto</figcaption>
 </figure>
 
 
 ## Tela Geradora de Relatórios e Fichas
 
 <p>A tela geradora de relatórios e fichas para gestão de estoque é uma ferramenta que facilita o controle dos produtos armazenados. Os usuários podem inserir e visualizar informações como quantidade de itens, datas de validade e fornecedores.</p>
-
-<em>Adicionar produtos:</em> Informar a quantidade, data de validade e fornecedor.
-<em>Visualizar informações:</em> Checar rapidamente os dados dos itens.
-<em>Gerar relatórios:</em> Criar documentos personalizados para ajudar nas compras e vendas.
+<p>A tela geradora de relatórios  permite aos usuários criar e visualizar relatórios detalhados sobre os produtos armazenados. Nela, é possível selecionar critérios específicos, como data, categoria de produtos e níveis de estoque, para gerar relatórios personalizados.</p>
 
 
 
