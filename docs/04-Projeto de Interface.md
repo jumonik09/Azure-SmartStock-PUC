@@ -92,7 +92,8 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <p> Um wireframe para a página de controle de estoque em um sistema back-end, focado no cadastro de produtos, organiza de maneira clara e eficiente os campos necessários para a gestão. Este wireframe apresenta uma estrutura simplificada, que inclui os principais elementos para a inserção, visualização e modificação de informações dos produtos. Ao definir esses campos de forma ordenada, o wireframe facilita a administração do estoque e aprimora a eficiência no processo de cadastro e controle de produtos.</p>
 
 <figure>
-  <img src="img/cadastro-de-produto.jpg"> <figcaption> Cadastro de Produto</figcaption>
+  <img src="img/cadastro-de-produto.jpg"> 
+  <figcaption> Cadastro de Produto</figcaption>
 </figure>
 
 
@@ -101,6 +102,11 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <p>A tela geradora de relatórios e fichas para gestão de estoque é uma ferramenta que facilita o controle dos produtos armazenados. Os usuários podem inserir e visualizar informações como quantidade de itens, datas de validade e fornecedores.</p>
 <p>A tela geradora de relatórios  permite aos usuários criar e visualizar relatórios detalhados sobre os produtos armazenados. Nela, é possível selecionar critérios específicos, como data, categoria de produtos e níveis de estoque, para gerar relatórios personalizados.</p>
 
+<figure>
+  <img src="img/TelaGeradoradeRelatorioeFichas.png"> 
+  <figcaption>Tela Geradora de Relatórios e Fichas </figcaption>
+</figure>
+
 
 
 ## Tela de Envio de Fichas
@@ -108,11 +114,22 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <p>A tela de envio de fichas para gestão de estoque é uma ferramenta que facilita o registro e a atualização das informações dos produtos. É possível selecionar o item desejado de uma lista suspensa ou campo de busca, ajudando a evitar erros. Pode-se inserir informações importantes, como a quantidade de unidades disponíveis, a data de validade para itens perecíveis e o nome do fornecedor.</p>
 <p>Após preencher os dados, há um botão “Enviar” que, ao ser clicado, salva as informações no sistema, acompanhada de uma confirmação visual de que o envio foi ocorrido com sucesso.</p>
 
+<figure>
+  <img src="img/TelaEnviodeFicha.png"> 
+  <figcaption>Tela Envio de Fichas </figcaption>
+</figure>
+
+
 
 
 ## Tela Solicitar Acesso
 
 <p> A tela de solicitação de acesso para a gestão de estoque, permite que usuários solicitem permissões para gerenciar as informações do estoque. O usuário deve preencher um formulário com seus dados, como nome, e-mail e cargo, além de especificar o motivo da solicitação. Após enviar o formulário, um aviso é gerado para os administradores, que poderão revisar e aprovar ou rejeitar o acesso.</p>
+
+<figure>
+  <img src="TelaSolicitarAcesso.png"> 
+  <figcaption>Tela Solicitar Acessos </figcaption>
+</figure>
 
 ## Diagrama de Fluxo
 
