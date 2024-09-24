@@ -43,9 +43,12 @@ O wireframe da página de controle de estoque é um esboço que mostra a estrutu
 <em> Filtros:</em>  Permitem buscar por categoria, data e outros critérios. 
 <em> Botões de Ações:</em>  Incluem "Adicionar Novo Item", "Atualizar Estoque" e "Excluir".
 
+
+
 <figure>
-  <img src="img/controle-de-estoque.png"> <figcaption>Controle de Estoque</figcaption>
+  <img src="img/controle-de-estoque.png">
 </figure>
+
 
 ## Central de Usuários 
 
@@ -57,7 +60,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <em> Detalhes do Usuário:</em> Mostra informações de cada usuário.
 
 <figure>
-  <img src="img/gestaodeusuario.png"> <figcaption>Central de Usuário </figcaption>
+  <img src="img/gestaodeusuario.png"> 
 </figure>
 
 
@@ -66,7 +69,6 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/gerenciamento-de-estoque.jpg">
-  <figcaption>Gerenciamento de Estoque</figcaption>
 </figure>
 
 <p>Um wireframe de controle de estoque para uma página de back-end tem como objetivo organizar visualmente os elementos necessários para gerenciar o estoque de produtos. Ele inclui seções básicas como:</p>
@@ -78,7 +80,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 ## Relatório de Estoque
 
 <figure>
-  <img src="img/relatoriodeestoque.jpg"><figcaption> Relatório de Estoque</figcaption>
+  <img src="img/relatoriodeestoque.jpg">
 </figure>
 
 
@@ -93,7 +95,6 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/cadastro-de-produto.jpg"> 
-  <figcaption> Cadastro de Usuário</figcaption>
 </figure>
 
 
@@ -104,7 +105,6 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/TelaGeradoradeRelatorioeFichas.png"> 
-  <figcaption>Tela Geradora de Relatórios e Fichas </figcaption>
 </figure>
 
 
@@ -116,7 +116,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/TelaEnviodeFicha.png"> 
-  <figcaption>Tela Envio de Fichas </figcaption>
+
 </figure>
 
 
@@ -127,7 +127,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <p> A tela de solicitação de acesso para a gestão de estoque, permite que usuários solicitem permissões para gerenciar as informações do estoque. O usuário deve preencher um formulário com seus dados, como nome, e-mail e cargo, além de especificar o motivo da solicitação. Após enviar o formulário, um aviso é gerado para os administradores, que poderão revisar e aprovar ou rejeitar o acesso.</p>
 
 <figure>
-  <img src="TelaSolicitarAcesso.png"> 
+  <img src="img/TelaSolicitarAcesso.png"> 
   <figcaption>Tela Solicitar Acessos </figcaption>
 </figure>
 
