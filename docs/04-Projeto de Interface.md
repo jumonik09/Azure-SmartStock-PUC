@@ -38,7 +38,7 @@ Além disso, o sistema está integrado com um banco de dados que armazena as cre
 
 O wireframe da página de controle de estoque é um esboço que mostra a estrutura e os principais elementos da página. Ele ajuda a planejar como o controle de estoque será exibido e usado.
 
-<p> Lista de Itens:</em>  Exibe produtos com nome, quantidade e preço. 
+<em> Lista de Itens:</em>  Exibe produtos com nome, quantidade e preço. 
 <em> Filtros:</em>  Permitem buscar por categoria, data e outros critérios. 
 <em> Botões de Ações:</em>  Incluem "Adicionar Novo Item", "Atualizar Estoque" e "Excluir".
 
@@ -46,7 +46,7 @@ O wireframe da página de controle de estoque é um esboço que mostra a estrutu
   <img src="img/controle-de-estoque.png"> <figcaption>Controle de Estoque</figcaption>
 </figure>
 
-## Gestão de Usuário 
+## Central de Usuários 
 
 
 A  página de gestão de usuário é um esboço que mostra como a página será organizada e os principais recursos que ela terá e  ajuda a planejar a gestão de usuários de forma clara e prática.
@@ -83,13 +83,35 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 
 
-## Cadastro de Produto
+## Cadastro de Usuários
 
 <p> Um wireframe para a página de controle de estoque em um sistema back-end, focado no cadastro de produtos, organiza de maneira clara e eficiente os campos necessários para a gestão. Este wireframe apresenta uma estrutura simplificada, que inclui os principais elementos para a inserção, visualização e modificação de informações dos produtos. Ao definir esses campos de forma ordenada, o wireframe facilita a administração do estoque e aprimora a eficiência no processo de cadastro e controle de produtos.</p>
 
 <figure>
   <img src="img/cadastro-de-produto.jpg"> <figcaption>Cadastro de Produto</figcaption>
 </figure>
+
+
+## Tela Geradora de Relatórios e Fichas
+
+<p>A tela geradora de relatórios e fichas para gestão de estoque é uma ferramenta que facilita o controle dos produtos armazenados. Os usuários podem inserir e visualizar informações como quantidade de itens, datas de validade e fornecedores.</p>
+
+<em>Adicionar produtos:</em> Informar a quantidade, data de validade e fornecedor.
+<em>Visualizar informações:</em> Checar rapidamente os dados dos itens.
+<em>Gerar relatórios:</em> Criar documentos personalizados para ajudar nas compras e vendas.
+
+
+
+## Tela de Envio de Fichas
+
+<p>A tela de envio de fichas para gestão de estoque é uma ferramenta que facilita o registro e a atualização das informações dos produtos. É possível selecionar o item desejado de uma lista suspensa ou campo de busca, ajudando a evitar erros. Pode-se inserir informações importantes, como a quantidade de unidades disponíveis, a data de validade para itens perecíveis e o nome do fornecedor.</p>
+<p>Após preencher os dados, há um botão “Enviar” que, ao ser clicado, salva as informações no sistema, acompanhada de uma confirmação visual de que o envio foi ocorrido com sucesso.</p>
+
+
+
+## Tela Solicitar Acesso
+
+<p> A tela de solicitação de acesso para a gestão de estoque, permite que usuários solicitem permissões para gerenciar as informações do estoque. O usuário deve preencher um formulário com seus dados, como nome, e-mail e cargo, além de especificar o motivo da solicitação. Após enviar o formulário, um aviso é gerado para os administradores, que poderão revisar e aprovar ou rejeitar o acesso.</p>
 
 ## Diagrama de Fluxo
 
