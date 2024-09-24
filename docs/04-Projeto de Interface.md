@@ -57,7 +57,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 <em> Detalhes do Usuário:</em> Mostra informações de cada usuário.
 
 <figure>
-  <img src="img/gestaodeusuario.png"> <figcaption>Gestão de Usuário </figcaption>
+  <img src="img/gestaodeusuario.png"> <figcaption>Central de Usuário </figcaption>
 </figure>
 
 
@@ -93,7 +93,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/cadastro-de-produto.jpg"> 
-  <figcaption> Cadastro de Produto</figcaption>
+  <figcaption> Cadastro de Usuário</figcaption>
 </figure>
 
 
