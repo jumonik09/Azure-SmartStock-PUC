@@ -27,137 +27,65 @@ Cada caso de teste é descrito com os seguintes campos:
 
 ## 3. Casos de Teste
 
-### Caso de Teste 001: Cadastro de Produto
-- **Número do Caso de Teste:** CT-001
-- **Pré-condições:** Usuário autenticado como Administrador.
-- **Procedimento:**
-  1. Acessar o menu "Cadastro de Produtos".
-  2. Clicar em "Novo Produto".
-  3. Preencher os campos obrigatórios (Nome, Descrição, Preço, Quantidade em Estoque).
-  4. Clicar em "Salvar".
-- **Dados de Entrada:**
-  - Nome: Arroz 5kg
-  - Descrição: Pacote de Arroz 5kg
-  - Preço: R$ 25,00
-  - Quantidade em Estoque: 100
-- **Resultado Esperado:** Produto cadastrado com sucesso e exibido na lista de produtos.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-001 – Cadastro de Produto** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-001 - A aplicação deve permitir o cadastro de produtos com informações obrigatórias. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue cadastrar um novo produto na aplicação. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Cadastro de Produtos" <br> - Clicar em "Novo Produto" <br> - Preencher os campos obrigatórios (Nome, Descrição, Preço, Quantidade em Estoque) <br> - Clicar em "Salvar" |
+| **Critério de Êxito** | - O produto foi cadastrado com sucesso e exibido na lista de produtos. |
 
-### Caso de Teste 002: Edição de Produto Cadastrado
-- **Número do Caso de Teste:** CT-002
-- **Pré-condições:** Produto já cadastrado no sistema. Usuário autenticado como Administrador.
-- **Procedimento:**
-  1. Acessar o menu "Produtos".
-  2. Selecionar o produto "Arroz 5kg".
-  3. Clicar em "Editar".
-  4. Alterar o preço para R$ 20,00.
-  5. Clicar em "Salvar".
-- **Dados de Entrada:**
-  - Produto: Arroz 5kg
-  - Novo Preço: R$ 20,00
-- **Resultado Esperado:** Preço do produto atualizado para R$ 20,00 na lista de produtos.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-002 – Edição de Produto Cadastrado** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-002 - A aplicação deve permitir a edição das informações de produtos cadastrados. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue editar um produto existente. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Produtos" <br> - Selecionar o produto "Arroz 5kg" <br> - Clicar em "Editar" <br> - Alterar o preço para R$ 20,00 <br> - Clicar em "Salvar" |
+| **Critério de Êxito** | - O preço do produto foi atualizado com sucesso. |
 
-### Caso de Teste 003: Exclusão de Produto
-- **Número do Caso de Teste:** CT-003
-- **Pré-condições:** Produto já cadastrado no sistema. Usuário autenticado como Administrador.
-- **Procedimento:**
-  1. Acessar o menu "Produtos".
-  2. Selecionar o produto "Arroz 5kg".
-  3. Clicar em "Excluir".
-  4. Confirmar a exclusão.
-- **Dados de Entrada:**
-  - Produto: Arroz 5kg
-- **Resultado Esperado:** Produto removido da lista de produtos com uma mensagem de confirmação.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-003 – Exclusão de Produto** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-003 - A aplicação deve permitir a exclusão de produtos cadastrados. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue excluir um produto cadastrado. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Produtos" <br> - Selecionar o produto "Arroz 5kg" <br> - Clicar em "Excluir" <br> - Confirmar a exclusão |
+| **Critério de Êxito** | - O produto foi excluído com sucesso e não aparece mais na lista. |
 
-### Caso de Teste 004: Visualização de Relatório de Estoque
-- **Número do Caso de Teste:** CT-004
-- **Pré-condições:** Produtos cadastrados no sistema. Usuário autenticado como Analista de Estoque.
-- **Procedimento:**
-  1. Acessar o menu "Relatórios".
-  2. Selecionar "Relatório de Estoque".
-  3. Filtrar por categoria "Alimentos".
-  4. Clicar em "Gerar Relatório".
-- **Dados de Entrada:**
-  - Categoria: Alimentos
-- **Resultado Esperado:** Relatório exibido com a lista detalhada de produtos na categoria "Alimentos".
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-004 – Visualização de Relatório de Estoque** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-004 - A aplicação deve gerar relatórios de estoque para análise. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue visualizar o relatório de estoque. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Relatórios" <br> - Selecionar "Relatório de Estoque" <br> - Filtrar por categoria "Alimentos" <br> - Clicar em "Gerar Relatório" |
+| **Critério de Êxito** | - O relatório de estoque é exibido corretamente. |
 
-### Caso de Teste 005: Geração de Relatório de Vendas
-- **Número do Caso de Teste:** CT-005
-- **Pré-condições:** Vendas registradas no sistema. Usuário autenticado como Gerente de Loja.
-- **Procedimento:**
-  1. Acessar o menu "Relatórios".
-  2. Selecionar "Relatório de Vendas".
-  3. Definir o período de 01/09/2024 a 30/09/2024.
-  4. Clicar em "Gerar Relatório".
-- **Dados de Entrada:**
-  - Período: 01/09/2024 - 30/09/2024
-- **Resultado Esperado:** Relatório gerado com detalhes das vendas realizadas no período especificado.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-005 – Geração de Relatório de Vendas** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-005 - A aplicação deve permitir a geração de relatórios de vendas. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue gerar um relatório de vendas. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Relatórios" <br> - Selecionar "Relatório de Vendas" <br> - Definir o período de 01/09/2024 a 30/09/2024 <br> - Clicar em "Gerar Relatório" |
+| **Critério de Êxito** | - O relatório de vendas é gerado corretamente para o período especificado. |
 
-### Caso de Teste 006: Autenticação de Usuário com Credenciais Válidas
-- **Número do Caso de Teste:** CT-006
-- **Pré-condições:** Usuário previamente cadastrado no sistema.
-- **Procedimento:**
-  1. Acessar a tela de login.
-  2. Inserir nome de usuário e senha válidos.
-  3. Clicar em "Entrar".
-- **Dados de Entrada:**
-  - Usuário: admin
-  - Senha: admin123
-- **Resultado Esperado:** Acesso concedido ao painel principal do sistema conforme o perfil do usuário.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-006 – Autenticação de Usuário com Credenciais Válidas** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-006 - A aplicação deve permitir a autenticação de usuários. |
+| **Objetivo do Teste** 	| Verificar se o usuário consegue realizar login com credenciais válidas. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Entrar" <br> - Preencher o campo de e-mail <br> - Preencher o campo da senha <br> - Clicar em "Login" |
+| **Critério de Êxito** | - O login é realizado com sucesso e o usuário é direcionado ao painel principal. |
 
-### Caso de Teste 007: Autenticação de Usuário com Credenciais Inválidas
-- **Número do Caso de Teste:** CT-007
-- **Pré-condições:** Nenhuma específica além de ter a tela de login disponível.
-- **Procedimento:**
-  1. Acessar a tela de login.
-  2. Inserir nome de usuário ou senha incorretos.
-  3. Clicar em "Entrar".
-- **Dados de Entrada:**
-  - Usuário: admin
-  - Senha: senhaErrada
-- **Resultado Esperado:** Mensagem de erro indicando credenciais inválidas e impedimento de acesso.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-007 – Autenticação de Usuário com Credenciais Inválidas** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-007 - A aplicação deve notificar o usuário em caso de credenciais inválidas. |
+| **Objetivo do Teste** 	| Verificar se o sistema informa erro ao tentar login com credenciais inválidas. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Entrar" <br> - Preencher o campo de e-mail com um e-mail inválido <br> - Preencher o campo da senha com uma senha inválida <br> - Clicar em "Login" |
+| **Critério de Êxito** | - Mensagem de erro é exibida indicando credenciais inválidas. |
 
-### Caso de Teste 008: Controle de Acesso por Perfil
-- **Número do Caso de Teste:** CT-008
-- **Pré-condições:** Usuários com diferentes perfis cadastrados no sistema (Administrador, Gerente, Analista, etc.).
-- **Procedimento:**
-  1. Autenticar-se com um perfil específico.
-  2. Tentar acessar funcionalidades restritas a outros perfis.
-  3. Verificar se o acesso é negado ou permitido corretamente.
-- **Dados de Entrada:**
-  - Usuário: julia (Analista de Estoque)
-  - Senha: julia123
-- **Resultado Esperado:** Usuário julia consegue acessar funcionalidades permitidas ao seu perfil e não consegue acessar funcionalidades restritas a outros perfis.
-- **Resultado Obtido:** [A ser preenchido após a execução do teste]
-- **Avaliação:** [Sucesso/Falha]
-- **Evidência:** [Anexar captura de tela]
+| **Caso de Teste** 	| **CT-008 – Controle de Acesso por Perfil** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-008 - A aplicação deve restringir o acesso a funcionalidades de acordo com o perfil do usuário. |
+| **Objetivo do Teste** 	| Verificar se o usuário tem acesso restrito às funcionalidades permitidas pelo seu perfil. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Autenticar-se com um perfil específico <br> - Tentar acessar funcionalidades restritas a outros perfis |
+| **Critério de Êxito** | - O usuário acessa apenas as funcionalidades permitidas para seu perfil. |
 
-### Caso de Teste 009: Alerta de Estoque Crítico
-- **Número do Caso de Teste:** CT-009
-- **Pré-condições:** Produto com quantidade abaixo do nível crítico definido.
-- **Procedimento:**
-  1. Acessar o menu "Produtos".
-  2. Verificar o status do estoque dos produtos.
-  3. Identificar se há alertas para produtos com estoque crítico.
-- **Dados de Entrada:**
-  - Produto
+| **Caso de Teste** 	| **CT-009 – Alerta de Estoque Crítico** 	|
+|:---:	|:---:	|
+| **Requisito Associado** 	| RF-009 - A aplicação deve alertar usuários sobre produtos com estoque abaixo do nível crítico. |
+| **Objetivo do Teste** 	| Verificar se o sistema gera alertas para estoque crítico. |
+| **Passos** 	| - Acessar o navegador <br> - Informar o endereço do site <br> - Clicar em "Produtos" <br> - Verificar o status do estoque dos produtos <br> - Identificar se há alertas para produtos com estoque crítico |
+| **Critério de Êxito** | - Alertas visíveis indicam que o estoque de produtos está crítico. |
