@@ -146,10 +146,140 @@ Cada caso de teste é descrito com os seguintes campos:
 ## Caso de Teste 010: Cadastro de Ordem de Compra
 | **Número do Caso de Teste** | CT-010 |
 |-------------------------------|--------|
-| **Pré-condições**             | Usuário autenticado como Comprador. |
-| **Procedimento**              | 1. Acessar o menu "Ordens de Compra".<br>2. Clicar em "Nova Ordem".<br>3. Preencher os campos obrigatórios (Fornecedor, Data, Itens).<br>4. Clicar em "Salvar". |
-| **Dados de Entrada**          | Fornecedor: Fornecedor X<br>Data: 24/09/2024<br>Itens: 10 unidades de Arroz 5kg |
-| **Resultado Esperado**        | Ordem de compra cadastrada com sucesso e exibida na lista de ordens. |
+| **Pré-condições**             | Usuário autenticado como Paulo (Analista de Compras). |
+| **Procedimento**              | 1. Acessar o menu "Ordens de Compra".<br>2. Clicar em "Nova Ordem de Compra".<br>3. Selecionar o fornecedor.<br>4. Adicionar produtos e quantidades.<br>5. Enviar para aprovação. |
+| **Dados de Entrada**          | Fornecedor: Fornecedor A<br>Produtos: Feijão 1kg - 50 unidades |
+| **Resultado Esperado**        | Ordem de Compra criada e enviada para aprovação da Gerente de Loja. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 011: Aprovação de Ordem de Compra
+| **Número do Caso de Teste** | CT-011 |
+|-------------------------------|--------|
+| **Pré-condições**             | Ordem de Compra pendente de aprovação. Usuário autenticado como Silvana (Gerente de Loja). |
+| **Procedimento**              | 1. Acessar o menu "Ordens de Compra".<br>2. Visualizar as ordens pendentes.<br>3. Selecionar a ordem de compra.<br>4. Aprovar ou recusar a ordem. |
+| **Dados de Entrada**          | Ordem de Compra: OC-001<br>Decisão: Aprovar |
+| **Resultado Esperado**        | Ordem de Compra OC-001 é aprovada e atualiza o status no sistema. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 012: Recebimento de Produtos
+| **Número do Caso de Teste** | CT-012 |
+|-------------------------------|--------|
+| **Pré-condições**             | Ordem de Compra aprovada. Usuário autenticado como Analista de Estoque (Júlia). |
+| **Procedimento**              | 1. Acessar o menu "Recebimento de Produtos".<br>2. Selecionar a Ordem de Compra aprovada.<br>3. Registrar a entrada dos produtos no estoque.<br>4. Confirmar o recebimento. |
+| **Dados de Entrada**          | Ordem de Compra: OC-001<br>Produtos Recebidos: Feijão 1kg - 50 unidades |
+| **Resultado Esperado**        | Produtos recebidos são adicionados ao estoque e a Ordem de Compra é marcada como concluída. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 013: Atualização Automática de Estoque após Venda
+| **Número do Caso de Teste** | CT-013 |
+|-------------------------------|--------|
+| **Pré-condições**             | Produto cadastrado no sistema com quantidade disponível. Usuário autenticado como Estoquista (Mariana). |
+| **Procedimento**              | 1. Acessar o menu "Vendas".<br>2. Registrar a venda de um produto.<br>3. Confirmar a venda.<br>4. Verificar a atualização do estoque. |
+| **Dados de Entrada**          | Produto: Arroz 5kg<br>Quantidade Vendida: 2 unidades |
+| **Resultado Esperado**        | Estoque do produto Arroz 5kg é reduzido em 2 unidades automaticamente. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 014: Alerta de Vencimento Próximo
+| **Número do Caso de Teste** | CT-014 |
+|-------------------------------|--------|
+| **Pré-condições**             | Produto com data de validade próxima (10 dias). |
+| **Procedimento**              | 1. Acessar o menu "Produtos".<br>2. Verificar se o sistema exibe alertas para produtos com validade próxima. |
+| **Dados de Entrada**          | Produto: Leite UHT<br>Data de Validade: 05/10/2024<br>Data Atual: 25/09/2024 |
+| **Resultado Esperado**        | Sistema exibe um alerta indicando que o produto Leite UHT está próximo da data de vencimento. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 015: Cadastro de Ficha de Reabastecimento
+| **Número do Caso de Teste** | CT-015 |
+|-------------------------------|--------|
+| **Pré-condições**             | Usuário autenticado como Júlia (Analista de Estoque). |
+| **Procedimento**              | 1. Acessar o menu "Reabastecimento".<br>2. Clicar em "Nova Ficha de Reabastecimento".<br>3. Selecionar os produtos e definir as quantidades.<br>4. Enviar para aprovação. |
+| **Dados de Entrada**          | Produtos: Leite UHT - 30 unidades<br>Produtos: Feijão 1kg - 20 unidades |
+| **Resultado Esperado**        | Ficha de Reabastecimento criada e enviada para aprovação da Gerente de Loja. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 016: Aprovação de Ficha de Reabastecimento
+| **Número do Caso de Teste** | CT-016 |
+|-------------------------------|--------|
+| **Pré-condições**             | Ficha de Reabastecimento pendente de aprovação. Usuário autenticado como Silvana (Gerente de Loja). |
+| **Procedimento**              | 1. Acessar o menu "Reabastecimento".<br>2. Visualizar as fichas pendentes.<br>3. Selecionar a ficha específica.<br>4. Aprovar ou recusar a ficha. |
+| **Dados de Entrada**          | Ficha de Reabastecimento: FR-001<br>Decisão: Aprovar |
+| **Resultado Esperado**        | Ficha de Reabastecimento FR-001 é aprovada e enviada para a estoquista (Mariana) para execução. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 017: Recebimento de Ficha de Reabastecimento
+| **Número do Caso de Teste** | CT-017 |
+|-------------------------------|--------|
+| **Pré-condições**             | Ficha de Reabastecimento aprovada. Usuário autenticado como Mariana (Estoquista). |
+| **Procedimento**              | 1. Acessar o menu "Reabastecimento".<br>2. Visualizar fichas aprovadas.<br>3. Receber e processar a ficha.<br>4. Atualizar o sistema com as ações realizadas. |
+| **Dados de Entrada**          | Ficha de Reabastecimento: FR-001<br>Produtos Recebidos: Leite UHT - 30 unidades<br>Feijão 1kg - 20 unidades |
+| **Resultado Esperado**        | Produtos adicionados ao estoque conforme a ficha e estoque atualizado no sistema. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 018: Teste de Segurança - Acesso Não Autorizado
+| **Número do Caso de Teste** | CT-018 |
+|-------------------------------|--------|
+| **Pré-condições**             | Sistema protegido por autenticação. |
+| **Procedimento**              | 1. Tentar acessar uma URL restrita sem autenticação.<br>2. Tentar acessar funcionalidades de outro perfil usando métodos alternativos. |
+| **Dados de Entrada**          | Tentativas de acesso não autorizado. |
+| **Resultado Esperado**        | Acesso negado com redirecionamento para a tela de login ou mensagem de erro adequada. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 019: Teste de Recuperação de Senha
+| **Número do Caso de Teste** | CT-019 |
+|-------------------------------|--------|
+| **Pré-condições**             | Usuário precisa de recuperação de senha. |
+| **Procedimento**              | 1. Acessar a tela de login.<br>2. Clicar em "Esqueci a senha".<br>3. Inserir e-mail associado à conta.<br>4. Verificar o e-mail recebido e seguir instruções. |
+| **Dados de Entrada**          | E-mail: usuario@exemplo.com |
+| **Resultado Esperado**        | E-mail de recuperação enviado com sucesso. |
+| **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
+| **Avaliação**                 | [Sucesso/Falha] |
+| **Evidência**                 | [Anexar captura de tela] |
+
+---
+
+## Caso de Teste 020: Logout do Sistema
+| **Número do Caso de Teste** | CT-020 |
+|-------------------------------|--------|
+| **Pré-condições**             | Usuário autenticado e em sessão ativa. |
+| **Procedimento**              | 1. Clicar no botão "Logout".<br>2. Verificar se o sistema redireciona para a tela de login. |
+| **Dados de Entrada**          | N/A |
+| **Resultado Esperado**        | Usuário desconectado com sucesso e redirecionado para a tela de login. |
 | **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
 | **Avaliação**                 | [Sucesso/Falha] |
 | **Evidência**                 | [Anexar captura de tela] |
