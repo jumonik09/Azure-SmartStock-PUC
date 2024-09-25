@@ -128,8 +128,8 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 <figure>
   <img src="img/TelaSolicitarAcesso.png"> 
-  <figcaption>Tela Solicitar Acessos </figcaption>
-</figure>
+ </figure>
+
 
 ## Diagrama de Fluxo
 
