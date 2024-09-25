@@ -10,7 +10,6 @@
 ## Integrantes
 
 * Camilla Penteado Zatz
-* Jéssica C. A. L. de Melo
 * Juliana Monik Moraes Silva
 * Michael Benyamin Gorenstein Brasil
 * Samara Raissa dos Santos Américo Guimarães
