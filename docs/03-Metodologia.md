@@ -77,9 +77,3 @@ As ferramentas utilizadas são os softwares:
 |Ferramente de Diagramação   | Diagrama de Classes         |https://lucid.app/lucidchart/9342c5b3-9a26-4988-802a-5d5ad34c5663/edit?invitationId=inv_59132baf-9384-4cf4-bd59-81f3d47307fe&page=HWEp-vi-RSFO#
 |Ferramente de Diagramação   |Modelo Entidade Relacionamento  |https://lucid.app/lucidchart/9342c5b3-9a26-4988-802a-5d5ad34c5663/edit?invitationId=inv_59132baf-9384-4cf4-bd59-81f3d47307fe&page=E.mb4kc.4tQh#
 |Ferramente de Diagramação   |Projeto da Base de Dados | em construção
-
-Liste quais ferramentas foram empregadas no desenvolvimento do projeto, justificando a escolha delas, sempre que possível.
- 
-> **Possíveis Ferramentas que auxiliarão no gerenciamento**: 
-> - [Slack](https://slack.com/)
-> - [Github](https://github.com/)
