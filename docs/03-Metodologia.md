@@ -42,11 +42,11 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 | Nome                            | Papel                         | Funções                        |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Camilla Penteado Zatz       | Scrum Master e Desenvolvedora                         |                              
-|Juliana Monik Moraes Silva  | QA e Desenvolvedora              |                         
-|Michael Benyamin Gorenstein Brasil   | QA e Desenvolvedor           |
-|Samara Raissa dos Santos Américo Guimarães   | QA e Desenvolvedora         | 
-|Victor Rodrigues Magalhães   | Product Owner e Desenvolvedor  |            
+| Camilla Penteado Zatz       | Scrum Master e Desenvolvedora                         | Responsável por garantir que a equipe siga os princípios e práticas do Scrum, facilitando as cerimônias e removendo impedimentos que possam atrapalhar o progresso
+|Juliana Monik Moraes Silva  | QA e Desenvolvedora              |  Responsável por implementar processos, políticas e padrões para garantir a qualidade do software durante todo o ciclo de desenvolvimento                       
+|Michael Benyamin Gorenstein Brasil   | QA e Desenvolvedor           | Responsável por implementar processos, políticas e padrões para garantir a qualidade do software durante todo o ciclo de desenvolvimento
+|Samara Raissa dos Santos Américo Guimarães   | QA e Desenvolvedora         | Responsável por implementar processos, políticas e padrões para garantir a qualidade do software durante todo o ciclo de desenvolvimento
+|Victor Rodrigues Magalhães   | Product Owner e Desenvolvedor  | Responsável por maximizar o valor do produto, atuando como ponto de contato principal entre as partes interessadas e a equipe de desenvolvimento           
 
 ### Processo
 
