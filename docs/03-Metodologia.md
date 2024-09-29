@@ -50,16 +50,9 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Processo
 
-Coloque  informações sobre detalhes da implementação do Scrum seguido pelo grupo. O grupo poderá fazer uso de ferramentas on-line para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução.
- 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+<p>Com o objetivo de distribuir as tarefas a serem realizadas entre os membros da equipe do projeto, estamos utilizando o repositório GitHub em conformidade com as práticas do framework Scrum. Essa abordagem permite uma gestão eficiente das atividades, assegurando que cada integrante tenha clareza sobre suas responsabilidades e prazos. Além disso, a utilização do GitHub facilita a colaboração e o monitoramento do progresso, promovendo uma comunicação mais eficaz e a integração entre os membros da equipe. Dessa forma, garantimos um fluxo de trabalho organizado e produtivo, essencial para o sucesso do projeto.</p>
 
 ### Ferramentas
-
 
 As ferramentas utilizadas são os softwares:
 
