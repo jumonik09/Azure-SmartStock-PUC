@@ -40,12 +40,13 @@ Discuta como a configuração do projeto foi feita na ferramenta de versionament
 
 ### Divisão de Papéis
 
-Apresente a divisão de papéis entre os membros do grupo.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
+| Nome                            | Papel                         | Funções                        |
+|-------------------------------------|------------------------------------|----------------------------------------|
+| Camilla Penteado Zatz       | Scrum Master e Desenvolvedora                         |                              
+|Juliana Monik Moraes Silva  | QA e Desenvolvedora              |                         
+|Michael Benyamin Gorenstein Brasil   | QA e Desenvolvedor           |
+|Samara Raissa dos Santos Américo Guimarães   | QA e Desenvolvedora         | 
+|Victor Rodrigues Magalhães   | Product Owner e Desenvolvedor  |            
 
 ### Processo
 
