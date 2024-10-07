@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "xmo5XbmSwk2/yKuRi2m/Obbld+tBj7i1B5qqJXHCoOI=",
+  "Hash": "Ui3oAxiVph3EZK4gKMesuuDgnXyxeI+CBdr18F7/J2Q=",
   "Source": "project",
   "BasePath": "_content/project",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/obj/Debug/net6.0/scopedcss/projectbundle/project.bundle.scp.css"
+    },
+    {
+      "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/login.css",
+      "SourceId": "project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/",
+      "BasePath": "_content/project",
+      "RelativePath": "css/login.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/login.css"
     },
     {
       "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/site.css",
