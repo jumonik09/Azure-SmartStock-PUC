@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Ui3oAxiVph3EZK4gKMesuuDgnXyxeI+CBdr18F7/J2Q=",
+  "Hash": "PG6gsnx2ZrdJ9OGMJpaRvnSybzsPw6kiD1L8CWrEp7s=",
   "Source": "project",
   "BasePath": "_content/project",
   "Mode": "Default",
@@ -51,12 +51,12 @@
       "OriginalItemSpec": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/obj/Debug/net6.0/scopedcss/projectbundle/project.bundle.scp.css"
     },
     {
-      "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/login.css",
+      "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/cadastroFornecedor.css",
       "SourceId": "project",
       "SourceType": "Discovered",
       "ContentRoot": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/",
       "BasePath": "_content/project",
-      "RelativePath": "css/login.css",
+      "RelativePath": "css/cadastroFornecedor.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -65,7 +65,24 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot/css/login.css"
+      "OriginalItemSpec": "wwwroot/css/cadastroFornecedor.css"
+    },
+    {
+      "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/cadastroProduto.css",
+      "SourceId": "project",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/",
+      "BasePath": "_content/project",
+      "RelativePath": "css/cadastroProduto.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/css/cadastroProduto.css"
     },
     {
       "Identity": "/Users/adolfolozanomendez/Documents/GitHub/PMV-ADS-2024-2-E2-Proj-Smart-Stock/project/wwwroot/css/site.css",
