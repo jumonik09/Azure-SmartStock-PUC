@@ -47,4 +47,36 @@ public class HomeController : Controller
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
+
+
+    [HttpPost]
+    public ActionResult CadastrarFornecedor(FornecedorView modelo)
+    {
+        Console.WriteLine($"Dados que chegaram nome: {modelo.nome}, email: {modelo.email}, telefone: {modelo.telefone}, endereço: {modelo.endereco}, cnpj: {modelo.cnpj}");
+
+        Console.WriteLine($"Model is valid?: {ModelState.IsValid}");
+
+        if (ModelState.IsValid)
+        {
+            // Aqui você pode salvar os dados, por exemplo, em um banco de dados
+            
+            //Convertendo modelo a Fornecedor
+            Fornecedor fornecedor = new Fornecedor();
+            fornecedor.razao = modelo.nome;
+            fornecedor.email = modelo.email;
+            fornecedor.endereco = modelo.endereco;
+            fornecedor.telefone = modelo.telefone;
+
+            Console.WriteLine($"Dados convertidos a fornecedor razao: {fornecedor.razao}, email: {fornecedor.email}, telefone: {fornecedor.telefone}, endereço: {fornecedor.endereco}");
+
+            //Mandando os dados para o banco de dados
+            _context.Fornecedor.Add(fornecedor); // Adiciona o fornecedor ao contexto
+            _context.SaveChanges(); // Salva as mudanças no banco de dados
+
+
+            return RedirectToAction("Sucesso"); // Redireciona após salvar
+        }
+
+        return View(modelo); // Retorna para o formulário se houver erros
+    }
 }

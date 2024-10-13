@@ -1,3 +1,4 @@
+@model FornecedorView
 @{
     ViewData["Title"] = "Cadastro de Fornecedor";
 }
@@ -13,24 +14,32 @@
 <body>
     <div class="container">
         <h1>Cadastro de Fornecedor</h1>
-        <form action="#" method="POST">
-            <label for="nome">Nome do Fornecedor:</label>
-            <input type="text" id="nome" name="nome" required>
 
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="telefone" required>
-
-            <label for="endereco">Endereço:</label>
-            <input type="text" id="endereco" name="endereco" required>
-
-            <label for="cnpj">CNPJ:</label>
-            <input type="text" id="cnpj" name="cnpj" required>
-
+        @using (Html.BeginForm("CadastrarFornecedor", "Home", FormMethod.Post))
+        {
+            <div>
+                @Html.LabelFor(m => m.nome)
+                @Html.TextBoxFor(m => m.nome)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.email)
+                @Html.TextBoxFor(m => m.email)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.telefone)
+                @Html.TextBoxFor(m => m.telefone)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.endereco)
+                @Html.TextBoxFor(m => m.endereco)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.cnpj)
+                @Html.TextBoxFor(m => m.cnpj)
+            </div>
             <button type="submit">Cadastrar</button>
-        </form>
+        }
+
     </div>
     <br>
     <br>
