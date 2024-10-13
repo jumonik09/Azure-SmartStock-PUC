@@ -1,4 +1,13 @@
+using Microsoft.EntityFrameworkCore; // Necessário para DbContext
+using Pomelo.EntityFrameworkCore.MySql.Infrastructure; // Necessário para UseMySql
+
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurando o DbContext
+builder.Services.AddDbContext<ApplicationDbContext>(options =>
+    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
+    new MySqlServerVersion(new Version(6, 0, 3)))); // Ajuste a versão conforme sua instalação
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
