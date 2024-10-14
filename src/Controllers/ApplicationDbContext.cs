@@ -7,4 +7,12 @@ public class ApplicationDbContext : DbContext
     }
 
     public DbSet<Fornecedor> Fornecedor { get; set; } // Adicione suas entidades aqui
+
+    public DbSet<Produto> Produto{ get; set; } // Adicione suas entidades aqui 
+    //ju
+
 }
+
+
+
+

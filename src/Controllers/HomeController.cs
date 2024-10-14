@@ -79,4 +79,35 @@ public class HomeController : Controller
 
         return View(modelo); // Retorna para o formulário se houver erros
     }
+
+    [HttpPost]
+    public ActionResult CadastrarProduto(ProdutoView modelo)
+    {
+        Console.WriteLine($"Dados que chegaram nome: {modelo.nome}, descricao {modelo.descricao}, preco: {modelo.preco}, categoria: {modelo.categoria}"); //agora testo no html e depois continuo a etapa
+        Console.WriteLine($"Model is valid?: {ModelState.IsValid}");
+        if (ModelState.IsValid){
+             // Aqui você pode salvar os dados, por exemplo, em um banco de dados
+            
+            //Convertendo modelo a Fornecedor
+            Produto produto = new Produto();
+            produto.nome = modelo.nome;
+            produto.categoria = modelo.categoria;
+            produto.ativo = true;
+            produto.fornecedor_id = 1;
+            Console.WriteLine($"Dados convertidos a produtos: {produto.nome}, categoria: {produto.categoria}, ativo: {produto.ativo}, fornecedor_id: {produto.fornecedor_id}");
+
+            //Mandando os dados para o banco de dados
+            _context.Produto.Add(produto); // Adiciona o fornecedor ao contexto
+            _context.SaveChanges(); // Salva as mudanças no banco de dados
+
+
+            return RedirectToAction("Sucesso"); // Redireciona após salvar
+
+        }
+
+        return View(modelo);
+    }
+
 }
+
+
