@@ -1,0 +1,96 @@
+﻿@{
+    ViewData["Title"] = "Gestão de Estoque";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="mb-4">
+            <h4 class="text-muted">Gestão de Estoque</h4>
+        </div>
+
+        
+        <div class="form-group">
+            <input type="text" class="form-control mb-2" placeholder="Input 1" />
+            <input type="text" class="form-control mb-2" placeholder="Input 2" />
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox1">
+                    <label class="form-check-label" for="checkbox1">
+                        Produto 1
+                    </label>
+                    <span class="float-right text-success" id="checkIcon1" style="display: none;">✔</span>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox2">
+                    <label class="form-check-label" for="checkbox2">
+                        Produto 2
+                    </label>
+                    <span class="float-right text-success" id="checkIcon2" style="display: none;">✔</span>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox3">
+                    <label class="form-check-label" for="checkbox3">
+                        Produto 3
+                    </label>
+                    <span class="float-right text-success" id="checkIcon3" style="display: none;">✔</span>
+                </div>
+
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="checkbox4">
+                    <label class="form-check-label" for="checkbox4">
+                        Produto 4
+                    </label>
+                    <span class="float-right text-success" id="checkIcon4" style="display: none;">✔</span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleCheckIcon(checkboxId, iconId) {
+            var checkbox = document.getElementById(checkboxId);
+            var icon = document.getElementById(iconId);
+
+            if (checkbox.checked) {
+                icon.style.display = 'inline';
+            } else {
+                icon.style.display = 'none';
+            }
+        }
+
+        document.getElementById('checkbox1').addEventListener('change', function () {
+            toggleCheckIcon('checkbox1', 'checkIcon1');
+        });
+        document.getElementById('checkbox2').addEventListener('change', function () {
+            toggleCheckIcon('checkbox2', 'checkIcon2');
+        });
+        document.getElementById('checkbox3').addEventListener('change', function () {
+            toggleCheckIcon('checkbox3', 'checkIcon3');
+        });
+        document.getElementById('checkbox4').addEventListener('change', function () {
+            toggleCheckIcon('checkbox4', 'checkIcon4');
+        });
+    </script>
+</body>
+</html>
