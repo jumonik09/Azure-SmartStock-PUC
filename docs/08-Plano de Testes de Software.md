@@ -31,7 +31,7 @@ Cada caso de teste é descrito com os seguintes campos:
 |-------------------------------|--------|
 | **Pré-condições**             | Usuário autenticado como Administrador. |
 | **Procedimento**              | 1. Acessar o menu "Cadastro de Produtos".<br>2. Clicar em "Novo Produto".<br>3. Preencher os campos obrigatórios (Nome, Descrição, Preço, Quantidade em Estoque).<br>4. Clicar em "Salvar". |
-| **Dados de Entrada**          | Nome: Arroz 5kg<br>Descrição: Pacote de Arroz 5kg<br>Preço: R$ 35,00<br>Quantidade em Estoque: 100 |
+| **Dados de Entrada**          | Nome: Arroz <br>Descrição: Arroz tipo 1 <br>Preço: R$ 35,00<br>Quantidade em Estoque: 100 |
 | **Resultado Esperado**        | Produto cadastrado com sucesso e exibido na lista de produtos. |
 | **Resultado Obtido**          | [A ser preenchido após a execução do teste] |
 | **Avaliação**                 | [Sucesso/Falha] |
