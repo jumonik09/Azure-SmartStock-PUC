@@ -1,4 +1,5 @@
 using Microsoft.EntityFrameworkCore;
+using project.Models;
 
 public class ApplicationDbContext : DbContext
 {
@@ -6,13 +7,7 @@ public class ApplicationDbContext : DbContext
     {
     }
 
-    public DbSet<Fornecedor> Fornecedor { get; set; } // Adicione suas entidades aqui
+    public DbSet<Fornecedor> Fornecedor { get; set; } 
 
-    public DbSet<Produto> Produto{ get; set; } // Adicione suas entidades aqui 
-    //ju
-
+    public DbSet<Produto> Produto{ get; set; }
 }
-
-
-
-
