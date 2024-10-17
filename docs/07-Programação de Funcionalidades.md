@@ -21,17 +21,22 @@ Se houver usuário de teste, o login e a senha também deverão ser informados a
 
 O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
 
-
-
-<figure>
-  <img src="img/pagina_cadastro.png">
-</figure>
+# Página Cadastro de Fornecedor  
 
 |ID    | Descrição do Requisito  | Tela Página Cadastro de Fornecedor | Juliana M |
 |------|-----------------------------------------|----|----|
 |RF-011| O sistema deve cadastrar o fornecedor e criar uma página informando que o cadastro foi realizado com sucesso. |  |  |
 |RNF-005| O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras. |  |  |
 |RF-12| O sistema deve permitir a inclusão de um novo fornecedor tendo incluso nome, email, telefone, endereço, cnpj.|  |  |
+
+<figure>
+  <img src="img/pagina_cadastro.png">
+</figure>
+
+<figure>
+  <img src="img/pagina_sucesso.png">
+</figure>
+
 
 
 > **Links Úteis**:
