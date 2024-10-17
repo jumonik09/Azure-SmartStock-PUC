@@ -26,6 +26,11 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Gestao_de_estoque()
+    {
+        return View();
+    }
+
     public IActionResult Privacy()
     {
         return View();
