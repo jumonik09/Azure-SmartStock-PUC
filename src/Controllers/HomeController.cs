@@ -1,6 +1,7 @@
-﻿using System.Diagnostics;
+using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
 using project.Models;
+
 
 namespace project.Controllers;
 
@@ -28,7 +29,11 @@ public class HomeController : Controller
 
     public IActionResult Gestao_de_estoque()
     {
-        return View();
+        // Buscar todos os produtos do banco de dados
+        var produtos = _context.Produto.ToList();
+
+        // Passar a lista de produtos para a view
+        return View(produtos);
     }
 
     public IActionResult Privacy()
@@ -45,35 +50,6 @@ public class HomeController : Controller
     public IActionResult CadastrarProduto()
     {
         return View();
-    }
-
-
-    public IActionResult Tabeladeproduto()
-    {
-        var produtosDb = _context.Produto.ToList();
-        Console.WriteLine($"Dados da table produtos: {produtosDb} size: {produtosDb.Count}");
-
-        var produtosView = new List<ProdutoView>(); 
-
-        foreach (Produto produtoDb in produtosDb)
-        {
-            Console.WriteLine($"Dados do produto id: {produtoDb.nome}, categoria: {produtoDb.categoria}");
-
-            produtosView.Add(new ProdutoView { 
-                nome = produtoDb.nome, 
-                descricao = "desconhecido", 
-                preco = "99,99", 
-                categoria = produtoDb.categoria 
-            });
-        }
-
-
-        var tabelaDeProdutoView = new TabelaDeProdutoView
-        {
-            produtos = produtosView
-        };
-
-        return View(tabelaDeProdutoView);
     }
 
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
