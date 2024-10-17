@@ -7,7 +7,7 @@ Implementação do sistema descrita por meio dos requisitos funcionais e/ou não
 Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos desenvolvidos.
 
 |ID    | Descrição do Requisito  | Artefatos produzidos | Aluno(a) responsável |
-|------|-----------------------------------------|----|----|
+ |------|-----------------------------------------|----|----|
 |RF-001| A aplicação deve permitir que o usuário avalie uma agência de intercâmbio com base na sua experiência|  |  |
 |RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
 |RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
@@ -20,6 +20,19 @@ Não deixe de informar o link onde a aplicação estiver disponível para acesso
 Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
 
 O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+
+
+
+<figure>
+  <img src="img/pagina_cadastro.png">
+</figure>
+
+|ID    | Descrição do Requisito  | Tela Página Cadastro de Fornecedor | Juliana M |
+|------|-----------------------------------------|----|----|
+|RF-011| O sistema deve cadastrar o fornecedor e criar uma página informando que o cadastro foi realizado com sucesso. |  |  |
+|RNF-005| O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras. |  |  |
+|RF-12| O sistema deve permitir a inclusão de um novo fornecedor tendo incluso nome, email, telefone, endereço, cnpj.|  |  |
+
 
 > **Links Úteis**:
 >
