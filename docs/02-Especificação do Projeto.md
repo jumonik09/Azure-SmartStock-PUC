@@ -283,7 +283,9 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-08  | O sistema deve permitir a autenticação e autorização de usuários para acesso ao sistema de gestão de estoque, com diferentes níveis de permissão para gestores e colaboradores. | MÉDIA      |
 | RF-09  | O sistema deve fornecer um alerta básico quando o estoque de um produto estiver abaixo de um limite definido.                                                     | ALTA       |
 | RF-10  | O sistema deve fornecer um alerta básico quando um lote de produto estiver 10 dias próximo a data de vencimento.                                                  | ALTA       |
-| RF-11  |O sistema deve cadastrar o fornecedor e criar uma página informando que o cadastro foi realizado com sucesso| ALTA       |
+| RF-11  |O sistema deve cadastrar o fornecedor e criar uma página informando que o cadastro foi realizado com sucesso.| ALTA       |
+| RF-12  |O sistema deve permitir a inclusão de um novo fornecedor tendo incluso nome, email, telefone, endereço, cnpj. | ALTA       |
+
 ### Requisitos não Funcionais
 
 | ID      | Descrição do Requisito                                                                                                                                                   | Prioridade |
