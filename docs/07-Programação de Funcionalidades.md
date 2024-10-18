@@ -15,11 +15,14 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 
 # Instruções de acesso
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+Acesso de forma local:
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+O usuário deverá clonar o repositório localmente e navegar até o diretório e executar o arquivo index.html em seu navegador de preferência.
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+Forma de acesso via URL:  https://icei-puc-minas-pmv-ads.github.io/PMV-ADS-2024-2-E2-Proj-Smart-Stock/
+
+O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  https://icei-puc-minas-pmv-ads.github.io/PMV-ADS-2024-2-E2-Proj-Smart-Stock/
+
 
 # Página Cadastro de Fornecedor  
 
