@@ -52,12 +52,40 @@ public class HomeController : Controller
         return View();
     }
 
+    public IActionResult Tabeladefornecedor()
+    {
+        var fornecedoresDb = _context.Fornecedor.ToList();
+        Console.WriteLine($"Dados da table fornecedor: {fornecedoresDb} size: {fornecedoresDb.Count}");
+
+        var fornecedoresView = new List<FornecedorView>(); 
+
+        foreach (Fornecedor fornecedorDb in fornecedoresDb)
+        {
+            Console.WriteLine($"Dados do fornecedor id: {fornecedorDb.id}, razao: {fornecedorDb.razao}");
+
+           fornecedoresView.Add(new FornecedorView { 
+                nome = fornecedorDb.razao, 
+                email = fornecedorDb.email, 
+                cnpj = "",
+                endereco = "", 
+                telefone = fornecedorDb.telefone,
+            });
+        }
+
+        var tabelaDeFornecedorView = new TabelaDeFornecedorView
+        {
+            fornecedores = fornecedoresView
+        };
+
+        return View(tabelaDeFornecedorView);
+    
+    }
+
     [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
     public IActionResult Sucesso()
     {
         return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
     }
-
 
     [HttpPost]
     public ActionResult CadastrarFornecedor(FornecedorView modelo)
@@ -184,3 +212,8 @@ public class HomeController : Controller
         return View();
     }
 }
+
+
+
+ 
+    

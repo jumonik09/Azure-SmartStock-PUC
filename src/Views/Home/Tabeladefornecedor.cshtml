@@ -1,0 +1,26 @@
+@model TabelaDeFornecedorView
+@{
+    ViewData["Title"] = "Lista de fornecedor";
+}
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/tabeladefornecedor.css">
+    <title>Lista de produtos</title>
+</head>
+<body>
+    <h1>Lista de Fornecedor -</h1>
+     @foreach (var fornecedor in Model.fornecedores)
+    {
+       <form><tr> 
+            <td>@fornecedor.nome</td> 
+            <td>@fornecedor.email</td> 
+            <td>@fornecedor.telefone</td>
+      </tr>
+       </form>
+        <br>
+    }
+</body>
+</html>

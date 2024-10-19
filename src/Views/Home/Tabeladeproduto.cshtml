@@ -11,14 +11,14 @@
     <title>Lista de produtos</title>
 </head>
 <body>
-    <h1>Lista de produtos</h1>
+    <h1>Lista de produtos -</h1>
 
     @foreach (var produto in Model.produtos)
     {
-        <tr>
+       <form><tr> 
             <td>@produto.nome</td>
             <td>@produto.categoria</td>
-        </tr>
+      </tr> </form>
         <br>
     }
 
