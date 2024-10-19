@@ -1,0 +1,131 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Usuario";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class=" btn btn-primary" role="button" asp-controller="Usuario" asp-action="Criar"> Adicionar novo usuário </a>
+    </div>
+    <br />
+
+    <h1 class="display-4">Listagem de Usuários</h1>
+
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Celular</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Marcos</td>
+                <td>marcus@gmail.com</td>
+                <td>31 99293-6524</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Patricia</td>
+                <td>pat@hotmail.com</td>
+                <td>31 98534-2020</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">3</th>
+                <td>Eduardo</td>
+                <td>dudu@hotmail.com</td>
+                <td>31 99222-4532</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">4</th>
+                <td>Lucas</td>
+                <td>lucas@hotmail.com</td>
+                <td>31 98763-4532</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">5</th>
+                <td>Samara</td>
+                <td>samara@hotmail.com</td>
+                <td>31 97809-4512</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">6</th>
+                <td>Juliana</td>
+                <td>juju@hotmail.com</td>
+                <td>31 99990-6032</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">7</th>
+                <td>Victor</td>
+                <td>victor@hotmail.com</td>
+                <td>31 98828-8892</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <th scope="row">8</th>
+                <td>Michael</td>
+                <td>michael@hotmail.com</td>
+                <td>31 99454-4544</td>
+                <td>
+                    <div class="btn-group" role="group">
+                        <a role="button" class="btn btn-primary" asp-controller="Usuario" asp-action="Editar">editar</a>
+                        <a role="button" class="btn btn-danger" asp-controller="Usuario" asp-action="ApagarConfirmacao">apagar</a>
+                    </div>
+                </td>
+            </tr>
+
+        </tbody>
+    </table>
+</div>

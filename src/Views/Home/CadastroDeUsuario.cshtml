@@ -1,0 +1,77 @@
+﻿@{
+    ViewData["Title"] = "Cadastro de Usuario";
+}
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Usuário</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2 class="text-center">Cadastro de Usuário</h2>
+        <form id="formCadastro" class="needs-validation" novalidate>
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
+                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+            </div>
+            
+            <div class="mb-3">
+                <label for="email" class="form-label">Telefone</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu número" required>
+                <div class="invalid-feedback">Por favor, insira um número válido.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Cargo</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu cargo" required>
+                <div class="invalid-feedback">Por favor, insira seu cargo.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
+                <div class="invalid-feedback">Por favor, insira um email válido.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="senha" class="form-label">Senha</label>
+                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
+                <div class="invalid-feedback">Por favor, insira sua senha.</div>
+            </div>
+
+            <div class="mb-3">
+                <label for="confirmarSenha" class="form-label">Ativo</label>
+                <input type="password" class="form-control" id="confirmarSenha" placeholder="Ativo ou Inatívo" required>
+                <div class="invalid-feedback">Por favor, coloque apenas a opção Ativo e Inativo.</div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Cadastrar</button>
+        </form>
+    </div>
+
+    <!-- Bootstrap JS (para validação de formulário) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Script para habilitar a validação do Bootstrap
+        (() => {
+          'use strict'
+          const forms = document.querySelectorAll('.needs-validation')
+          Array.from(forms).forEach(form => {
+            form.addEventListener('submit', event => {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              form.classList.add('was-validated')
+            }, false)
+          })
+        })();
+    </script>
+</body>
+</html>

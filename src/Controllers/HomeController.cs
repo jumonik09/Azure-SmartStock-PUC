@@ -118,4 +118,44 @@ public class HomeController : Controller
         return View(modelo);
     }
 
+
+    public IActionResult Tabeladeproduto()
+    {
+        var produtosDb = _context.Produto.ToList();
+        Console.WriteLine($"Dados da table produtos: {produtosDb} size: {produtosDb.Count}");
+
+        var produtosView = new List<ProdutoView>();
+
+        foreach (Produto produtoDb in produtosDb)
+        {
+            Console.WriteLine($"Dados do produto id: {produtoDb.nome}, categoria: {produtoDb.categoria}");
+
+            produtosView.Add(new ProdutoView
+            {
+                nome = produtoDb.nome,
+                descricao = "desconhecido",
+                preco = "99,99",
+                categoria = produtoDb.categoria
+            });
+        }
+
+
+        var tabelaDeProdutoView = new TabelaDeProdutoView
+        {
+            produtos = produtosView
+        };
+
+        return View(tabelaDeProdutoView);
+    }
+
+
+    public IActionResult ListagemDeUsuario()
+    {
+        return View();
+    }
+
+    public IActionResult CadastroDeUsuario()
+    {
+        return View();
+    }
 }
