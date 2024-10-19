@@ -10,4 +10,6 @@ public class ApplicationDbContext : DbContext
     public DbSet<Fornecedor> Fornecedor { get; set; } 
 
     public DbSet<Produto> Produto{ get; set; }
+
+    public DbSet<Usuario> Usuario { get; set; }
 }

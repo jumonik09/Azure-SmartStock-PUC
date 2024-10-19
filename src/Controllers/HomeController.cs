@@ -151,7 +151,32 @@ public class HomeController : Controller
 
     public IActionResult ListagemDeUsuario()
     {
-        return View();
+        var usuariosDb = _context.Usuario.ToList();
+        Console.WriteLine($"Dados da table usuario: {usuariosDb} size: {usuariosDb.Count}");
+
+        var usuariosView = new List<UsuarioView>();
+
+        foreach (Usuario usuarioDb in usuariosDb)
+        {
+            Console.WriteLine($"Dados do produto id: {usuarioDb.Nome}, categoria: {usuarioDb.Email}");
+
+            usuariosView.Add(new UsuarioView
+            {
+                Nome = usuarioDb.Nome,
+                Telefone = usuarioDb.Telefone,
+                Cargo = usuarioDb.Cargo,
+                Email = usuarioDb.Email,
+                Ativo = "",
+                Senha = usuarioDb.Senha,
+                Nivel = usuarioDb.Nivel
+            });
+        }
+
+        var listagemDeUsuariosView = new ListagemDeUsuarioView
+        {
+            ListaDeUsuario = usuariosView
+        };
+        return View(listagemDeUsuariosView);
     }
 
     public IActionResult CadastroDeUsuario()
