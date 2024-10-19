@@ -1,4 +1,4 @@
-# Programação de Funcionalidades (doc ainda não preenchido, o que consta aqui é do template do github)
+# Programação de Funcionalidades 
 
 <span style="color:red">Pré-requisitos: <a href="2-Especificação do Projeto.md"> Especificação do Projeto</a></span>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="4-Metodologia.md"> Metodologia</a>, <a href="3-Projeto de Interface.md"> Projeto de Interface</a>, <a href="5-Arquitetura da Solução.md"> Arquitetura da Solução</a>
 
@@ -22,7 +22,7 @@ O usuário deverá clonar o repositório localmente e navegar até o diretório 
 
 Forma de acesso:
 
-O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  https://icei-puc-minas-pmv-ads.github.io/PMV-ADS-2024-2-E2-Proj-Smart-Stock/
+O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  
 
 
 # Página Cadastro de Fornecedor  
@@ -45,7 +45,7 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  ht
 <img src="img/pagina_sucesso.png">
 </figure>
 
-Página Lista de Fornecedores:
+Página Lista de Produtos:
  <br>
  Passagem de Dados SQL para HTML.
  A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados foram formatados para exibição em HTML.
