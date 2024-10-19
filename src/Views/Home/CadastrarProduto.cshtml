@@ -1,0 +1,43 @@
+@model ProdutoView
+@{
+    ViewData["Title"] = "Cadastro de Produto";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Produto</title>
+    <link rel="stylesheet" href="~/css/CadastroProduto.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Cadastro de Produto</h2>
+        
+        @using (Html.BeginForm("CadastrarProduto", "Home", FormMethod.Post))
+        {
+            <div>
+                @Html.LabelFor(m => m.nome)
+                @Html.TextBoxFor(m => m.nome)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.descricao)
+                @Html.TextBoxFor(m => m.descricao)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.preco)
+                @Html.TextBoxFor(m => m.preco)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.categoria)
+                @Html.TextBoxFor(m => m.categoria)
+            </div>
+            <button type="submit">Cadastrar</button>
+        }
+    </div>
+</body>
+</html>
+
+
+

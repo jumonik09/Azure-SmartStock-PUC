@@ -1,0 +1,46 @@
+@model FornecedorView
+@{
+    ViewData["Title"] = "Cadastro de Fornecedor";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/cadastroFornecedor.css">
+    <title>Cadastro de Fornecedor</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Cadastro de Fornecedor</h1>
+
+        @using (Html.BeginForm("CadastrarFornecedor", "Home", FormMethod.Post))
+        {
+            <div>
+                @Html.LabelFor(m => m.nome)
+                @Html.TextBoxFor(m => m.nome)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.email)
+                @Html.TextBoxFor(m => m.email)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.telefone)
+                @Html.TextBoxFor(m => m.telefone)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.endereco)
+                @Html.TextBoxFor(m => m.endereco)
+            </div>
+            <div>
+                @Html.LabelFor(m => m.cnpj)
+                @Html.TextBoxFor(m => m.cnpj)
+            </div>
+            <button type="submit">Cadastrar</button>
+        }
+
+    </div>
+   
+</body>
+</html>

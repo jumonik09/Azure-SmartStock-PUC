@@ -1,0 +1,22 @@
+﻿@model ListagemDeUsuarioView
+@{
+    ViewData["Title"] = "Listagem de Usuario";
+}
+
+<div class="text-center">
+
+    <br />
+
+    <h1 class="display-4">Listagem de Usuários</h1>
+
+    @foreach (var usuarioView in Model.ListaDeUsuario)
+    {
+        <tr>
+            <td>@usuarioView.Nome</td>
+            <td>@usuarioView.Telefone</td>
+            <td>@usuarioView.Email</td>
+        </tr>
+        <br>
+    }
+    
+</div>

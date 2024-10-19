@@ -1,2 +1,6 @@
 mysql_data
 .vscode
+
+src/obj/*
+src/bin/*
+.vs/
