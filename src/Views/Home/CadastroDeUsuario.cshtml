@@ -1,4 +1,5 @@
-﻿@{
+﻿@model UsuarioView
+@{
     ViewData["Title"] = "Cadastro de Usuario";
 }
 
@@ -14,45 +15,41 @@
 <body>
     <div class="container mt-5">
         <h2 class="text-center">Cadastro de Usuário</h2>
-        <form id="formCadastro" class="needs-validation" novalidate>
-            <div class="mb-3">
-                <label for="nome" class="form-label">Nome</label>
-                <input type="text" class="form-control" id="nome" placeholder="Digite seu nome" required>
-                <div class="invalid-feedback">Por favor, insira seu nome.</div>
+        @using (Html.BeginForm("CadastrarUsuario", "Home", FormMethod.Post))
+        {
+            <div>
+                @Html.LabelFor(m => m.Nome, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Nome, new { @class = "form-control", placeholder = "Digite o nome" })
             </div>
-            
-            <div class="mb-3">
-                <label for="email" class="form-label">Telefone</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu número" required>
-                <div class="invalid-feedback">Por favor, insira um número válido.</div>
+            <br/>
+            <div>
+                @Html.LabelFor(m => m.Telefone, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Telefone, new { @class = "form-control", placeholder = "Digite o telefone" })
             </div>
-
-            <div class="mb-3">
-                <label for="email" class="form-label">Cargo</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu cargo" required>
-                <div class="invalid-feedback">Por favor, insira seu cargo.</div>
+            <br />
+            <div>
+                @Html.LabelFor(m => m.Cargo, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Cargo, new { @class = "form-control", placeholder = "Digite o cargo" })
             </div>
-
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input type="email" class="form-control" id="email" placeholder="Digite seu email" required>
-                <div class="invalid-feedback">Por favor, insira um email válido.</div>
+            <br />
+            <div>
+                @Html.LabelFor(m => m.Email, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Email, new { @class = "form-control", placeholder = "Digite o email" })
             </div>
-
-            <div class="mb-3">
-                <label for="senha" class="form-label">Senha</label>
-                <input type="password" class="form-control" id="senha" placeholder="Digite sua senha" required>
-                <div class="invalid-feedback">Por favor, insira sua senha.</div>
+            <br />
+            <div>
+                @Html.LabelFor(m => m.Senha, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Senha, new { @class = "form-control", placeholder = "Digite a senha" })
             </div>
-
-            <div class="mb-3">
-                <label for="confirmarSenha" class="form-label">Ativo</label>
-                <input type="password" class="form-control" id="confirmarSenha" placeholder="Ativo ou Inatívo" required>
-                <div class="invalid-feedback">Por favor, coloque apenas a opção Ativo e Inativo.</div>
+            <br />
+            <div>
+                @Html.LabelFor(m => m.Ativo, new { @class = "form-label" })
+                @Html.TextBoxFor(m => m.Ativo, new { @class = "form-check-input" })
             </div>
-
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
-        </form>
+            <br />
+            <button type="submit" class="btn btn-success">Cadastrar</button>
+        }
+        
     </div>
 
     <!-- Bootstrap JS (para validação de formulário) -->

@@ -147,6 +147,39 @@ public class HomeController : Controller
     }
 
 
+    [HttpPost]
+    public ActionResult CadastrarUsuario(UsuarioView modelo)
+    {
+        Console.WriteLine($"Dados que chegaram nome: {modelo.Nome}"); //agora testo no html e depois continuo a etapa
+        Console.WriteLine($"Model is valid?: {ModelState.IsValid}");
+        if (ModelState.IsValid)
+        {
+            // Aqui você pode salvar os dados, por exemplo, em um banco de dados
+
+            //Convertendo modelo a Usuario
+            Usuario usuario = new Usuario();
+            usuario.Nome = modelo.Nome;
+            usuario.Telefone = modelo.Telefone;
+            usuario.Cargo = modelo.Cargo;
+            usuario.Email = modelo.Email;
+            usuario.Senha = modelo.Senha;
+            usuario.Ativo = true;
+            usuario.Nivel = 1;
+            Console.WriteLine($"Dados convertidos a usuario: {usuario.Nome}");
+
+            //Mandando os dados para o banco de dados
+            _context.Usuario.Add(usuario); // Adiciona o Usuario ao contexto
+            _context.SaveChanges(); // Salva as mudanças no banco de dados
+
+           
+            return RedirectToAction("Sucesso"); // Redireciona após salvar
+
+        }
+
+        return RedirectToAction("Sucesso");
+    }
+
+
     public IActionResult Tabeladeproduto()
     {
         var produtosDb = _context.Produto.ToList();
