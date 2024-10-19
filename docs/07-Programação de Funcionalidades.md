@@ -36,13 +36,19 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  ht
 <figure>
   <img src="img/pagina_cadastro.png">
 </figure>
+
 <br>
+
+<p>Ao clicar no botão de cadastro, você será redirecionado para a página de sucesso, onde uma mensagem de confirmação do cadastro do fornecedor será exibida.</p>
 <figure>
-  <img src="img/pagina_sucesso.png">
+
+<img src="img/pagina_sucesso.png">
 </figure>
-<br>
- Página Lista de Fornecedores - Passagem de Dados SQL para HTML.
-<p> A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados foram formatados para exibição em HTML.</p>
+
+Página Lista de Fornecedores:
+ <br>
+ Passagem de Dados SQL para HTML.
+ A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados foram formatados para exibição em HTML.
 
  <figure>
   <img src="img/pagina_produtos.png">
