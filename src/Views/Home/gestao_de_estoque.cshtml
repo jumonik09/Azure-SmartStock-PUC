@@ -1,3 +1,5 @@
+<!-- Def 1 -->
+
 @model IEnumerable<project.Models.Produto>
 
 @{
@@ -13,20 +15,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </nav>
-
+    
     <div class="container mt-3">
         <div class="mb-4">
             <h4 class="text-muted">Gestão de Estoque</h4>
-        </div>
-
-        <div class="form-group">
-            <input type="text" class="form-control mb-2" placeholder="Input 1" />
-            <input type="text" class="form-control mb-2" placeholder="Input 2" />
         </div>
 
         <div class="card">
@@ -46,25 +38,19 @@
     </div>
 
     <script>
-        function toggleCheckIcon(checkboxId, iconId) {
-            var checkbox = document.getElementById(checkboxId);
-            var icon = document.getElementById(iconId);
-
-            if (checkbox.checked) {
-                icon.style.display = 'inline';
-            } else {
-                icon.style.display = 'none';
-            }
-        }
-
-        @foreach (var produto in Model)
-        {
-            <text>
-                document.getElementById('checkbox@produto.id').addEventListener('change', function () {
-                    toggleCheckIcon('checkbox@produto.id', 'checkIcon@produto.id');
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.form-check-input').forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    var icon = this.parentElement.querySelector('.text-success');
+                    if (this.checked) {
+                        icon.style.display = 'inline';
+                    } else {
+                        icon.style.display = 'none';
+                    }
                 });
-            </text>
-        }
+            });
+        });
     </script>
+
 </body>
 </html>
