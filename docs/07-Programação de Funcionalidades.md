@@ -12,6 +12,7 @@ Por exemplo: a tabela a seguir deverá ser preenchida considerando os artefatos 
 |RF-002| A aplicação deve permitir que o usuário inclua comentários ao fazer uma avaliação de uma agência de intercâmbio     |  |  |
 |RF-003| A aplicação deve permitir que o usuário consulte todas as agências de intercâmbio cadastradas ordenando-as com base em suas notas |  |  |
 
+<br> 
 
 # Instruções de acesso
 
@@ -19,7 +20,7 @@ Acesso de forma local:
 
 O usuário deverá clonar o repositório localmente e navegar até o diretório e executar o arquivo index.html em seu navegador de preferência.
 
-Forma de acesso via URL:  https://icei-puc-minas-pmv-ads.github.io/PMV-ADS-2024-2-E2-Proj-Smart-Stock/
+Forma de acesso:
 
 O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  https://icei-puc-minas-pmv-ads.github.io/PMV-ADS-2024-2-E2-Proj-Smart-Stock/
 
@@ -35,12 +36,17 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:  ht
 <figure>
   <img src="img/pagina_cadastro.png">
 </figure>
-
+<br>
 <figure>
   <img src="img/pagina_sucesso.png">
 </figure>
+<br>
+ Página Lista de Fornecedores - Passagem de Dados SQL para HTML.
+<p> A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados foram formatados para exibição em HTML.</p>
 
-
+ <figure>
+  <img src="img/pagina_produtos.png">
+</figure>
 
 > **Links Úteis**:
 >
