@@ -286,9 +286,7 @@ As tabelas que se seguem apresentam os requisitos funcionais e não funcionais q
 | RF-11  |O sistema deve cadastrar o fornecedor e criar uma página informando que o cadastro foi realizado com sucesso.| ALTA       |
 | RF-12  |O sistema deve permitir a inclusão de um novo fornecedor tendo incluso nome, email, telefone, endereço, cnpj. | ALTA       |
 | RF-13  |O sistema deve cadastrar o produto e criar uma página informando que o cadastro foi realizado com sucesso. | ALTA       |
-
-
-### Requisitos não Funcionais
+|RF-14 |O sistema deve cadastrar o produto e criar uma página informando que o cadastro foi realizado com sucesso. | Alta |
 
 | ID      | Descrição do Requisito                                                                                                                                                   | Prioridade |
 |---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|
