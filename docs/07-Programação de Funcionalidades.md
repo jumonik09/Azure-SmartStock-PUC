@@ -39,25 +39,48 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
 
 <br>
 
-<p>Ao clicar no botão de cadastro, você será redirecionado para a página de sucesso, onde uma mensagem de confirmação do cadastro do fornecedor será exibida.</p>
-<figure>
+<p>Ao clicar no botão de cadastrar fornecedor, você será redirecionado para a página de sucesso, onde uma mensagem de confirmação do cadastro do fornecedor será exibida.</p>
 
+<figure>
 <img src="img/pagina_sucesso.png">
 </figure>
 
-Página Lista de Produtos:
- <br>
+<b>Página Lista de Fornecedor: </b>
+<br>
  Passagem de Dados SQL para HTML.
  A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados foram formatados para exibição em HTML.
 
  <figure>
-  <img src="img/pagina_produtos.png">
+  <img src="img/pagina_fornecedor.png">
 </figure>
 
-> **Links Úteis**:
->
-> - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
-> - [JSON Tutorial](https://www.w3resource.com/JSON)
-> - [JSON Data Set Sample](https://opensource.adobe.com/Spry/samples/data_region/JSONDataSetSample.html)
-> - [JSON - Introduction (W3Schools)](https://www.w3schools.com/js/js_json_intro.asp)
-> - [JSON Tutorial (TutorialsPoint)](https://www.tutorialspoint.com/json/index.htm)
+<br>
+
+# Página Cadastro de Produto
+
+|ID    | Descrição do Requisito  | Tela Página Cadastro de Produto | Juliana M |
+|------|-----------------------------------------|----|----|
+|RF-013| O sistema deve cadastrar o produto e criar uma página informando que o cadastro foi realizado com sucesso. |  |  |
+|RNF-005| O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras. |  |  |
+|RNF-01| O sistema deve ter uma interface simples e fácil de usar, com design básico para facilitar a navegação para os funcionários da empresa.  |  | |
+|RF-02| O sistema deve permitir a visualização de uma lista detalhada de todos os produtos cadastrados. | | |
+|RF-14|O sistema deve cadastrar o produto e criar uma página informando que o cadastro foi realizado com sucesso.| | |
+
+
+<figure>
+  <img src="img/pagina_cadastrarproduto.png">
+</figure>
+
+<p>Ao clicar no botão de cadastrar produto , você será redirecionado para a página de sucesso, onde uma mensagem de confirmação do cadastro do produto será exibida.</p>
+
+<figure>
+<img src="img/pagina_sucesso.png">
+</figure>
+
+<b>  Página Lista de Produtos:</b>
+<p> Passagem de Dados SQL para HTML.</p>
+<p> A primeira etapa foi executar uma query SQL em um banco de dados. Após a execução, os dados retornados dos produtos adicionados foram formatados para exibição em HTML.</p>
+  
+  <figure>
+   <img src="img/pagina_produtos.png">
+</figure>
