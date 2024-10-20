@@ -8,16 +8,12 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - O sistema deve permitir o cadastro de produtos, incluindo atributos como nome, descrição, preço e quantidade em estoque|
 |Registro de evidência | ![Imagem do WhatsApp de 2024-10-15 à(s) 20 34 44_57183825](https://github.com/user-attachments/assets/ff1a2cde-b938-4640-a8cc-b059308f7ed0)
- |
+ 
 
-| **Caso de Teste** 	| **CT-02 – Realizar login** 	|
+| **Caso de Teste** 	| **CT-02 – ** 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-00Y - A aplicação deve permitir que um usuário previamente cadastrado faça login |
-|Registro de evidência | www.teste.com.br/drive/ct-02 |
+|	Requisito Associado 	| RF-14 - O sistema deve permitir a execução de consultas SQL em um banco de dados e a formatação dos dados retornados para exibição em uma página HTML.|
+|Registro de evidência | <figure><img src="img/lista_usuario.png"> </figure> |
+|Registro de evidência | <figure><img src="img/dados_usuario.png"> </figure> | 
 
-## Avaliação
 
-Discorra sobre os resultados do teste. Ressaltando pontos fortes e fracos identificados na solução. Comente como o grupo pretende atacar esses pontos nas próximas iterações. Apresente as falhas detectadas e as melhorias geradas a partir dos resultados obtidos nos testes.
-
-> **Links Úteis**:
-> - [Ferramentas de Test para Java Script](https://geekflare.com/javascript-unit-testing/)
