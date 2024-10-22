@@ -1,6 +1,64 @@
 # Plano de Testes de Usabilidade
+<p> As Heurísticas de Nielsen são um conjunto de dez princípios que orientam o design e a avaliação de interfaces de usuário, visando otimizar a usabilidade. Desenvolvidas por Jakob Nielsen, especialista em usabilidade, essas diretrizes oferecem uma abordagem prática para identificar problemas de usabilidade em diversos sistemas, desde websites complexos até aplicativos móveis simples (NIELSEN, 1993).</p>
 
-### **1. Index.cshtml (Home)**
+<p> Cada uma das heurísticas aborda um aspecto específico da experiência do usuário, como a importância da comunicação clara entre o sistema e o usuário, e a minimização de erros. A aplicação dessas heurísticas durante o design e os testes permite que desenvolvedores e designers criem interfaces mais intuitivas e eficientes, melhorando a satisfação do usuário e contribuindo para o sucesso comercial (NIELSEN, 1993).</p>
+
+<p> As 10 Heurísticas de Nielsen são princípios fundamentais que orientam o design de interfaces, cada uma abordando um aspecto crucial da experiência do usuário. Elas são: </p>
+
+<b> 01) Visibilidade do status do sistema:</b> 
+<p >O usuário deve sempre saber o que está acontecendo no sistema por meio de feedback claro.</p>
+      <br>
+
+<b> 02)Correspondência entre o sistema e o mundo real:</b>
+<p> A interface deve utilizar linguagem e conceitos familiares ao usuário.</p>
+      <br>
+
+<b> 03)Liberdade e controle do usuário:</b> 
+<p> Usuários devem ter a capacidade de desfazer e refazer ações facilmente.</p>
+       <br>
+
+<b> 04) Consistência e padrões:</b> 
+<p> Elementos da interface devem seguir convenções estabelecidas para evitar confusão.</p>
+      <br>
+
+<b> 05) Prevenção de erros:</b> 
+<p> O design deve minimizar as possibilidades de erro, oferecendo dicas e opções claras.</p>
+  <br>
+ 
+  <b> 06) Reconhecer ao invés de lembrar:</b> 
+  <p> A interface deve facilitar o reconhecimento de informações, reduzindo a carga de memória do usuário. </p>
+    <br>
+ 
+  <b> 07) Eficiência e flexibilidade de uso:</b>
+  <p> A interface deve atender tanto a usuários iniciantes quanto a experientes, permitindo personalização.</p>
+    <br>
+   
+  <b> 08) Estética e design minimalista: <b>
+  <p> O design deve ser simples e relevante, evitando informações excessivas.</p>
+    <br>
+  
+    
+  <b> 09) Recuperação diante de erros:</b> 
+  <p> O sistema deve oferecer soluções claras para erros que possam ocorrer.</p>
+    <br>
+   
+   <b> 10) Ajuda e documentação:</b>
+   <p> Mesmo que o sistema seja utilizável sem documentação, deve haver suporte acessível para os usuários.</p>
+   
+   <br>
+
+  <p>Essas heurísticas ajudam a criar interfaces mais intuitivas e eficazes, promovendo uma melhor experiência do usuário.</p>
+  <br>
+
+
+  <p> Referência: NIELSEN, Jakob. Usability Engineering. San Francisco: Morgan Kaufmann, 1993.</p>
+  <p> Referência: NIELSEN, Jakob. Heuristic evaluation. In: Usability engineering. San Francisco: Morgan Kaufmann, 1993. p. 251-272. </p>
+  
+   <br>
+ <hr>
+  
+  ### **1. Index.cshtml (Home)**
+
 
 - **Links de navegação:** Testar se todos os links na homepage direcionam corretamente para as respectivas páginas.
 
