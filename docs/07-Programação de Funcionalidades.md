@@ -84,3 +84,20 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
   <figure>
    <img src="img/pagina_produtos.png">
 </figure>
+
+---
+
+# Página Cadastro de Produto
+
+|ID    | Descrição do Requisito  | Tela Página Cadastro de Usuário | Michael Brasil |
+|------|-----------------------------------------|----|----|
+|RF-01| O sistema deve permitir o cadastro de um novo usuário com nome, telefone, cargo, email, senha e status. |  |  |
+|RNF-02| O sistema deve ser responsivo e funcionar corretamente em dispositivos móveis e desktops. |  |  |
+|RF-03| O sistema deve exibir uma mensagem de sucesso ao usuário após o cadastro ser realizado com sucesso.  |  | |
+|RNF-04| O sistema deve ser compatível com navegadores web comuns, como Chrome, Firefox, Edge, sem necessidade de plugins extras. | | |
+|RF-05|O sistema deve permitir visualizar as informações dos usuários cadastrados.| | |
+
+
+<figure>
+  <img src="img/M_cadastrando.png"
+</figure>
