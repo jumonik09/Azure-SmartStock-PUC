@@ -17,3 +17,10 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 |Registro de evidência | <figure><img src="img/dados_usuario.png"> </figure> | 
 
 
+| **Caso de Teste** 	| **CT-03 – Cadastro de Usuários 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-01 - O sistema deve permitir a execução de consultas SQL em um banco de dados e a formatação dos dados retornados para exibição em uma página HTML.|
+|Registro de evidência | <figure><img src="img/M_cadastrando.png"> </figure> |
+|Registro de evidência | <figure><img src="img/M_efetuando.png"> </figure> | 
+|Registro de evidência | <figure><img src="img/M_Listagem.png"> </figure> |
+|Registro de evidência | <figure><img src="img/M_registrobanco.png"> </figure> | 
