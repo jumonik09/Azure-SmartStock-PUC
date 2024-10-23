@@ -87,7 +87,7 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
 
 ---
 
-# Página Cadastro de Produto
+# Página Cadastro de Usuário
 
 |ID    | Descrição do Requisito  | Tela Página Cadastro de Usuário | Michael Brasil |
 |------|-----------------------------------------|----|----|
