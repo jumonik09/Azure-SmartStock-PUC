@@ -101,3 +101,12 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
 <figure>
   <img src="img/M_cadastrando.png"
 </figure>
+
+
+<figure>
+  <img src="img/M_efetuando.png"
+</figure>
+
+<figure>
+  <img src="img/M_Listagem.png"
+</figure>
