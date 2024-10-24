@@ -36,7 +36,7 @@ Conclusão: O sistema executou consultas SQL com sucesso, armazenou os dados e f
 
 ---
 
-# Análise Heurística - Tela de Cadastro de Usuário
+# Tela de Cadastro de Usuário
 
 ## 1. Visibilidade do Status do Sistema
 - **Observação**: O sistema fornece feedback em tempo real sobre o status do cadastro, como mensagens de sucesso ou erro durante o processo de envio dos dados.
