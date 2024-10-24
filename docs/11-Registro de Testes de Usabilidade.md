@@ -2,7 +2,34 @@
 
 Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
 
- ## Página Lista de Usuários - CT-02 
+ ## Cadastro de Produto - CT-001
+
+O teste do requisito RF-01, que aborda o cadastro de produtos com atributos como nome, descrição, preço e quantidade em estoque, teve um resultado parcial. Enquanto os campos de nome, descrição e preço funcionaram corretamente, a funcionalidade de inserção da quantidade de produtos ainda precisa de ajustes. Embora a maior parte do requisito tenha sido atendida, a funcionalidade de quantidade requer melhorias.
+
+
+01) Visibilidade do status do sistema: A página Cadastro de Produto poderia se beneficiar de um feedback mais claro sobre a validação da quantidade inserida, ajudando o usuário a se sentir mais seguro durante o processo.
+
+02) Correspondência entre o sistema e o mundo real: A terminologia utilizada nos campos é apropriada e fácil de entender.
+
+03) Controle e liberdade do usuário: O sistema permite uma boa navegação, mas algumas melhorias na edição da quantidade poderiam facilitar a correção de eventuais erros.
+
+04) Consistência e padronização: A consistência nos campos de nome, descrição e preço é positiva, e uma uniformidade da interface.
+
+05) Prevenção de erros: A validação da quantidade é um aspecto a ser aprimorado, evitando que os usuários enfrentem pequenos obstáculos durante o cadastro.
+
+06) Reconhecimento em vez de lembrança: Incluir exemplos de entrada ao lado do campo de quantidade seria uma boa prática, facilitando o entendimento.
+
+07) Flexibilidade e eficiência de uso: A interface é intuitiva.
+
+08) Estética e design minimalista: O design é funcional e agradável.
+
+09) Ajuda e documentação: Embora a interface seja intuitiva, uma seção de ajuda ou dicas contextuais poderia enriquecer a experiência do usuário.
+
+10) Feedback do usuário: Mensagens de erro mais específicas quando a quantidade não é aceita poderiam facilitar a compreensão e a correção por parte do usuário.
+
+Em geral, enquanto os campos de nome, descrição e preço funcionaram bem, a funcionalidade de quantidade apresenta oportunidades para melhorias que podem enriquecer a experiência do usuário.
+
+ ## Página Lista de Usuários - CT-002 
 
 <b> Registro de Teste:</b> O sistema executou consultas SQL com sucesso, armazenou os dados e os formatou em uma tabela HTML com cabeçalhos dinâmicos. A tabela foi estilizada de forma clara, confirmando que todas as funcionalidades atenderam ao requisito RF-14.
 
