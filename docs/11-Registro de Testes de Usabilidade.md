@@ -107,3 +107,50 @@ Resultados do Teste:
 
 ## Conclusão Geral
 A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria dos princípios heurísticos de usabilidade. Ela proporciona uma experiência intuitiva, consistente e eficiente, com um foco claro na prevenção de erros e visibilidade do status do sistema. A flexibilidade e o design minimalista aumentam a eficiência do uso, tornando o processo fluido e agradável para diferentes tipos de usuários.
+
+----------
+
+# Cadastro de Fornecedor - CT-003
+ 
+## 01. Visibilidade do Status do Sistema:
+- **Observação:** Assim como no cadastro de produtos, o sistema poderia fornecer um feedback mais claro sobre a validação de CNPJ e telefone. Mensagens de erro específicas ou ícones de sucesso/erro seriam úteis para indicar ao usuário se as informações estão corretas ou precisam de ajuste.
+- **Impacto:** Alto. Uma visibilidade clara das validações de CNPJ e telefone ajudaria a melhorar a confiança do usuário durante o processo de cadastro.
+
+## 02. Correspondência com o Mundo Real:
+- **Observação:** A terminologia utilizada nos campos do formulário é apropriada e fácil de entender. Termos como "Nome do Fornecedor", "CNPJ", "Endereço", "E-mail" e "Telefone" estão alinhados com o que o usuário espera encontrar.
+- **Impacto:** Alto. Usar uma linguagem familiar ajuda a evitar confusões e facilita o uso por parte do usuário, tornando o processo de cadastro mais simples.
+
+## 03. Controle e Liberdade do Usuário:
+- **Observação:** O sistema oferece uma boa navegação, permitindo que o usuário volte a editar dados facilmente. No entanto, uma melhoria na edição do CNPJ e telefone, como um formato padrão para esses campos, poderia ajudar na correção de eventuais erros.
+- **Impacto:** Médio. Melhorias na liberdade de edição, como um botão de “voltar” visível ou um campo de CNPJ com formatação automática, poderiam facilitar a experiência do usuário.
+
+## 04. Consistência e Padronização:
+- **Observação:** A interface segue um padrão consistente em todos os campos do formulário, com uma apresentação coerente entre nome, endereço e e-mail. No entanto, a falta de padronização na verificação do CNPJ e do telefone prejudica a consistência.
+- **Impacto:** Alto. Garantir que todos os campos, especialmente os de CNPJ e telefone, sigam padrões de validação e formatação consistentes é essencial para uma experiência fluida.
+
+## 05. Prevenção de Erros:
+- **Observação:** A validação do CNPJ precisa ser aprimorada, de forma a evitar que o usuário insira informações incorretas. O campo de telefone também poderia ter validação mais robusta para evitar números incompletos ou mal formatados.
+- **Impacto:** Alto. Prevenir erros antes que eles aconteçam, através de validação automática e mensagens claras, melhora a confiança e reduz frustrações.
+
+## 06. Reconhecimento em vez de Memorização:
+- **Observação:** Assim como no cadastro de produtos, seria útil adicionar exemplos de entrada ao lado dos campos de CNPJ e telefone, o que ajudaria o usuário a saber qual o formato esperado sem precisar memorizar ou adivinhar.
+- **Impacto:** Médio. Isso tornaria o processo mais intuitivo, ajudando o usuário a preencher os campos corretamente sem recorrer a documentações externas.
+
+## 07. Flexibilidade e Eficiência de Uso:
+- **Observação:**  A interface é intuitiva e eficiente, tanto para novos usuários quanto para os mais experientes. Atalhos como o preenchimento automático de campos, quando possível (por exemplo, o preenchimento do endereço a partir do CEP), poderiam aumentar ainda mais a eficiência.
+- **Impacto:** Médio. A adição de recursos que facilitem o preenchimento de dados, especialmente em campos como endereço e telefone, tornaria o uso mais eficiente.
+
+## 08. Estética e Design Minimalista:
+- **Observação:** A página mantém um design funcional e agradável, sem excesso de elementos visuais desnecessários, o que facilita a navegação. Todos os campos estão claramente dispostos e bem organizados.
+- **Impacto:** Alto. Um design minimalista ajuda a manter o foco do usuário nos campos importantes, tornando o processo de cadastro mais rápido e eficiente.
+
+## 09. Ajuda e Documentação:
+- **Observação:** Embora o formulário seja intuitivo, uma seção de ajuda ou dicas contextuais poderia enriquecer a experiência do usuário, principalmente nos campos de validação mais complexos, como CNPJ e telefone.
+- **Impacto:** Baixo. A adição de dicas ao lado dos campos mais técnicos seria um plus para novos usuários ou para quem tenha dúvidas sobre o formato correto dos dados.
+
+## 10. Feedback:
+- **Observação:** Mensagens de erro mais específicas para campos como CNPJ e telefone ajudariam o usuário a entender melhor o que está errado e como corrigir. Ao invés de apenas “CNPJ inválido”, uma mensagem como “O CNPJ deve conter 14 dígitos, sem caracteres especiais” seria mais clara.
+- **Impacto:** Médio. Um feedback mais detalhado melhora a experiência e facilita a correção de erros, evitando múltiplas tentativas frustrantes.
+
+## Conclusão Geral
+O Cadastro de Fornecedor atende à maioria dos requisitos funcionais, mas apresenta algumas oportunidades de melhoria, especialmente na validação de campos críticos como CNPJ e telefone. O design da interface é simples e funcional, proporcionando uma boa experiência geral, mas pode ser enriquecido com feedbacks mais claros e ferramentas de preenchimento automático para aumentar a eficiência e evitar erros.
