@@ -7,5 +7,6 @@ namespace project.Models
         public string categoria { get; set; }
         public bool ativo { get; set; }
         public int fornecedor_id { get; set; }
+        public float? preco { get; set; }
     }
 }
