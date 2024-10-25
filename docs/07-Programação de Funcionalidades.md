@@ -110,3 +110,34 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
 <figure>
   <img src="img/M_Listagem.png"
 </figure>
+
+
+---
+
+# Página Gestão de Estoque 
+
+|ID    | Descrição dos Requisitos Funcionais  | Tela Página Gestão de Estoque | Michael Brasil |
+|------|-----------------------------------------|----|----|
+|RNF-02| O sistema deve ser responsivo e funcionar corretamente em dispositivos móveis e desktops. |  |  |
+|RF-03|O sistema deve ter uma interface simples e fácil de usar, com design básico para facilitar a navegação para os funcionários da empresa.  |  | |
+|RNF-04| O sistema deve ser compatível com navegadores web comuns, como Chrome, Firefox, Edge, sem necessidade de plugins extras. | | |
+|RF-05|O sistema deve permitir visualizar os produtos que foram cadastrados.| | |
+<br/>
+
+|| O restante dos Requisitos Funcionais serão feitos na próxima etapa 
+
+<br/>
+
+|ID    | Descrição dos Requisitos Não Funcionais  | Tela Página Gestão de Estoque | Michael Brasil |
+|------|-----------------------------------------|----|----|
+|RNF-02|O sistema deve ter uma estrutura de código clara e bem documentada, para facilitar a compreensão e manutenção por estudantes. |  |  |
+|RF-03|O sistema deve ser responsivo o suficiente para ser usado em diferentes tamanhos de tela, como monitores e laptops. |  | |
+|RNF-04|Apenas usuários autenticados devem ter acesso ao sistema, com diferentes níveis de permissão conforme o perfil. | | |
+
+<br/>
+
+<figure>
+  <img src="img/tela gestao de estoque.png"
+</figure>
+
+
