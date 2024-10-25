@@ -14,4 +14,15 @@ public class OrdemDeCompraController : Controller
         _context = context;
     }
 
+    public IActionResult CadastroOrdemDeCompra()
+    {
+        var model = new OrdemDeCompra();
+
+        ViewBag.Fornecedores = _context.Fornecedor.Select(f => new SelectListItem { Value = f.id.ToString(), Text = f.razao }).ToList();
+        ViewBag.Produtos = _context.Produto.Select(p => new SelectListItem { Value = $"{p.id}|{p.preco}", Text = p.nome }).ToList();
+        ViewBag.Usuarios = _context.Usuario.Select(u => new SelectListItem { Value = u.id.ToString(), Text = u.Nome }).ToList();
+
+        return View(model);
+    }
+
 }
