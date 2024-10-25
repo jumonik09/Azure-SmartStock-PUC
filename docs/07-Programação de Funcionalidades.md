@@ -89,7 +89,7 @@ O usuário deverá abrir um navegador de Internet e informar a seguinte URL:
 
 # Página Cadastro de Usuário
 
-|ID    | Descrição do Requisito  | Tela Página Cadastro de Usuário | Michael Brasil |
+|ID    | Descrição do Requisito  | Tela Página Cadastro de Usuário | Samara Raíssa |
 |------|-----------------------------------------|----|----|
 |RF-01| O sistema deve permitir o cadastro de um novo usuário com nome, telefone, cargo, email, senha e status. |  |  |
 |RNF-02| O sistema deve ser responsivo e funcionar corretamente em dispositivos móveis e desktops. |  |  |
