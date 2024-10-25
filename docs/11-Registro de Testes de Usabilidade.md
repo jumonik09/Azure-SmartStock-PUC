@@ -55,13 +55,13 @@ Resultados do Teste:
 
 <b>Estética e Design Minimalista:</b> A apresentação da tabela foi limpa e focada, evitando informações desnecessárias.
 
-<b> Recuperação Diante de Erros:</b> Incompleto.
+<b> Recuperação Diante de Erros:</b> Apesar de a interface ser fácil de navegar, adicionar uma seção de ajuda ou sugestões contextuais poderia melhorar a experiência do usuário.
 
-<b>Ajuda e Documentação:</b> Incompleto.
+<b>Ajuda e Documentação:</b> Mensagens de erro mais claras quando a quantidade não é aceita poderiam ajudar o usuário a compreender e resolver o problema.
 
-Conclusão: O sistema executou consultas SQL com sucesso, armazenou os dados e formatou-os em uma tabela HTML com cabeçalhos dinâmicos e estilização clara. Todas as funcionalidades testadas atenderam ao requisito RF-14, garantindo uma experiência de usuário satisfatória.
+<p> Conclusão: O sistema executou consultas SQL com sucesso, armazenou os dados e formatou-os em uma tabela HTML com cabeçalhos dinâmicos e estilização clara. Todas as funcionalidades testadas atenderam ao requisito RF-14, garantindo uma experiência de usuário satisfatória.</p>
 
----
+----------
 
 # Tela de Cadastro de Usuário
 
