@@ -1,0 +1,192 @@
+@model OrdemDeCompra
+
+@{
+    ViewData["Title"] = "Cadastro de Ordem de Compra";
+
+    var listaFornecedores = ViewBag.Fornecedores as List<SelectListItem>;
+    var listaProdutos = ViewBag.Produtos as List<SelectListItem>;
+    var listaUsuarios = ViewBag.Usuarios as List<SelectListItem>;
+}
+
+<h2>@ViewData["Title"]</h2>
+
+
+
+<form>
+    <div class="form-group">
+        <label class="control-label">Usuário</label>
+        <div  class="d-flex gap-2 align-items-center justify-content-center">
+            <select id="usuario" class="form-control selectpicker">
+                <option value="" selected>Selecione o seu usuário</option>
+                @foreach (var opcao in listaUsuarios)
+                {
+                    <option value="@opcao.Value">@opcao.Text</option>
+                }
+            </select>
+        </div>
+        <span class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label class="control-label">Fornecedores</label>
+          <select id="fornecedor" class="form-control">
+              <option value="">Selecione um fornecedor</option>
+            @foreach (var opcao in listaFornecedores)
+            {
+                <option value="@opcao.Value">@opcao.Text</option>
+            }
+        </select>
+        <span class="text-danger"></span>
+    </div>
+
+    <div class="form-group">
+        <label class="control-label">Produtos</label>
+        <div class="d-flex gap-2 align-items-center justify-content-center">
+            <select id="produtos" class="form-control selectpicker">
+                <option value="" selected>Selecione os produtos</option>
+                @foreach (var opcao in listaProdutos)
+                {
+                    <option value="@opcao.Value">@opcao.Text</option>
+                }
+            </select>
+            <button type="button" id="add-produto" class="btn btn-primary">
+                <i class="fa-solid fa-plus"></i>
+            </button>
+        </div>
+        <span class="text-danger"></span>
+    </div>
+
+    <table id="table-produtos" class="table table-striped mt-2">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Preço</th>
+                <th>Quantidade</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+
+    <p>Total: R$<span id="total">0</span></p>
+
+    <button type="button" id="submit" class="btn btn-primary mt-2">Cadastrar</button>
+</form>
+
+@section Scripts {
+    @await Html.PartialAsync("_ValidationScriptsPartial")
+
+    <script>
+        const table = $("#table-produtos").DataTable({
+            'columnDefs': [{
+                targets: '_all',
+                orderable: false,
+                className: 'text-left'
+            }],
+            bFilter: false,
+            language: { url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json' },
+            'colReorder': false,
+            'fixedHeader': false,
+            'order': [],
+            'paging': false,
+            'info': false,
+            'createdRow': function (row, data, dataIndex) {
+                $(row).attr('id', 'row_' + data[0])
+            }
+        });
+        let produtos = [];
+
+        $('#add-produto').click(() => {
+            const id = $('#produtos').val().split('|')[0]
+            const preco = $('#produtos').val().split('|')[1]
+
+            const idsExistentes = produtos.map(p => p.id);
+
+            if (idsExistentes.includes(id)) {
+                    return swal.fire({
+                        icon: "warning",
+                        title: "Atenção",
+                        html: "Um mesmo produto não pode ser inserido mais de uma vez!"
+                    })
+            }
+
+            let total = parseFloat($('#total').html()); 
+
+            total += parseFloat(preco);
+
+            $('#total').html(total);
+
+            produtos.push({ id, quantidade: 1, preco })
+            table.row.add([
+                id,
+                $('#produtos').find(":selected").text(),
+                `R$ ${preco}`,
+                `<input onchange='mudaQuantidade(event, ${id})' value=1 class="form-control quantidade" id='quantidade-${id}' type='number' min='1  ' />`,
+                `<button onclick='removeProduto(${id})' type="button" class="btn btn-danger"><i class="fa-solid fa-trash"></i></button>`
+            ])
+                
+            table.draw()
+        })
+
+        function removeProduto(id) {
+            produto = produtos.filter(p => p.id == id)[0];
+            const total = parseFloat(produto.preco) * parseInt(produto.quantidade);
+
+            let totalPedido = parseFloat($('#total').html())
+
+            totalPedido -= total;
+
+            $('#total').html(totalPedido.toFixed(2));
+            
+            
+            produtos = produtos.filter(p => p.id != id);
+
+
+            table.row(`tr#row_${id}`).remove().draw()
+        }
+
+        function mudaQuantidade(e, id) {
+            let total = parseFloat($('#total').html());
+
+            let produto = produtos.filter(p => p.id == id)[0];
+
+            total -= parseFloat(produto.preco) * parseInt(produto.quantidade)
+
+            total += produto.preco * parseInt(e.target.value);
+
+            $('#total').html(total);
+
+            produtos = produtos.map((p) => p.id == id ? { ...p, quantidade: e.target.value } : p);
+        }
+
+        $('#submit').click(() => {
+            const data = {
+                fornecedor: $('#fornecedor').val(),
+                usuario: $('#usuario').val(),
+                total: parseFloat($('#total').html()),
+                produtos
+            }
+
+            $.ajax({
+                method: "POST",
+                url: "/OrdemDeCompra/CadastrarOrdemDeCompra",
+                data,
+                success: () => {
+                    $('input').val('');
+                    $('select').val('');
+                    table.clear().draw()
+                    produtos = [];
+                    $('#total').html("0")
+
+                    swal.fire({
+                        icon: "success",
+                        title: "Sucesso",
+                        html: "Ordem de compra gerada com sucesso"
+                    })
+                }
+            })
+        })
+    </script>
+}
