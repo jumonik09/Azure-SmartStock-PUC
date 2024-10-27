@@ -22,16 +22,16 @@ jobs:
           dotnet-version: '6.0.x'
 
       - name: Build with dotnet
-        run: dotnet build --configuration Release
+        run: dotnet build ./src/project.csproj --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/myapp
+        run: dotnet publish ./src/project.csproj -c Release -o ./myapp
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v4
         with:
           name: .net-app
-          path: ${{env.DOTNET_ROOT}}/myapp
+          path: ./myapp
 
   deploy:
     runs-on: windows-latest
@@ -51,9 +51,9 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_B5B766D5513449B59F6933938DF2C326 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_C552A7589A8D40CDB783862C07C1DD26 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_DBAC1FF0D4844E708E778068986D6034 }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_5705B9BDB78748D9B6282527BBFDCC84 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_52F4CA89C98D44399E8DF7382832BA02 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_86E802AE41354C3BBDA816A3E80AB366 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
