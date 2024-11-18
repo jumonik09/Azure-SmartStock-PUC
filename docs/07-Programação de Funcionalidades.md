@@ -2,7 +2,9 @@
 
 
 # Instruções de acesso:
-em construcao
+
+ <a href="https://smartstock-fjfcetdsg4ahfwcv.brazilsouth-01.azurewebsites.net/Home">Clique aqui para acessá-lo.</a>
+
 
 --------------
 
@@ -123,3 +125,47 @@ em construcao
 </figure>
 
 
+---
+
+# Página de Cadastro de Ordem de Compra e Gestão de Ordem de Compra
+
+### Requisitos Funcionais
+
+| ID    | Descrição dos Requisitos Funcionais  | Tela Página Cadastro de Ordem de Compra | Responsável |
+|-------|--------------------------------------|-----------------------------------------|-------------|
+| RF-01 | O sistema deve permitir o cadastro de uma nova ordem de compra com usuário, fornecedor, produtos e status | OrdemDeCompra/CadastroOrdemDeCompra | Victor Magalhães |
+| RF-03 | O sistema deve permitir a aprovação de ordens de compra cadastradas. | OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+
+<br/>
+
+### Requisitos Não Funcionais
+
+| ID    | Descrição dos Requisitos Não Funcionais  | Tela Página Cadastro de Ordem de Compra | Responsável |
+|------|-----------------------------------------|---------------------------------------|-------------|
+| RNF-01 | O sistema deve ter uma interface simples e fácil de usar, com design básico para facilitar a navegação para os funcionários da empresa. | OrdemDeCompra/CadastroOrdemDeCompra; OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+| RNF-02 | O sistema deve ter uma estrutura de código clara e bem documentada, para facilitar a compreensão e manutenção por estudantes. | OrdemDeCompra/CadastroOrdemDeCompra; OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+| RNF-03 | O sistema deve ser responsivo o suficiente para ser usado em diferentes tamanhos de tela, como monitores e laptops. | OrdemDeCompra/CadastroOrdemDeCompra; OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+| RNF-04 | O sistema deve carregar rapidamente, com um tempo de resposta menor ou igual a 3 segundos. | OrdemDeCompra/CadastroOrdemDeCompra; OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+| RNF-05 | O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras. | OrdemDeCompra/CadastroOrdemDeCompra; OrdemDeCompra/OrdensDeCompra | Victor Magalhães |
+
+<br/>
+
+### Observações
+- O restante dos requisitos funcionais e não funcionais serão tratados nas próximas etapas do projeto.
+- Documentação será atualizada conforme o progresso do desenvolvimento e implementação das funcionalidades.
+
+<figure>
+  <img src="img/OrdemDeCompra/cadastro_ordem_compra.png"
+</figure>
+
+<figure>
+  <img src="img/OrdemDeCompra/cadastro_ordem_compra_sucesso.png"
+</figure>
+
+<figure>
+  <img src="img/OrdemDeCompra/lista_ordem_compra.png"
+</figure>
+
+<figure>
+  <img src="img/OrdemDeCompra/lista_ordem_compra_sucesso.png"
+</figure>

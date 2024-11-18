@@ -133,6 +133,7 @@ A  página de gestão de usuário é um esboço que mostra como a página será 
 
 ## Diagrama de Fluxo
 
-![Diagrama de Fluxo](https://github.com/user-attachments/assets/992f0e5c-7498-4f5a-a569-83f3d48dc7b5)
 
-
+<figure>
+  <img src="img/Diagrama de Fluxo (2).png"> 
+ </figure>

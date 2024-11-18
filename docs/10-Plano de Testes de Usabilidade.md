@@ -119,3 +119,57 @@
 - **Listagem de produtos com checkbox:** Testar se os produtos são listados com checkboxes ao lado de cada um e se o comportamento de seleção funciona corretamente (marcar e desmarcar).
 - **Atualização visual ao marcar:** Verificar se, ao marcar um produto, o ícone de Check aparece e desaparece corretamente.
 - **Validação de ID de produto:** Garantir que os IDs de produtos associados aos checkboxes correspondam ao banco de dados.
+
+
+### **10. Ordem de Compra**
+
+---
+
+#### **Listagem de Usuários**
+- **Listagem de usuários:** Testar se todos os usuários são listados corretamente para seleção no select.
+- **Validação de seleção:** Verificar se a seleção de usuários funciona corretamente ao clicar no nome.
+
+---
+
+#### **Listagem de Fornecedores**
+- **Listagem de fornecedores:** Testar se todos os fornecedores são listados corretamente para seleção no select.
+- **Validação de seleção:** Garantir que a seleção de fornecedores funcione corretamente ao clicar no nome.
+
+---
+
+#### **Listagem de Produtos**
+- **Listagem de produtos:** Testar se todos os produtos são listados corretamente para seleção no select.
+- **Validação de seleção:** Verificar se a seleção de produtos funciona corretamente ao clicar no nome.
+
+---
+
+#### **Adição de Produtos**
+- **Adicionar produto:** Ao clicar no ícone de `+`, o produto deve ser adicionado à tabela de produtos adicionados.
+- **Verificação na tabela:** Garantir que o produto apareça corretamente na tabela após a adição.
+
+---
+
+#### **Atualização da Quantidade de Produtos**
+- **Aumentar quantidade:** Ao aumentar a quantidade de um produto, o total da ordem de compra deve aumentar conforme a quantidade incrementada.
+- **Validação do total:** Verificar se o total é atualizado corretamente na interface.
+
+---
+
+#### **Exclusão de Produtos**
+- **Excluir produto:** Ao excluir um produto da tabela, o total da ordem de compra deve ser decrementado de acordo com o valor total do produto multiplicado pela quantidade.
+- **Verificação da tabela:** Garantir que o produto seja removido da tabela após a exclusão.
+
+---
+
+#### **11. Tela de Listagem de Ordens de Compra**
+- **Listagem de ordens de compra:** As ordens de compra devem ser listadas corretamente com as informações descritas no cabeçalho de cada coluna.
+- **Validação de status:** Se a ordem de compra está pendente, a coluna de status deve refletir isso corretamente, indicando "Pendente" ou "Aprovado".
+- **Botão de aprovar:** O botão para aprovar deve estar habilitado para ordens pendentes e desabilitado com a indicação "Aprovado" para ordens já aprovadas.
+
+---
+
+#### **Aprovação de Ordens de Compra**
+- **Aprovar ordem de compra:** Ao aprovar uma ordem de compra, a linha correspondente deve ser atualizada, e o botão de aprovar deve mudar para refletir o novo status.
+- **Validação do status:** Verificar se o status da ordem de compra muda para "Aprovado" após a aprovação.
+
+---

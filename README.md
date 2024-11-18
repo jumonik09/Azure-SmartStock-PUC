@@ -21,13 +21,18 @@
 
 ## Instruções de utilização
 
-Assim que a primeira versão do sistema estiver disponível, deverá complementar com as instruções de utilização. Descreva como instalar eventuais dependências e como executar a aplicação.
 
-Não deixe de informar o link onde a aplicação estiver disponível para acesso (por exemplo: https://adota-pet.herokuapp.com/src/index.html).
+<p><I> - Link da aplicação disponível para acesso:</I></p>
 
-Se houver usuário de teste, o login e a senha também deverão ser informados aqui (por exemplo: usuário - admin / senha - admin).
+ <a href="https://smartstock-fjfcetdsg4ahfwcv.brazilsouth-01.azurewebsites.net/Home">Clique aqui para acessá-lo.</a>
 
-O link e o usuário/senha descritos acima são apenas exemplos de como tais informações deverão ser apresentadas.
+<p><I>- Azure Data Studio:</I> </p>
+ <strong>Server:</strong> smartstockdb.database.windows.net
+  <br>
+<strong> Usuario admin:</strong> smart_stock_admin
+ <br>
+<strong> Senha:</strong> Angel_2024
+
 
 # Documentação
 

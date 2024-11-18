@@ -1,4 +1,4 @@
-<!-- Def 1 -->
+<!-- Def 3 -->
 
 @model IEnumerable<project.Models.Produto>
 
@@ -15,8 +15,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    
+    @Html.AntiForgeryToken()
+
+
     <div class="container mt-3">
+        <br />
         <div class="mb-4">
             <h4 class="text-muted">Gestão de Estoque</h4>
         </div>
@@ -35,6 +38,54 @@
                 }
             </div>
         </div>
+
+        <br /><br />
+
+        <div class="card">
+            <div class="card-body">
+
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <h5>Cadastre produtos aqui:</h5>
+                        <a class="btn btn-primary ms-3" href=" /Home/CadastrarProduto" style="background-color: #8c52ff;">Adicionar Produto</a>
+                    </div>
+                </div>
+
+
+                <br />
+
+                <!-- Aqui -->
+                <table class="table table-striped estoque-table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var produto in Model)
+                        {
+                            <tr>
+                                <td>@produto.nome</td>
+                                <td>@produto.quantidade</td>
+                                <td>R$ @String.Format("{0:F2}", produto.preco)</td>  @* Exibe o preço com 2 casas decimais *@
+                                <td>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="@Url.Action("EditarProduto", "Ge", new { id = produto.id })" class="btn btn-warning me-2">Editar</a>
+                                        <button onclick="deletarProduto(@produto.id)" class="btn btn-danger">Deletar</button>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
     </div>
 
     <script>
@@ -50,6 +101,29 @@
                 });
             });
         });
+
+        function deletarProduto(produtoId) {
+            if (confirm("Tem certeza que deseja excluir este produto?")) {
+                const token = document.querySelector('input[name="__RequestVerificationToken"]').value;
+
+                fetch(`/Ge/Deletar/${produtoId}`, {
+                    method: "POST",
+                    headers: {
+                        "RequestVerificationToken": token
+                    },
+                    credentials: 'same-origin'
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert("Produto deletado com sucesso!");
+                            location.reload();
+                        } else {
+                            alert("Erro ao deletar o produto.");
+                        }
+                    })
+                    .catch(error => console.error("Erro:", error));
+            }
+        }
     </script>
 
 </body>

@@ -1,6 +1,5 @@
 # Registro de Testes de Usabilidade
 
-Após realizar os testes de usabilidade, obtém-se um relatório a partir das análises realizadas. O Registro de Testes de Usabilidade é um relatório que contém as evidências dos testes e relatos dos usuários participantes, baseado no Plano de Testes de Usabilidade desenvolvido para os casos de uso desta etapa.
 
  ## Cadastro de Produto - CT-001
 
@@ -29,57 +28,15 @@ O teste do requisito RF-01, que aborda o cadastro de produtos com atributos como
 
 Em geral, enquanto os campos de nome, descrição e preço funcionaram bem, a funcionalidade de quantidade apresenta oportunidades para melhorias que podem enriquecer a experiência do usuário.
 
- ## Página Lista de Usuários - CT-002 
 
-<b> Registro de Teste:</b> O sistema executou consultas SQL com sucesso, armazenou os dados e os formatou em uma tabela HTML com cabeçalhos dinâmicos. A tabela foi estilizada de forma clara, confirmando que todas as funcionalidades atenderam ao requisito RF-14.
+ 
+ 
+ ## Página Lista de Usuários - 
 
-Registro de Teste de Usabilidade
+<p>Quem testou: - Juliana M.</p>
+<p>Criadora da página: - Samara Raissa</p>
 
-Objetivo do Teste: Avaliar a usabilidade do sistema em relação à execução de consultas SQL, armazenamento de dados e formatação em uma tabela HTML.
-
-Resultados do Teste:
-
-<b>Visibilidade do Status do Sistema:</b> O sistema forneceu feedback claro durante a execução das consultas, indicando o progresso e o sucesso da operação.
-
-<b>Correspondência com o Mundo Real:</b> As mensagens e termos utilizados estavam em linguagem acessível, facilitando a compreensão para os usuários.
-
-<b>Liberdade e Controle do Usuário:</b> Os usuários puderam facilmente refazer consultas na página Cadastro de Usuário, permitindo maior controle sobre suas ações.
-
-<b>Consistência e Padrões:</b> A formatação da tabela HTML seguiu padrões estabelecidos, garantindo uma apresentação intuitiva dos dados.
-
-<b>Prevenção de Erros:</b> O sistema validou as entradas antes da execução das consultas, minimizando erros potenciais.
-
-<b>Reconhecer ao Invés de Lembrar:</b> Os cabeçalhos dinâmicos da tabela permitiram que os usuários reconhecessem rapidamente as informações apresentadas.
-
-<b> Eficiência e Flexibilidade de Uso:</b> A tabela foi estilizada de forma clara e eficiente, permitindo uma visualização rápida e fácil.
-
-<b>Estética e Design Minimalista:</b> A apresentação da tabela foi limpa e focada, evitando informações desnecessárias.
-
-<b> Recuperação Diante de Erros:</b> Apesar de a interface ser fácil de navegar, adicionar uma seção de ajuda ou sugestões contextuais poderia melhorar a experiência do usuário.
-
-<b>Ajuda e Documentação:</b> Mensagens de erro mais claras quando a quantidade não é aceita poderiam ajudar o usuário a compreender e resolver o problema.
-
-<p> Conclusão: O sistema executou consultas SQL com sucesso, armazenou os dados e formatou-os em uma tabela HTML com cabeçalhos dinâmicos e estilização clara. Todas as funcionalidades testadas atenderam ao requisito RF-14, garantindo uma experiência de usuário satisfatória.</p>
-
-----------
-
-## 8. Estética e Design Minimalista
-- **Observação**: A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante.
-- **Impacto**: Alto. Um design simples facilita a navegação e torna o processo mais rápido e agradável.
-
-## 9. Ajuda aos Usuários para Reconhecer, Diagnosticar e Corrigir Erros
-- **Observação**: Quando ocorre um erro, o sistema informa claramente o que deu errado, como "O e-mail inserido é inválido", e orienta sobre como corrigi-lo.
-- **Impacto**: Médio. Isso ajuda o usuário a retificar rapidamente os problemas, sem frustração.
-
-## 10. Ajuda e Documentação
-- **Observação**: A documentação ou ajuda disponível é clara e fácil de acessar, caso o usuário tenha dúvidas sobre o processo de cadastro.
-- **Impacto**: Baixo. Se bem implementado, pode ajudar, mas geralmente o processo de cadastro é simples o suficiente para não precisar de ajuda detalhada.
-
-## Conclusão Geral
-A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria dos princípios heurísticos de usabilidade. Ela proporciona uma experiência intuitiva, consistente e eficiente, com um foco claro na prevenção de erros e visibilidade do status do sistema. A flexibilidade e o design minimalista aumentam a eficiência do uso, tornando o processo fluido e agradável para diferentes tipos de usuários.
-
-
-| **Caso de Teste** 	| **Tela Cadastro de Usuário** 	|
+ | **Caso de Teste** 	| **Tela Cadastro de Usuário** 	|
 |:---:	|:---:	|
 |	 **01)Características:**	| **Visibilidade do Status do Sistema** | 
 |	 **1.1)**	| **As telas iniciam com um título que descreve seu conteúdo?** | 
@@ -87,8 +44,10 @@ A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria do
 |	 **1.2)**	| **O sistema fornece feedback em tempo real sobre o status do cadastro?.** | 
 |   Comentários: XXX|Sim (X)  Não ( ) N/A ( )| 
 |	 **1.3)**	| **Aparecerá uma mensagem de sucesso ou erro durante o processo de envio dos dados?** | 
-|   **Comentários**: Mensagem de sucesso aparece quando os dados são inseridos corretamente e registrados na tela Cadastro do usuário. Não há página de erro.|Sim (X)  Não ( ) | 
-|	 **02)Características:**	| **Correspondência com o mundo real** | 
+|   **Comentários**: Mensagem de sucesso aparece quando os dados são inseridos corretamente e registrados na tela Cadastro do usuário. Não há página de erro.|Sim (X)  Não ( ) | N/A ( )| |	
+|	 **1.4)**	| **O sistema executou consultas SQL com sucesso, armazenou os dados e os formatou em uma tabela HTML com cabeçalhos dinâmicos?** | 
+|   Comentários: XXX|Sim (X)  Não ( ) N/A ( )| 
+| **02)Características:**	| **Correspondência com o mundo real** | 
 |	**2.1)** | **A interface utiliza termos familiares e claros, como "Nome", "E-mail" e "Senha", em vez de termos técnicos ou confusos?**|
 |   Comentários: XXX | Sim (X)  Não ( ) N/A ( )| 
 |	**2.2)** | **As cores empregadas estão de acordo com a paleta de cores previamente definida pela equipe?**|
@@ -116,57 +75,224 @@ A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria do
 | 	**6.1)** | **Os rótulos estão próximos dos campos e separados pelo menos por um espaço?** |
 | Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
 | 	**6.2)** | **São utilizadas bordas para identificas possíveis grupos de elementos?** |
-| Comentários:A ausência de bordas pode dificultar a identificação visual de agrupamentos, o que pode prejudicar a organização e a usabilidade do sistema.| Sim (X)  Não (X )  N/A ( )|
+| Comentários:A ausência de bordas pode dificultar a identificação visual de agrupamentos, o que pode prejudicar a organização e a usabilidade do sistema.| Sim ( )  Não (X )  N/A ( )|
 |	 **07)Características:**	| **Flexibilidade e Eficiência de Uso** | 
 | 	**7.1)** | **Existem atalhos para as funções disponíveis no sistema?** |
-| Comentários: O "menu hambúrguer" disponibiliza o acesso a outras páginas de maneira eficiente.| Sim (X)  Não X)  N/A ( )|
+| Comentários: O "menu hambúrguer" disponibiliza o acesso a outras páginas de maneira eficiente.| Sim (X)  Não (X)  N/A ( )|
 |	 **08)Características:**	| **Estética e Design Minimalista** | 
 | 	**8.1)** | **Apenas a informação necessária para ação esta visível na tela?** |
 | Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
 | 	**8.2)** | **A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante?** |
 | Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+| 	**8.3)** | **A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante?** |
+| Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+|	 **09)Características:**	| **Recuperação Diante de Erros** | 
+|	**9.1)** | **É utilizado um sinal sonoro para alerta de erros?** |
+| Comentários: XXX| Sim ()  Não (X)  N/A ( )|
+|	**9.2)** | **As mensagens de erros sugere uma ação para correção?** |
+| Comentários: Mensagens de erro mais claras quando a quantidade não é aceita poderiam ajudar o usuário a compreender e resolver o problema| Sim ()  Não (X )  N/A ( )|
+|	**9.3)** | **As mensagens de  erro identificam a severidade e a causa do erro?** |
+| Comentários: XXX| Sim ()  Não (X )  N/A ( )|
+|	**10)Características:**	| **Ajuda e documentação** | 
+|	**10.1)** | **É simples o acesso a ajuda do sistema e o retorno ao sistema?** |
+| Comentários: XXX| Sim ()  Não ( )  N/A (X)|
+|	**10.2)** | **Existe ajuda online sensível ao contexto?** |
+| Comentários:A falta de ajuda contextual pode dificultar a orientação do usuário, tornando a navegação mais complexa e aumentando a carga cognitiva, o que compromete a usabilidade do sistema.| Sim ( )  Não ( )  N/A (X)|
 
 
+----------
 
-## 01. Visibilidade do Status do Sistema:
-- **Observação:** Assim como no cadastro de produtos, o sistema poderia fornecer um feedback mais claro sobre a validação de CNPJ e telefone. Mensagens de erro específicas ou ícones de sucesso/erro seriam úteis para indicar ao usuário se as informações estão corretas ou precisam de ajuste.
-- **Impacto:** Alto. Uma visibilidade clara das validações de CNPJ e telefone ajudaria a melhorar a confiança do usuário durante o processo de cadastro.
+# Tela de Cadastro de Usuário
 
-## 02. Correspondência com o Mundo Real:
-- **Observação:** A terminologia utilizada nos campos do formulário é apropriada e fácil de entender. Termos como "Nome do Fornecedor", "CNPJ", "Endereço", "E-mail" e "Telefone" estão alinhados com o que o usuário espera encontrar.
-- **Impacto:** Alto. Usar uma linguagem familiar ajuda a evitar confusões e facilita o uso por parte do usuário, tornando o processo de cadastro mais simples.
+## 1. Visibilidade do Status do Sistema
+- **Observação**: O sistema fornece feedback em tempo real sobre o status do cadastro, como mensagens de sucesso ou erro durante o processo de envio dos dados.
+- **Impacto**: Alto. A visibilidade clara mantém o usuário informado sobre o progresso e resultado de suas ações, evitando incertezas.
 
-## 03. Controle e Liberdade do Usuário:
-- **Observação:** O sistema oferece uma boa navegação, permitindo que o usuário volte a editar dados facilmente. No entanto, uma melhoria na edição do CNPJ e telefone, como um formato padrão para esses campos, poderia ajudar na correção de eventuais erros.
-- **Impacto:** Médio. Melhorias na liberdade de edição, como um botão de “voltar” visível ou um campo de CNPJ com formatação automática, poderiam facilitar a experiência do usuário.
+## 2. Correspondência com o Mundo Real
+- **Observação**: A interface utiliza termos familiares e claros, como "Nome", "E-mail" e "Senha", em vez de termos técnicos ou confusos.
+- **Impacto**: Alto. Isso facilita a compreensão e o uso da tela, tornando o sistema acessível para diversos perfis de usuários.
 
-## 04. Consistência e Padronização:
-- **Observação:** A interface segue um padrão consistente em todos os campos do formulário, com uma apresentação coerente entre nome, endereço e e-mail. No entanto, a falta de padronização na verificação do CNPJ e do telefone prejudica a consistência.
-- **Impacto:** Alto. Garantir que todos os campos, especialmente os de CNPJ e telefone, sigam padrões de validação e formatação consistentes é essencial para uma experiência fluida.
+## 3. Controle e Liberdade do Usuário
+- **Observação**: Os usuários podem facilmente corrigir erros ou retornar a passos anteriores no processo de cadastro, como modificar campos preenchidos incorretamente.
+- **Impacto**: Médio. Proporciona flexibilidade para o usuário refazer ações sem ficarem presos em fluxos rígidos.
 
-## 05. Prevenção de Erros:
-- **Observação:** A validação do CNPJ precisa ser aprimorada, de forma a evitar que o usuário insira informações incorretas. O campo de telefone também poderia ter validação mais robusta para evitar números incompletos ou mal formatados.
-- **Impacto:** Alto. Prevenir erros antes que eles aconteçam, através de validação automática e mensagens claras, melhora a confiança e reduz frustrações.
+## 4. Consistência e Padrões
+- **Observação**: A tela segue padrões de design consistentes, como a posição dos botões de ação, estilo de campos e feedback visual.
+- **Impacto**: Alto. A consistência reduz a carga cognitiva do usuário, já que ele sabe o que esperar e como interagir com os elementos.
 
-## 06. Reconhecimento em vez de Memorização:
-- **Observação:** Assim como no cadastro de produtos, seria útil adicionar exemplos de entrada ao lado dos campos de CNPJ e telefone, o que ajudaria o usuário a saber qual o formato esperado sem precisar memorizar ou adivinhar.
-- **Impacto:** Médio. Isso tornaria o processo mais intuitivo, ajudando o usuário a preencher os campos corretamente sem recorrer a documentações externas.
+## 5. Prevenção de Erros
+- **Observação**: O sistema realiza validação de dados antes do envio, como verificar formatos de e-mail ou campos obrigatórios, prevenindo erros antes que eles ocorram.
+- **Impacto**: Alto. Isso minimiza a ocorrência de erros e aumenta a confiança do usuário no processo.
 
-## 07. Flexibilidade e Eficiência de Uso:
-- **Observação:**  A interface é intuitiva e eficiente, tanto para novos usuários quanto para os mais experientes. Atalhos como o preenchimento automático de campos, quando possível (por exemplo, o preenchimento do endereço a partir do CEP), poderiam aumentar ainda mais a eficiência.
-- **Impacto:** Médio. A adição de recursos que facilitem o preenchimento de dados, especialmente em campos como endereço e telefone, tornaria o uso mais eficiente.
+## 6. Reconhecimento em vez de Memorização
+- **Observação**: Os campos estão claramente identificados e apresentam exemplos ou placeholders, permitindo que os usuários entendam facilmente o que devem inserir.
+- **Impacto**: Médio. Reduz a necessidade de o usuário lembrar-se de detalhes ou instruções para completar o cadastro.
 
-## 08. Estética e Design Minimalista:
-- **Observação:** A página mantém um design funcional e agradável, sem excesso de elementos visuais desnecessários, o que facilita a navegação. Todos os campos estão claramente dispostos e bem organizados.
-- **Impacto:** Alto. Um design minimalista ajuda a manter o foco do usuário nos campos importantes, tornando o processo de cadastro mais rápido e eficiente.
+## 7. Flexibilidade e Eficiência de Uso
+- **Observação**: A tela é projetada para ser eficiente tanto para novos usuários quanto para usuários mais experientes, com atalhos ou preenchimento automático.
+- **Impacto**: Médio. Usuários experientes conseguem realizar o cadastro mais rapidamente, mas a simplicidade também ajuda novatos.
 
-## 09. Ajuda e Documentação:
-- **Observação:** Embora o formulário seja intuitivo, uma seção de ajuda ou dicas contextuais poderia enriquecer a experiência do usuário, principalmente nos campos de validação mais complexos, como CNPJ e telefone.
-- **Impacto:** Baixo. A adição de dicas ao lado dos campos mais técnicos seria um plus para novos usuários ou para quem tenha dúvidas sobre o formato correto dos dados.
+## 8. Estética e Design Minimalista
+- **Observação**: A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante.
+- **Impacto**: Alto. Um design simples facilita a navegação e torna o processo mais rápido e agradável.
 
-## 10. Feedback:
-- **Observação:** Mensagens de erro mais específicas para campos como CNPJ e telefone ajudariam o usuário a entender melhor o que está errado e como corrigir. Ao invés de apenas “CNPJ inválido”, uma mensagem como “O CNPJ deve conter 14 dígitos, sem caracteres especiais” seria mais clara.
-- **Impacto:** Médio. Um feedback mais detalhado melhora a experiência e facilita a correção de erros, evitando múltiplas tentativas frustrantes.
+## 9. Ajuda aos Usuários para Reconhecer, Diagnosticar e Corrigir Erros
+- **Observação**: Quando ocorre um erro, o sistema informa claramente o que deu errado, como "O e-mail inserido é inválido", e orienta sobre como corrigi-lo.
+- **Impacto**: Médio. Isso ajuda o usuário a retificar rapidamente os problemas, sem frustração.
+
+## 10. Ajuda e Documentação
+- **Observação**: A documentação ou ajuda disponível é clara e fácil de acessar, caso o usuário tenha dúvidas sobre o processo de cadastro.
+- **Impacto**: Baixo. Se bem implementado, pode ajudar, mas geralmente o processo de cadastro é simples o suficiente para não precisar de ajuda detalhada.
 
 ## Conclusão Geral
-O Cadastro de Fornecedor atende à maioria dos requisitos funcionais, mas apresenta algumas oportunidades de melhoria, especialmente na validação de campos críticos como CNPJ e telefone. O design da interface é simples e funcional, proporcionando uma boa experiência geral, mas pode ser enriquecido com feedbacks mais claros e ferramentas de preenchimento automático para aumentar a eficiência e evitar erros.
+A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria dos princípios heurísticos de usabilidade. Ela proporciona uma experiência intuitiva, consistente e eficiente, com um foco claro na prevenção de erros e visibilidade do status do sistema. A flexibilidade e o design minimalista aumentam a eficiência do uso, tornando o processo fluido e agradável para diferentes tipos de usuários.
+
+----------
+
+# Cadastro de Fornecedor 
+<p> Quem testou: - Samara Raíssa </p>
+<p> Criadora da Página: - Juliana M </p>
+ 
+| **Caso de Teste** 	| **Tela Cadastro de Fornecedor** 	|
+|:---:	|:---:	|
+|	 **01)Características:**	| **Visibilidade do Status do Sistema** | 
+|	 **1.1)**	| **O sistema fornece feedback claro sobre a validação de CNPJ e telefone?** |  
+|	 Comentários: Seria útil incluir ícones de sucesso/erro ou mensagens específicas para melhorar a visibilidade de validação.) |Sim ( )  Não (X) N/A ( )| 
+|	 **02) Características:**	| **Correspondência com o Mundo Real** | 
+|  **2.1)** |A terminologia dos campos é apropriada e familiar ao usuário?|	
+|	 Comentários: Os termos "Nome do Fornecedor", "CNPJ", "Endereço" e "Telefone" são familiares e de fácil entendimento para o usuário.	| Sim (X) Não ( ) N/A ( ) | 
+| **03) Características:**| **Controle e Liberdade do Usuário** |
+| **3.1)**	| **O sistema permite fácil edição dos dados?** | 
+|	Comentários: A navegação é boa, mas melhorias na edição de CNPJ e telefone (como formatação automática) poderiam ajudar. | *Sim (X) Não ( ) N/A ( )|
+| **04) Características:** | **Consistência e Padronização** | 
+|	**4.1)** | **Todos os campos seguem padrões consistentes de validação?**|
+| **Comentários: Falta padronização na verificação de CNPJ e telefone, o que compromete a consistência.** | Sim ( ) Não (X) N/A ( ) | 
+|	 **05) Características:**	| **Prevenção de Erros** | 
+|	**5.1)** | **O sistema valida CNPJ e telefone automaticamente?**|
+| Comentários: A validação de CNPJ e telefone poderia ser aprimorada para prevenir erros na entrada de dados.| Sim ( ) Não (X) N/A ( )|
+|	**06) Características:** | **Reconhecimento em vez de Memorização**|
+| **6.1)**| **Há exemplos de entrada ao lado dos campos de CNPJ e telefone?** |
+|	Comentários: Exemplos de formato nos campos ajudariam a orientar o usuário. | Sim ( ) Não (X) N/A ( ) |
+| **07) Características:**| **Flexibilidade e Eficiência de Uso**|
+|	**7.1)**	| **Há preenchimento automático de dados (como CEP) para agilizar o cadastro?** | 
+|	Comentários: O preenchimento automático de endereço a partir do CEP tornaria o sistema mais eficiente.	| Sim ( ) Não (X) N/A ( ) | 
+| **08) Características:**| **Estética e Design Minimalista** |
+| **8.1)**| **O design é funcional e focado no essencial, sem distrações?** | 
+| Comentários: A interface é organizada, com disposição clara dos campos, facilitando o cadastro.| Sim (X) Não ( ) N/A ( ) |
+| **09) Características:**	| **Ajuda e Documentação** | 
+| 	**9.1)** | **Há ajuda ou dicas contextuais nos campos mais complexos?** |
+| Comentários: Dicas ao lado dos campos de validação (como CNPJ) enriqueceriam a experiência do usuário.| Sim ( ) Não (X) N/A ( ) |
+| 	**10) Características:** | **Feedback** |
+| **10.1)** | **Mensagens de erro são claras e específicas?** | 
+| 	Comentários: Mensagens detalhadas como "CNPJ deve ter 14 dígitos, sem caracteres especiais" ajudariam o usuário a corrigir erros. | *Sim ( ) Não (X) N/A ( )|
+
+
+----------
+
+# Tela de Gestão de Estoque
+
+## 1. Listagem de Produtos com Checkbox
+- **Observação**: A tela exibe corretamente a lista de produtos, cada um com um checkbox ao lado, permitindo ao usuário selecionar ou desmarcar produtos conforme necessário.
+- **Impacto**: Alto. A seleção de produtos facilita a manipulação em massa e a gestão dos itens em estoque.
+
+## 2. Atualização Visual ao Marcar Produtos
+- **Observação**: Ao marcar um produto, o ícone de check aparece visualmente, e ao desmarcar o produto, o ícone desaparece.
+- **Impacto**: Alto. O feedback visual garante que o usuário entenda rapidamente quais itens foram selecionados, melhorando a experiência de uso.
+
+## 3. Validação de ID de Produto
+- **Observação**: Cada produto listado está associado corretamente ao ID correspondente do banco de dados, garantindo a consistência entre os dados da interface e os dados internos.
+- **Impacto**: Alto. Essa consistência é essencial para evitar confusões e erros ao manipular os produtos.
+
+## 4. Marcação e Desmarcação Correta dos Checkboxes
+- **Observação**: A funcionalidade de marcar e desmarcar checkboxes funciona conforme esperado, possibilitando a seleção múltipla sem erros ou conflitos.
+- **Impacto**: Médio. Facilita a seleção de produtos específicos de forma intuitiva, sem exigir ações complexas do usuário.
+
+## 5. Verificação da Consistência dos Dados
+- **Observação**: Cada produto marcado ou desmarcado mantém suas informações intactas, sem alterações nos dados exibidos ao interagir com o checkbox.
+- **Impacto**: Médio. A integridade dos dados ao interagir com os checkboxes evita erros no gerenciamento e facilita a rastreabilidade dos itens selecionados.
+
+## Conclusão Geral
+A tela de gestão de estoque passou nos testes de usabilidade, fornecendo uma interface intuitiva e responsiva para selecionar, visualizar e verificar produtos. O feedback visual e a consistência dos dados asseguram uma experiência de uso positiva, essencial para a gestão eficiente de estoque.
+
+
+----------
+
+# **Cadastro de Usuário**  
+
+<p> Quem testou: - Michael Brasil</p>
+<p>  Criadora da Página: - Samara Raissa</p>
+
+| **Caso de Teste** 	| **Tela Cadastro de Usuário** 	|
+|:---:	|:---:	|
+|	 **01) Características:**	| **Visibilidade do Status do Sistema** | 
+|	 **1.1)**	| **O sistema fornece feedback claro ao usuário durante o cadastro?** |  
+|	 **Comentários:** O sistema exibe mensagens de sucesso após o cadastro, indicando que o processo foi concluído corretamente.	| Sim (X) Não ( ) N/A ( ) | 
+|	 **02) Características:**	| **Correspondência com o Mundo Real** | 
+|  **2.1)** |Os campos têm terminologia clara e familiar ao usuário?|	
+| **Comentários:** Os termos como "Nome do Usuário", "Telefone", "Cargo", "Email", "Senha" e "Ativo" são familiares e intuitivos para o usuário final. A estrutura está adequada, mas seria interessante renomear "Ativo" para algo mais descritivo, como "Usuário Ativo?" para maior clareza. | Sim (X) Não ( ) N/A ( ) 
+| **03) Características:**| **Controle e Liberdade do Usuário** |
+| **3.1)**	| **O sistema permite correção ou edição de dados antes de concluir o cadastro?** | 
+|	**Comentários:** É possível corrigir dados inseridos antes do envio, e campos mal preenchidos são destacados. | Sim (X) Não ( ) N/A ( ) |
+| **04) Características:** | **Consistência e Padronização** | 
+|	**4.1)** | **A validação dos campos segue um padrão consistente?** |
+| **Comentários:** Todos os campos têm validação clara, mas seria interessante padronizar mensagens de erro com maior detalhamento. | Sim (X) Não ( ) N/A ( ) | 
+|	 **05) Características:**	| **Prevenção de Erros** | 
+|	**5.1)** | **Os campos impedem a entrada de dados incorretos, como e-mails inválidos?** |
+| **Comentários:** Não há validação automática de e-mail e aviso quando o formato está incorreto. | Sim ( ) Não (X) N/A ( ) |
+|	**06) Características:** | **Reconhecimento em vez de Memorização** |
+| **6.1)**| **Há exemplos de formato ao lado dos campos?** |
+|	**Comentários:** Não há exemplos visíveis, mas placeholders nos campos fornecem orientação suficiente. | Sim (X) Não ( ) N/A ( ) |
+| **07) Características:**| **Flexibilidade e Eficiência de Uso** |
+|	**7.1)**	| **O sistema sugere preenchimento automático de dados (como nome ou e-mail)?** | 
+|	**Comentários:** Não há preenchimento automático, mas isso não impacta significativamente a experiência devido à simplicidade do cadastro. | Sim ( ) Não (X) N/A ( ) |
+| **08) Características:**| **Estética e Design Minimalista** |
+| **8.1)**| **O design é funcional e focado no essencial, sem distrações?** | 
+| **Comentários:** A interface é clara, organizada e sem elementos desnecessários, o que torna o cadastro eficiente. | Sim (X) Não ( ) N/A ( ) |
+| **09) Características:**	| **Ajuda e Documentação** | 
+| 	**9.1)** | **Há dicas ou mensagens contextuais nos campos mais complexos?** |
+| **Comentários:** Não há necessidade de dicas adicionais, pois o processo é simples. | Sim (X) Não ( ) N/A ( ) |
+| 	**10) Características:** | **Feedback** |
+| **10.1)** | **Mensagens de erro são claras e específicas?** | 
+| 	**Comentários:** Mensagens como "E-mail inválido" e "A senha deve conter no mínimo 8 caracteres" são claras e informativas. | Sim ( ) Não (X) N/A ( ) |
+
+
+
+#  Cadastro Ordem de Compra
+<p> Quem testou: - Juliana M. </p>
+<p> Criador da Página: - Victor Magalhães</p>
+ 
+| **Caso de Teste** 	| **Tela Cadastro Ordem de Compra**|
+|:---:	|:---:	|
+|	 **01)Características:**	| **Visibilidade do Status do Sistema** | 
+|	 **1.1)**	| **O sistema fornece informações claras sobre Usuário, Fornecedores e Produtos?** |  
+|	 |Sim (X)  Não ( ) N/A ( )| 
+|	 **02) Características:**	| **Correspondência com o Mundo Real** | 
+|  **2.1)** |A terminologia dos campos é apropriada e familiar ao usuário?|	
+|	 Comentários: Os termos "Usuário", "Fornecedores", e "Podutos" são familiares e de fácil entendimento para o usuário.	| Sim (X) Não ( ) N/A ( ) | 
+| **03) Características:**| **Controle e Liberdade do Usuário** |
+| **3.1)**	| **O sistema permite fácil edição dos dados?** | 
+|	Comentários: A navegação está eficiente, mas melhorias na edição de Usuários, Produtos e Fornecedores, como formatação automática, poderiam otimizar a experiência. | Sim () Não ( ) N/A ( X )|
+| **04) Características:** | **Consistência e Padronização** | 
+|	**4.1)** | **Todos os campos seguem padrões consistentes de validação?**|
+|| Sim ( X) Não ( ) N/A ( ) | 
+|	 **05) Características:**	| **Prevenção de Erros** | 
+|	**5.1)** | **O sistema realiza a validação automática das informações?**|
+| Comentários: A validação das informações poderia ser aprimorada para evitar erros na entrada de dados.| Sim (X) Não () N/A ( )|
+|	**06) Características:** | **Reconhecimento em vez de Memorização**|
+| **6.1)**| **Existem exemplos de entrada ao lado dos campos de Nome, Preço, Quantidade?"** |
+|	Comentários:Exemplos de formato nos campos ajudariam a orientar os usuários na entrada de dados. | Sim ( ) Não (X) N/A ( ) |
+| **07) Características:**| **Flexibilidade e Eficiência de Uso**|
+|	**7.1)**	| **"O sistema oferece exemplos de entrada ao lado dos campos durante as operações de CRUD?"** | 
+|	Comentários:	| Sim (X) Não (X) N/A ( ) | 
+| **08) Características:**| **Estética e Design Minimalista** |
+| **8.1)**| **O design é funcional e focado no essencial, sem distrações?** | 
+| Comentários:A interface é organizada, com disposição clara dos campos, o que facilita o processo de cadastro de ordens de compra.| Sim (X) Não ( ) N/A ( ) |
+| **09) Características:**	| **Ajuda e Documentação** | 
+| 	**9.1)** | **Existem ajudas ou dicas contextuais nos campos mais complexos** |
+| Comentários: **Dicas ao lado dos campos de validação, como o de CNPJ, enriqueceriam a experiência do usuário.** Sim ( ) Não (X) N/A ( ) |
+| 	**10) Características:** | **Feedback** |
+| **10.1)** | **Mensagens de erro são claras e específicas?** | 
+| 	Comentários: **Mensagens de erro detalhadas, sem caracteres especiais, ajudariam o usuário a corrigir problemas de forma mais eficiente.** | Sim ( ) Não ( ) N/A (X)|
+
+
+----------

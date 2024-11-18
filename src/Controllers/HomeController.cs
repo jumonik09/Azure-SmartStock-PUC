@@ -1,5 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using project.Models;
 
 
@@ -209,6 +210,13 @@ public class HomeController : Controller
         return View(tabelaDeProdutoView);
     }
 
+    public IActionResult FazerEdicaoGE()
+    {
+        return View("~/Views/Home/FazerEdicaoGE.cshtml");
+    }
+
+
+
 
     public IActionResult ListagemDeUsuario()
     {
@@ -244,9 +252,10 @@ public class HomeController : Controller
     {
         return View();
     }
+
+    public IActionResult PaginaLogin()
+    {
+        return View();
+    }
+
 }
-
-
-
- 
-    

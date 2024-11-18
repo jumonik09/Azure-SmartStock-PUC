@@ -8,5 +8,6 @@ namespace project.Models
         public bool ativo { get; set; }
         public int fornecedor_id { get; set; }
         public float? preco { get; set; }
+        public int? quantidade { get; set; } //aqui
     }
 }

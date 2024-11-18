@@ -1,0 +1,82 @@
+@{
+    ViewData["Title"] = "Seção de Estoque";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seção de Estoque</title>
+    <link rel="stylesheet" href="~/css/SecaoDeEstoque.css">
+</head>
+<body>
+    <header>
+        <h1>Seção de Estoque</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Produto</h2>
+            <form action="/estoque/adicionar" method="POST">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="name" required>
+                
+                <label for="product-quantity">Quantidade:</label>
+                <input type="number" id="product-quantity" name="quantity" required>
+                
+                <label for="product-price">Preço:</label>
+                <input type="text" id="product-price" name="price" required>
+                
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+        <section class="inventory-section">
+            <h2>Estoque Atual</h2>
+            <table id="inventory-table">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                   
+                    <tr>
+                        <td>Produto A</td>
+                        <td>10</td>
+                        <td>R$ 00,00</td>
+                        <td>
+                            <form action="/estoque/editar" method="GET" style="display:inline;">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit">Editar</button>
+                            </form>
+                            <form action="/estoque/deletar" method="POST" style="display:inline;">
+                                <input type="hidden" name="id" value="1">
+                                <button type="submit">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Produto B</td>
+                        <td>5</td>
+                        <td>R$ 2,00</td>
+                        <td>
+                            <form action="/estoque/editar" method="GET" style="display:inline;">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit">Editar</button>
+                            </form>
+                            <form action="/estoque/deletar" method="POST" style="display:inline;">
+                                <input type="hidden" name="id" value="2">
+                                <button type="submit">Deletar</button>
+                            </form>
+                        </td>
+                    </tr>
+                    <!-- Adicione mais produtos aqui -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

@@ -10,7 +10,7 @@ O diagrama de classes ilustra graficamente como será a estrutura do software, e
 
 O Modelo ER representa através de um diagrama como as entidades (coisas, objetos) se relacionam entre si na aplicação interativa.
 
-![Entidade de Relacionamento](https://github.com/user-attachments/assets/1f1c2804-9b23-4864-9432-022d1c103df3)
+![Imagem do WhatsApp de 2024-10-27 à(s) 10 26 17_10089f6a](https://github.com/user-attachments/assets/ffe56270-a3db-4f5f-a9d9-992d36a0dee0)
 
 
 ## Projeto da Base de Dados
@@ -21,17 +21,61 @@ O projeto da base de dados corresponde à representação das entidades e relaci
 
 ## Tecnologias Utilizadas
 
-Descreva aqui qual(is) tecnologias você vai usar para resolver o seu problema, ou seja, implementar a sua solução. Liste todas as tecnologias envolvidas, linguagens a serem utilizadas, serviços web, frameworks, bibliotecas, IDEs de desenvolvimento, e ferramentas.
+<p> - C# é uma linguagem de programação orientada a objetos da Microsoft, essencial para o desenvolvimento de soluções backend, especialmente com a plataforma .NET.</p>
+<p>O C# é utilizado no backend para desenvolver a lógica de negócios e processar dados, C# garante que as operações realizadas no servidor, como requisições e manipulação de informações, sejam rápidas e seguras, refletindo em um desempenho ideal para o usuário final.</p>
 
-Apresente também uma figura explicando como as tecnologias estão relacionadas ou como uma interação do usuário com o sistema vai ser conduzida, por onde ela passa até retornar uma resposta ao usuário.
+<p> - Azure é a plataforma de nuvem da Microsoft, oferecendo serviços de computação em nuvem para hospedar e gerenciar aplicativos backend, garantindo escalabilidade e segurança.</p>
+<p>O Azure fornece infraestrutura em nuvem para hospedar e gerenciar o backend das aplicações. Isso permite que os serviços e dados estejam disponíveis de forma confiável e escalável, garantindo uma experiência sem interrupções para os usuários, independentemente da carga de acessos.</p>
+
+
+<p> - ASP.NET é um framework da Microsoft usado no desenvolvimento de aplicações web e APIs, sendo amplamente utilizado no backend para criar soluções dinâmicas e escaláveis.</p>
+<p> O ASP.NET cria APIs e aplicações web que se comunicam diretamente com o backend, processando as interações dos usuários. Ele garante que a experiência do usuário seja fluida, ao lidar com requisições e fornecer respostas rápidas e seguras.
+Essas tecnologias são fundamentais para o desenvolvimento de sistemas backend eficientes e seguros.</p>
+
+<p>Observa-se que essas tecnologias se relacionam com o usuário no backend principalmente por meio da criação de aplicativos e serviços eficientes, seguros e escaláveis que impactam diretamente na experiência do usuário, mesmo que de forma indireta.
+ Apesar das tecnologias mencionadas atuarem principalmente no backend, são essenciais para que o usuário tenha uma experiência final eficiente, segura e sem falhas.</p>
+
+<p> - GitHub é uma plataforma de hospedagem de código-fonte que utiliza o sistema de controle de versão Git. É amplamente usada por desenvolvedores para gerenciar, compartilhar e colaborar em projetos de software. Através do GitHub, equipes podem versionar o código, controlar alterações e trabalhar de forma colaborativa em tempo real.</p>
 
 ## Hospedagem
+<p>O Azure Data Studio é uma ferramenta de código aberto da Microsoft, projetada para o gerenciamento de bancos de dados como SQL Server e Azure SQL Database. Com uma interface gráfica intuitiva, facilita a administração de dados e a manipulação de tabelas, tornando o gerenciamento de bancos de dados mais eficiente e acessível. Além disso, o Azure Data Studio permite a criação, modificação e visualização de tabelas de forma simplificada. Os usuários podem executar consultas SQL, alterar a estrutura das tabelas e consultar dados de maneira rápida e eficaz, otimizando a administração de bancos de dados relacionais.</p>
+<br>
+<p>A ferramenta também se integra facilmente a serviços de hospedagem em nuvem como o Azure SQL Database, permitindo o gerenciamento de bancos de dados hospedados na nuvem de forma simples e prática. A integração com a plataforma Azure oferece escalabilidade, segurança avançada e alta disponibilidade, tornando-a uma solução ideal para quem busca administrar bancos de dados tanto locais quanto na nuvem, com o benefício de otimizar custos e recursos de infraestrutura.</p>
 
-Explique como a hospedagem e o lançamento da plataforma foi feita.
+<br>
 
-> **Links Úteis**:
->
-> - [Website com GitHub Pages](https://pages.github.com/)
-> - [Programação colaborativa com Repl.it](https://repl.it/)
-> - [Getting Started with Heroku](https://devcenter.heroku.com/start)
-> - [Publicando Seu Site No Heroku](http://pythonclub.com.br/publicando-seu-hello-world-no-heroku.html)
+<figure>
+  <img src="img/azure_data_studio.png"> 
+ </figure>
+
+<br>
+
+<figure>
+  <img src="img/tabela_azuredatastudio.png"> 
+ </figure>
+
+ <br>
+- Tabela Usuário
+
+<figure>
+  <img src="img/tabela_usuario.png"> 
+ </figure>
+
+ <br>
+
+
+ <br>
+- Tabela Ordem de Compra e Produto
+  <figure>
+  <img src="img/ordem_produto.png"> 
+ </figure> 
+
+ <br>
+
+ - Tabela Ordem de Compra 
+  <figure>
+  <img src="img/ordem_compra.png"> 
+ </figure>
+ 
+
+ 
