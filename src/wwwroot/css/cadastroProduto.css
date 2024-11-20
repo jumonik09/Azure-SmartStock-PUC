@@ -56,3 +56,15 @@ button {
     button:hover {
         background-color: 8c52ff;
     }
+
+    /* Estilo do botão */
+.botao {
+    
+    width: 100%;
+        padding: 10px;
+        background-color:rgb(31, 30, 30);
+        color: #F5FFFA;
+        border: solid;
+        border-radius: 30px;
+        
+}
