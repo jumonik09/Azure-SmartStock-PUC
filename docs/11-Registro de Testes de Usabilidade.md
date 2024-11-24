@@ -1,35 +1,5 @@
 # Registro de Testes de Usabilidade
 
-
- ## Cadastro de Produto - CT-001
-
-O teste do requisito RF-01, que aborda o cadastro de produtos com atributos como nome, descrição, preço e quantidade em estoque, teve um resultado parcial. Enquanto os campos de nome, descrição e preço funcionaram corretamente, a funcionalidade de inserção da quantidade de produtos ainda precisa de ajustes. Embora a maior parte do requisito tenha sido atendida, a funcionalidade de quantidade requer melhorias.
-
-
-01) Visibilidade do status do sistema: A página Cadastro de Produto poderia se beneficiar de um feedback mais claro sobre a validação da quantidade inserida, ajudando o usuário a se sentir mais seguro durante o processo.
-
-02) Correspondência entre o sistema e o mundo real: A terminologia utilizada nos campos é apropriada e fácil de entender.
-
-03) Controle e liberdade do usuário: O sistema permite uma boa navegação, mas algumas melhorias na edição da quantidade poderiam facilitar a correção de eventuais erros.
-
-04) Consistência e padronização: A consistência nos campos de nome, descrição e preço é positiva, e uma uniformidade da interface.
-
-05) Prevenção de erros: A validação da quantidade é um aspecto a ser aprimorado, evitando que os usuários enfrentem pequenos obstáculos durante o cadastro.
-
-06) Reconhecimento em vez de lembrança: Incluir exemplos de entrada ao lado do campo de quantidade seria uma boa prática, facilitando o entendimento.
-
-07) Flexibilidade e eficiência de uso: A interface é intuitiva.
-
-08) Estética e design minimalista: O design é funcional e agradável.
-
-09) Ajuda e documentação: Embora a interface seja intuitiva, uma seção de ajuda ou dicas contextuais poderia enriquecer a experiência do usuário.
-
-10) Feedback do usuário: Mensagens de erro mais específicas quando a quantidade não é aceita poderiam facilitar a compreensão e a correção por parte do usuário.
-
-Em geral, enquanto os campos de nome, descrição e preço funcionaram bem, a funcionalidade de quantidade apresenta oportunidades para melhorias que podem enriquecer a experiência do usuário.
-
-
- 
  
  ## Página Lista de Usuários - 
 
@@ -99,53 +69,73 @@ Em geral, enquanto os campos de nome, descrição e preço funcionaram bem, a fu
 |	**10.2)** | **Existe ajuda online sensível ao contexto?** |
 | Comentários:A falta de ajuda contextual pode dificultar a orientação do usuário, tornando a navegação mais complexa e aumentando a carga cognitiva, o que compromete a usabilidade do sistema.| Sim ( )  Não ( )  N/A (X)|
 
+ ## Página Cadastro de Produtos - 
 
-----------
+ <p>Quem testou: - Camila Zatz.</p>
+ <p>Criadora da página: - Juliana M.</p>
 
-# Tela de Cadastro de Usuário
+ | *Caso de Teste* 	| *Tela Cadastrar Produto* 	|
+|:---:	|:---:	|
+|	 *01)Características:*	| *Visibilidade do Status do Sistema* | 
+|	 *1.1)*	| *As telas iniciam com um título que descreve seu conteúdo?* | 
+|   Comentários: XXX|Sim (X)  Não ( ) N/A ( )| 
+|	 *1.2)*	| *O sistema fornece feedback em tempo real sobre o status do cadastro do produto?.* | 
+|   Comentários: XXX|Sim (X)  Não ( ) N/A ( )| 
+|	 *1.3)*	| *Uma mensagem de sucesso ou erro é exibida durante o processo de envio dos dados* | 
+|   *Comentários*:A mensagem de sucesso é exibida quando os dados são inseridos corretamente e registrados na tela de Cadastrar  Produto. Não há uma página específica para erros.|Sim (X)  Não ( ) | N/A ( )| |	
+|	 *1.4)*	| *O sistema executou consultas SQL com sucesso, armazenou os dados e os formatou em uma tabela HTML com cabeçalhos dinâmicos?* | 
+|   Comentários: XXX|Sim (X)  Não ( ) N/A ( )| 
+| *02)Características:*	| *Correspondência com o mundo real* | 
+|	*2.1)* | *A interface utiliza termos familiares e claros, como "Nome", "E-mail" e "Senha", em vez de termos técnicos ou confusos?*|
+|   Comentários: XXX | Sim (X)  Não ( ) N/A ( )| 
+|	*2.2)* | *As cores empregadas estão de acordo com a paleta de cores previamente definida pela equipe?*|
+|   Comentários: XXX | Sim (X)  Não ( ) N/A ( )  | 
+|	 *03)Características:*	| *Controle e Liberdade do Usuário* | 
+|	*3.1)* | *Os usuários conseguem corrigir facilmente erros ou voltar a etapas anteriores no processo de cadastro de produto, como alterar campos preenchidos incorretamente?*|
+|   Comentários:O sistema não permite que o usuário desfaça ações, restringindo-o a fluxos fixos.| Sim ( )  Não (X) N/A ( )|
+|	*3.2* | *Existe uma funcionalidade para desfazer ações realizadas pelo usuário?*|
+|   Comentários: XXX| Sim ( )  Não (X) N/A ( ) |
+|	*3.3* | *O usuário pode se mover entre campos e janelas livremente?*|
+|   Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+|	 *4.0)Características:*	| *Consistência e padrões* | 
+|	 *4.1*	| *O sistema evita uso constante de letras maiúsculas?* | 
+|   Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+|	 *4.2*	| *A tela segue padrões de design consistentes, como a posição dos botões de ação, estilo de campos e feedback visual?* |
+|   Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+|	 *4.3*	| *A consistência reduz a carga cognitiva do usuário, uma vez que ele sabe o que esperar e como interagir com os elementos?* | 
+|   Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+| *5.0)Características:*	| *Prevenção de Erros* | 
+| 	*5.1)* | *O sistema realiza validação de dados antes do envio, como verificar formatos de e-mail ou campos obrigatórios, prevenindo erros antes que eles ocorram?* |
+| Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+| 	*5.2)* | *O sistema alerta o usuário se ele estas prestes a erros críticos?* |
+| Comentários:A falta de alertas para erros críticos pode elevar a chance de falhas graves, prejudicando a experiência do usuário e a eficiência do sistema. Sim ()  Não (X)  N/A ( )|
+|	 *06)Características:*	| *Reconhecimento em vez de Memorização* | 
+| 	*6.1)* | *Os rótulos estão próximos dos campos e separados pelo menos por um espaço?* |
+| Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+| 	*6.2)* | *São utilizadas bordas para identificas possíveis grupos de elementos?* |
+| Comentários:A falta de bordas pode tornar difícil a identificação visual dos agrupamentos, o que pode comprometer a organização e a usabilidade do sistema.| Sim ( )  Não ( )  N/A (X)|
+|	 *07)Características:*	| *Flexibilidade e Eficiência de Uso* | 
+| 	*7.1)* | *Existem atalhos para as funções disponíveis no sistema?* |
+| Comentários: O "menu hambúrguer" oferece acesso eficiente a outras páginas. Sim (X)  Não ()  N/A ( )|
+|	 *08)Características:*	| *Estética e Design Minimalista* | 
+| 	*8.1)* | *Apenas a informação necessária para ação esta visível na tela?* |
+| Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+| 	*8.2)* | *A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante?* |
+| Comentários: XXX| Sim (X)  Não ( )  N/A ( )|
+|	 *09)Características:*	| *Recuperação Diante de Erros* | 
+|	*9.1)* | *É utilizado um sinal sonoro para alerta de erros?* |
+| Comentários: XXX| Sim ()  Não (X)  N/A ( )|
+|	*9.2)* | *As mensagens de erros sugere uma ação para correção?* |
+| Comentários:Mensagens de erro mais claras, indicando quando a quantidade não é aceita, ajudariam o usuário a entender e corrigir o problema.| Sim ()  Não ( )  N/A (X)|
+|	*9.3)* | *As mensagens de erro indicam a gravidade e a causa do problema?* |
+| Comentários: XXX| Sim ()  Não ( )  N/A (X )|
+|	*10)Características:*	| *Ajuda e documentação* | 
+|	*10.1)* | *É simples o acesso a ajuda do sistema e o retorno ao sistema?* |
+| Comentários: XXX| Sim ()  Não ( )  N/A (X)|
+|	*10.2)* | *Há ajuda online contextualizada disponível?* |
+| Comentários:A ausência de ajuda contextual pode dificultar a orientação do usuário, tornando a navegação mais complexa e aumentando a carga cognitiva, o que impacta negativamente a usabilidade do sistema.| Sim ( )  Não ( )  N/A (X)|||Registro de evidência 
 
-## 1. Visibilidade do Status do Sistema
-- **Observação**: O sistema fornece feedback em tempo real sobre o status do cadastro, como mensagens de sucesso ou erro durante o processo de envio dos dados.
-- **Impacto**: Alto. A visibilidade clara mantém o usuário informado sobre o progresso e resultado de suas ações, evitando incertezas.
-
-## 2. Correspondência com o Mundo Real
-- **Observação**: A interface utiliza termos familiares e claros, como "Nome", "E-mail" e "Senha", em vez de termos técnicos ou confusos.
-- **Impacto**: Alto. Isso facilita a compreensão e o uso da tela, tornando o sistema acessível para diversos perfis de usuários.
-
-## 3. Controle e Liberdade do Usuário
-- **Observação**: Os usuários podem facilmente corrigir erros ou retornar a passos anteriores no processo de cadastro, como modificar campos preenchidos incorretamente.
-- **Impacto**: Médio. Proporciona flexibilidade para o usuário refazer ações sem ficarem presos em fluxos rígidos.
-
-## 4. Consistência e Padrões
-- **Observação**: A tela segue padrões de design consistentes, como a posição dos botões de ação, estilo de campos e feedback visual.
-- **Impacto**: Alto. A consistência reduz a carga cognitiva do usuário, já que ele sabe o que esperar e como interagir com os elementos.
-
-## 5. Prevenção de Erros
-- **Observação**: O sistema realiza validação de dados antes do envio, como verificar formatos de e-mail ou campos obrigatórios, prevenindo erros antes que eles ocorram.
-- **Impacto**: Alto. Isso minimiza a ocorrência de erros e aumenta a confiança do usuário no processo.
-
-## 6. Reconhecimento em vez de Memorização
-- **Observação**: Os campos estão claramente identificados e apresentam exemplos ou placeholders, permitindo que os usuários entendam facilmente o que devem inserir.
-- **Impacto**: Médio. Reduz a necessidade de o usuário lembrar-se de detalhes ou instruções para completar o cadastro.
-
-## 7. Flexibilidade e Eficiência de Uso
-- **Observação**: A tela é projetada para ser eficiente tanto para novos usuários quanto para usuários mais experientes, com atalhos ou preenchimento automático.
-- **Impacto**: Médio. Usuários experientes conseguem realizar o cadastro mais rapidamente, mas a simplicidade também ajuda novatos.
-
-## 8. Estética e Design Minimalista
-- **Observação**: A interface é limpa, sem elementos desnecessários ou poluídos visualmente, permitindo que o foco do usuário esteja apenas no que é relevante.
-- **Impacto**: Alto. Um design simples facilita a navegação e torna o processo mais rápido e agradável.
-
-## 9. Ajuda aos Usuários para Reconhecer, Diagnosticar e Corrigir Erros
-- **Observação**: Quando ocorre um erro, o sistema informa claramente o que deu errado, como "O e-mail inserido é inválido", e orienta sobre como corrigi-lo.
-- **Impacto**: Médio. Isso ajuda o usuário a retificar rapidamente os problemas, sem frustração.
-
-## 10. Ajuda e Documentação
-- **Observação**: A documentação ou ajuda disponível é clara e fácil de acessar, caso o usuário tenha dúvidas sobre o processo de cadastro.
-- **Impacto**: Baixo. Se bem implementado, pode ajudar, mas geralmente o processo de cadastro é simples o suficiente para não precisar de ajuda detalhada.
-
-## Conclusão Geral
-A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria dos princípios heurísticos de usabilidade. Ela proporciona uma experiência intuitiva, consistente e eficiente, com um foco claro na prevenção de erros e visibilidade do status do sistema. A flexibilidade e o design minimalista aumentam a eficiência do uso, tornando o processo fluido e agradável para diferentes tipos de usuários.
+![Imagem do WhatsApp de 2024-10-15 à(s) 20 34 44_57183825](https://github.com/user-attachments/assets/ff1a2cde-b938-4640-a8cc-b059308f7ed0)
 
 ----------
 
@@ -189,31 +179,67 @@ A tela de cadastro de usuário foi bem-sucedida nos testes e atende a maioria do
 
 ----------
 
-# Tela de Gestão de Estoque
+## Gestão de Estoque
 
-## 1. Listagem de Produtos com Checkbox
-- **Observação**: A tela exibe corretamente a lista de produtos, cada um com um checkbox ao lado, permitindo ao usuário selecionar ou desmarcar produtos conforme necessário.
-- **Impacto**: Alto. A seleção de produtos facilita a manipulação em massa e a gestão dos itens em estoque.
+<p>Quem testou: - Victor Magalhães</p>
+<p>Criador da página: - Michael Benyamin Gorenstein Brasil</p>
 
-## 2. Atualização Visual ao Marcar Produtos
-- **Observação**: Ao marcar um produto, o ícone de check aparece visualmente, e ao desmarcar o produto, o ícone desaparece.
-- **Impacto**: Alto. O feedback visual garante que o usuário entenda rapidamente quais itens foram selecionados, melhorando a experiência de uso.
-
-## 3. Validação de ID de Produto
-- **Observação**: Cada produto listado está associado corretamente ao ID correspondente do banco de dados, garantindo a consistência entre os dados da interface e os dados internos.
-- **Impacto**: Alto. Essa consistência é essencial para evitar confusões e erros ao manipular os produtos.
-
-## 4. Marcação e Desmarcação Correta dos Checkboxes
-- **Observação**: A funcionalidade de marcar e desmarcar checkboxes funciona conforme esperado, possibilitando a seleção múltipla sem erros ou conflitos.
-- **Impacto**: Médio. Facilita a seleção de produtos específicos de forma intuitiva, sem exigir ações complexas do usuário.
-
-## 5. Verificação da Consistência dos Dados
-- **Observação**: Cada produto marcado ou desmarcado mantém suas informações intactas, sem alterações nos dados exibidos ao interagir com o checkbox.
-- **Impacto**: Médio. A integridade dos dados ao interagir com os checkboxes evita erros no gerenciamento e facilita a rastreabilidade dos itens selecionados.
-
-## Conclusão Geral
-A tela de gestão de estoque passou nos testes de usabilidade, fornecendo uma interface intuitiva e responsiva para selecionar, visualizar e verificar produtos. O feedback visual e a consistência dos dados asseguram uma experiência de uso positiva, essencial para a gestão eficiente de estoque.
-
+| **Caso de Teste** 	| **Tela de Gestão de Estoque** 	|
+|:---:	|:---:	|
+|	**01) Características:**	| **Visibilidade do Status do Sistema** | 
+|	**1.1)**	| **A tela permite ao usuário marcar e desmarcar produtos?** | 
+|   Comentários: A marcação de produtos não realiza nenhuma ação, apenas permite selecionar ou desmarcar. | Sim (X)  Não ( ) N/A ( )| 
+|	**1.2)**	| **A tela exibe uma lista de produtos com as colunas "Produto", "Quantidade", "Preço" e "Ações", com as opções "Editar" e "Deletar"?** | 
+|   Comentários: A tabela exibe corretamente os dados dos produtos e as ações disponíveis para edição ou exclusão. | Sim (X)  Não ( ) N/A ( )| 
+|	**1.3)**	| **A tela permite adicionar novos produtos, redirecionando o usuário para a tela de criação de produtos?** | 
+|   Comentários: Sim, mas após adicionar um produto, a tela não exibe o item imediatamente e requer recarregamento para atualização. | Sim (X)  Não ( ) N/A ( )| 
+|	**1.4)**	| **A tela permite editar um produto, redirecionando para uma tela de edição?** | 
+|   Comentários: Ao clicar em editar, o usuário é direcionado para a tela de edição do produto. | Sim (X)  Não ( ) N/A ( )| 
+|	**1.5)**	| **A tela permite deletar um produto com a exibição de um alerta de confirmação?** | 
+|   Comentários: O sistema exibe um alerta de confirmação e exclui o produto imediatamente, sem recarregar a tela. | Sim (X)  Não ( ) N/A ( )| 
+| **02) Características:**	| **Correspondência com o mundo real** | 
+|	**2.1)**	| **Os termos utilizados na interface, como "Produto", "Quantidade", "Preço" e "Ações", são claros e familiares para o usuário?**|
+|   Comentários: Os termos são claros e facilmente compreendidos, alinhados com o contexto do sistema. | Sim (X)  Não ( ) N/A ( )| 
+|	**2.2)**	| **A disposição dos elementos na tela segue um padrão lógico, com os produtos sendo listados de maneira organizada e as ações dispostas ao lado de cada item?**|
+|   Comentários: A disposição das colunas está bem organizada, e as opções de ações estão próximas dos produtos. | Sim (X)  Não ( ) N/A ( )| 
+| **03) Características:**	| **Controle e Liberdade do Usuário** | 
+|	**3.1)**	| **O usuário pode facilmente editar, excluir ou adicionar produtos sem a necessidade de recarregar a página manualmente?**|
+|   Comentários: O usuário pode realizar apenas a exclusão sem necessidade de recarregar, mas a adição e edição de produtos requerem um recarregamento para exibição. | Sim ()  Não (X) N/A ( )|
+|	**3.2)**	| **O sistema permite desfazer a exclusão de um produto, caso o usuário tenha cometido um erro?**|
+|   Comentários: Não existe a opção de desfazer uma exclusão após confirmação. | Sim ( )  Não (X)  N/A ( )|
+| **04) Características:**	| **Consistência e Padrões** | 
+|	**4.1)**	| **A tela segue padrões de design consistentes, como a posição das colunas de produtos e ações, e o estilo das opções de "Editar" e "Deletar"?** |
+|   Comentários: A interface segue um padrão claro e consistente nas opções de ação para cada produto. | Sim (X)  Não ( ) N/A ( )|
+|	**4.2)**	| **As colunas e opções de ação permanecem no mesmo lugar, garantindo uma experiência de navegação consistente?** |
+|   Comentários: A posição das colunas e botões não muda, oferecendo uma navegação consistente. | Sim (X)  Não ( ) N/A ( )|
+| **05) Características:**	| **Prevenção de Erros** | 
+|	**5.1)**	| **O sistema realiza validação de dados antes de adicionar ou editar um produto?** |
+|   Comentários: A tela na qual o usuário é redirecionado valida os dados ao editar ou adicionar um produto, com campos obrigatórios. | Sim (X)  Não ( ) N/A ( )|
+|	**5.2)**	| **O sistema alerta o usuário se ele tentar deletar um produto sem confirmação, evitando exclusões acidentais?** |
+|   Comentários: O sistema exibe um alerta de confirmação para evitar exclusões acidentais. | Sim (X)  Não ( ) N/A ( )|
+| **06) Características:**	| **Reconhecimento em vez de Memorização** | 
+|	**6.1)**	| **Os rótulos dos produtos e as opções de ação estão claramente identificados e próximos aos itens, facilitando a navegação?** |
+|   Comentários: Os rótulos e botões de ação estão bem posicionados, facilitando a interação. | Sim (X)  Não ( )  N/A ( )|
+|	**6.2)**	| **Os usuários podem identificar rapidamente o que cada ação (editar, excluir) faz, sem a necessidade de memorizar funções?** |
+|   Comentários: As ações de editar e excluir são claras pelo nome e pelo ícone. | Sim (X)  Não ( )  N/A ( )|
+| **07) Características:**	| **Flexibilidade e Eficiência de Uso** | 
+|	**7.1)**	| **O sistema permite realizar ações de forma rápida e eficiente, como a exclusão de produtos sem recarregar a página?** |
+|   Comentários: A exclusão de produtos é rápida e não exige recarregamento da página. | Sim (X)  Não ( )  N/A ( )|
+| **08) Características:**	| **Estética e Design Minimalista** | 
+|	**8.1)**	| **A interface exibe apenas as informações necessárias para a interação do usuário, sem elementos desnecessários?** |
+|   Comentários: A interface está limpa e apresenta apenas o necessário para o gerenciamento de estoque. | Sim (X)  Não ( )  N/A ( )|
+|	**8.2)**	| **A tela tem um design claro e direto, sem sobrecarga de informações, permitindo que o foco do usuário seja mantido?** |
+|   Comentários: A tela tem um design objetivo, com foco nas ações essenciais. | Sim (X)  Não ( )  N/A ( )|
+| **09) Características:**	| **Recuperação Diante de Erros** | 
+|	**9.1)**	| **Há alertas sonoros ou visuais para indicar erros ao tentar excluir ou adicionar um produto de forma incorreta?** |
+|   Comentários: Não há alertas sonoros, mas há feedback visual adequado para erros. | Sim ( )  Não (X)  N/A ( )|
+|	**9.2)**	| **O sistema fornece sugestões para correção em caso de erro ao adicionar ou editar produtos?** |
+|   Comentários: O sistema exibe mensagens de erro claras quando necessário, como para campos obrigatórios não preenchidos. | Sim (X)  Não ( )  N/A ( )|
+| **10) Características:**	| **Ajuda e Documentação** | 
+|	**10.1)**	| **É fácil acessar ajuda ou documentação sobre a gestão de estoque?** |
+|   Comentários: Não há documentação ou ajuda diretamente acessível, mas a interface é intuitiva. | Sim ( )  Não (X)  N/A ( )|
+|	**10.2)**	| **A tela fornece ajuda contextual ou sugestões relacionadas ao processo de gerenciamento de produtos?** |
+|   Comentários: Não há ajuda contextual, mas a interface é clara e autoexplicativa. | Sim ( )  Não (X)  N/A ( )|
 
 ----------
 
@@ -296,3 +322,43 @@ A tela de gestão de estoque passou nos testes de usabilidade, fornecendo uma in
 
 
 ----------
+
+# Ordem de Compra
+
+
+<p> Quem testou: - Juliana M. </p>
+<p> Criador da Página: - Victor Magalhães</p>
+
+| **Caso de Teste** 	| **Tela  Ordem de Compra**|
+ |:---:	|:---:	|
+|	 **01)Características:**	| **Visibilidade do Status do Sistema** | 
+|	 **1.1)**O sistema fornece informações claras sobre o fornecedor, o usuário, a data, o status e as ações cadastradas?** |  
+|	 |Sim (X)  Não ( ) N/A ( )| 
+|	 **02) Características:**	| **Correspondência com o Mundo Real** | 
+|  **2.1)** |A terminologia dos campos é apropriada e familiar ao usuário?|	
+|	 Comentários:A navegação está eficiente, porém a experiência poderia ser aprimorada com melhorias na edição de Fornecedor, Usuário, Data e Status, como a adição de formatação automática..	| Sim (X) Não ( ) N/A ( ) | 
+| **03) Características:**| **Controle e Liberdade do Usuário** |
+| **3.1)**	| **O sistema permite fácil edição dos dados?** | 
+|	Comentários:  | Sim () Não ( ) N/A ( X )|
+| **04) Características:** | **Consistência e Padronização** | 
+|	**4.1)** | **Todos os campos seguem padrões consistentes de validação?**|
+|| Sim ( X) Não ( ) N/A ( ) | 
+|	 **05) Características:**	| **Prevenção de Erros** | 
+|	**5.1)** | **O sistema realiza a validação automática das informações?**|
+| Comentários: | Sim (X) Não () N/A ( )|
+|	**06) Características:** | **Reconhecimento em vez de Memorização**|
+| **6.1)**| **Há exemplos de entrada ao lado dos campos cadastrados?**|
+|	Comentários:A inclusão de exemplos de formato nos campos ajudaria a orientar os usuários na inserção de dados.| Sim ( ) Não (X) N/A ( ) |
+| **07) Características:**| **Flexibilidade e Eficiência de Uso**|
+|	**7.1)**	| **"O sistema oferece exemplos de entrada ao lado dos campos durante as operações de CRUD?"** | 
+|	Comentários: Não, o sistema não oferece exemplos de entrada ao lado dos campos durante as operações de CRUD. Isso pode dificultar a compreensão dos formatos esperados para os dados, especialmente para usuários menos experientes. A inclusão desses exemplos poderia melhorar a usabilidade.| Sim () Não ( ) N/A (X ) | 
+| **08) Características:**| **Estética e Design Minimalista** |
+| **8.1)**| **O design é funcional e focado no essencial, sem distrações?** | 
+| Comentários:A interface é organizada, com disposição clara dos campos, o que facilita o processo de cadastro de ordens de compra.| Sim (X) Não ( ) N/A ( ) |
+| **09) Características:**	| **Ajuda e Documentação** | 
+| 	**9.1)** | **Existem ajudas ou dicas contextuais nos campos mais complexos?** |
+| Comentários: Sim ( ) Não (X) N/A ( ) |
+| 	**10) Características:** | **Feedback** |
+| **10.1)** | **Mensagens de erro são claras e específicas?** | 
+| 	Comentários: Não, as mensagens de erro não são detalhadas e contêm caracteres especiais. Mensagens mais claras ajudariam o usuário a corrigir os erros de forma mais eficiente. | Sim ( ) Não ( ) N/A (X)|
+

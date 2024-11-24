@@ -13,4 +13,14 @@ public class ApplicationDbContext : DbContext
   public DbSet<Usuario> Usuario { get; set; }
   public DbSet<OrdemDeCompra> OrdemDeCompra { get; set; }
   public DbSet<OrdemDeCompraProduto> OrdemDeCompraProduto { get; set; }
+
+  protected override void OnModelCreating(ModelBuilder modelBuilder)
+  {
+    base.OnModelCreating(modelBuilder);
+
+    modelBuilder.Entity<OrdemDeCompra>()
+        .Property(o => o.Total)
+        .HasColumnType("decimal(10, 2)");
+
+  }
 }

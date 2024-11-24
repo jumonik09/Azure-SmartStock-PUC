@@ -5,9 +5,9 @@ namespace project.Models
         public int id { get; set; }
         public string? nome { get; set; }
         public string? categoria { get; set; }
-        public bool ativo { get; set; }
+        public byte ativo { get; set; }
         public int fornecedor_id { get; set; }
-        public float? preco { get; set; }
+        public double? preco { get; set; }
         public int? quantidade { get; set; } //aqui
     }
 }

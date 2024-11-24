@@ -1,29 +1,25 @@
 message: Please cite this software using these metadata.
-title:
+title: SmartStock
 authors:
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
-  - family-names: 
-    given-names: 
+  - family-names: Penteado Zatz
+    given-names: Camilla
+  - family-names: Monik Moraes
+    given-names: Juliana
+  - family-names: Benyamin Gorenstein Brasil
+  given-names: Michael
+  - family-names: Santos Américo Guimarães   
+  given-names: Samara
+  - family-names: Rodrigues Magalhães
+  given-names: Victor
+    affiliation: PUC Minas
+    family-names:  Marques Pietrobon
+    given-names: Carlos
   - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+     
 keywords:
-  - 
-  - 
-repository-code: 
+  - Gestao de Estoque
+  - Organização
+repository-code: https://github.com/ICEI-PUC-Minas-PMV-ADS/PMV-ADS-2024-2-E2-Proj-Smart-Stock
 version: 1.0.0
-date-released: 2023-10-31
+date-released: 2024-11-20

@@ -1,0 +1,120 @@
+<!-- Def 4 -->
+
+@model IEnumerable<project.Models.Produto>
+
+@{
+    ViewData["Title"] = "Gestão de Estoque";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    @Html.AntiForgeryToken()
+
+
+    <div class="container mt-3">
+        <br />
+        <div class="mb-4">
+            <h3 class="text-muted">Gestão de Estoque</h3>
+        </div>
+
+        <br />
+
+        <div class="mb-4">
+            <h5 class="text-muted">Check Area:</h5>
+            <p>Faça comparações e veja se seu estoque está completo</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+                @foreach (var produto in Model)
+                {
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="@produto.id" id="checkbox@produto.id">
+                        <label class="form-check-label" for="checkbox@produto.id">
+                            @produto.nome
+                        </label>
+                        <span class="float-right text-success" id="checkIcon@produto.id" style="display: none;">✔</span>
+                    </div>
+                }
+            </div>
+        </div>
+
+        <br /><br />
+
+        <div class="mb-4">
+            <h5 class="text-muted">Edite seus produtos registrados ou cadastre um novo:</h5>
+            <p>Seu estoque ao dispor do seu controle</p>
+        </div>
+
+        <div class="card">
+            <div class="card-body">
+
+                <div class="card-body">
+                    <div class="d-flex align-items-center">
+                        <h5>Cadastre produtos aqui:</h5>
+                        <a class="btn btn-primary ms-3" href=" /Home/CadastrarProduto" style="background-color: #8c52ff;">Adicionar Produto</a>
+                    </div>
+                </div>
+
+
+                <br />
+
+                <!-- Aqui -->
+                <table class="table table-striped estoque-table">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Produto</th>
+                            <th>Quantidade</th>
+                            <th>Preço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        @foreach (var produto in Model)
+                        {
+                            <tr>
+                                <td>@produto.nome</td>
+                                <td>@produto.quantidade</td>
+                                <td>R$ @String.Format("{0:F2}", produto.preco)</td>  @* Exibe o preço com 2 casas decimais *@
+                                <td>
+                                    <div class="d-flex justify-content-start">
+                                        <a href="@Url.Action("EditarProduto", "Ge", new { id = produto.id })" class="btn btn-warning me-2">Editar</a>
+                                        <!--<button onclick="deletarProduto(@*produto.id*@)" class="btn btn-danger">Deletar</button>-->
+                                        <a asp-action="Delete" asp-route-id="@produto.id" class="btn btn-danger btn-sm">Excluir</a>
+                                    </div>
+
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+                <br />
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.querySelectorAll('.form-check-input').forEach(function (checkbox) {
+                checkbox.addEventListener('change', function () {
+                    var icon = this.parentElement.querySelector('.text-success');
+                    if (this.checked) {
+                        icon.style.display = 'inline';
+                    } else {
+                        icon.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

@@ -2,26 +2,35 @@
 
 <span style="color:red">Pré-requisitos: <a href="3-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="8-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
-Para cada caso de teste definido no Plano de Testes de Software, realize o registro das evidências dos testes feitos na aplicação pela equipe, que comprovem que o critério de êxito foi alcançado (ou não!!!). Para isso, utilize uma ferramenta de captura de tela que mostre cada um dos casos de teste definidos (obs.: cada caso de teste deverá possuir um vídeo do tipo _screencast_ para caracterizar uma evidência do referido caso).
+ ## Caso de Teste 02: Cadastrar Produtos
+<p> Testado por Camila Zatz </p>
+<p> Criador da página: Juliana M.</p>
 
 | **Caso de Teste** 	| **CT-001 – Cadastro de Produto** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - O sistema deve permitir o cadastro de produtos, incluindo atributos como nome, descrição, preço e quantidade em estoque|
-|Registro de evidência | ![Imagem do WhatsApp de 2024-10-15 à(s) 20 34 44_57183825](https://github.com/user-attachments/assets/ff1a2cde-b938-4640-a8cc-b059308f7ed0)
- 
+|Correspondeu ao Esperado| Sim, o comportamento do sistema atendeu aos requisitos. Os produtos foram cadastrados com sucesso e os dados foram devidamente armazenados. Ressalta-se, no entanto, a necessidade de incluir a quantidade dos produtos ||Registro de evidência 
+
+ ## Caso de Teste 02: Tela Lista de Usuários
+<p> Testado por Juliana M. </p>
+<p> Criador da página: Samara Raíssa</p>| 
 
 | **Caso de Teste** 	| **CT-02 – ** 	|
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-14 - O sistema deve permitir a execução de consultas SQL em um banco de dados e a formatação dos dados retornados para exibição em uma página HTML.|
-|Registro de evidência | <figure><img src="img/lista_usuario.png"> </figure> |
+|Correspondeu ao Esperado|O sistema atendeu ao esperado, permitindo a execução de consultas SQL no banco de dados e a formatação correta dos dados retornados para exibição na página HTML.  |Registro de evidência | <figure><img src="img/lista_usuario.png"> </figure> |
 |Registro de evidência | <figure><img src="img/dados_usuario.png"> </figure> | 
 
 <br/>
 
-| **Caso de Teste** 	| **CT-03 – Cadastro de Usuários 	|
+## Caso de Teste 03: Tela Cadastro de Usuários
+<p> Testado por Michel Brasil </p>
+<p> Criador da página: Samara Raíssa</p>| 
+
+**Caso de Teste** 	| **CT-03 – Cadastro de Usuários 	
 |:---:	|:---:	|
 |	Requisito Associado 	| RF-01 - O sistema deve permitir o cadastro do Usuario, incluindo atributos como nome, telefone, cargo, email, ativo e senha |
-|Registro de evidência | <figure><img src="img/M_cadastrando.png"> </figure> |
+|Correspondeu ao Esperado|Sim, o comportamento do sistema atendeu aos requisitos. Os usuários foram cadastrados com sucesso e os dados foram devidamente armazenados.| <figure><img src="img/M_cadastrando.png"> </figure> |
 |Registro de evidência | <figure><img src="img/M_efetuando.png"> </figure> | 
 |Registro de evidência | <figure><img src="img/M_Listagem.png"> </figure> |
 |Registro de evidência | <figure><img src="img/M_registrobanco.png"> </figure> | 
@@ -30,6 +39,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Caso de Teste 004: Tela Cadastro de Fornecedor
 <p> Testado por Samara Raíssa </p>
+<p> Criador da página: Juliana M.</p>
 
 | **Caso de Teste** 	| CT-04 – Tela Cadastro de Fornecedor 	|
 |:---:	|:---:	|
@@ -45,6 +55,7 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 
 ## Caso de Teste 005: Tela Cadastro Ordem de Compra 
 <p> Testado por Samara Raíssa </p>
+<p> Criador da página: Victor Magalhães</p>
 
 | **Caso de Teste** 	| CT-05 – Cadastro Ordem de Compra 	|
 |:---:	|:---:	|
@@ -60,25 +71,28 @@ Para cada caso de teste definido no Plano de Testes de Software, realize o regis
 <br/>
 
 ## Caso de Teste 002: Execução de Consultas SQL
+<p> Testado por Victor Magalhães </p>
+<p> Criador da página: Michael Benyamin Gorenstein Brasil</p>
 
-| **Caso de Teste** 	| **CT-02 – Gestão de estoque 	|
+| **Caso de Teste** 	| CT-02 – Execução de Consultas SQL 	|
 |:---:	|:---:	|
-|	Requisito Associado 	| RF-14 - O sistema deve permitir a execução de consultas SQL em um banco de dados e a formatação dos dados retornados para exibição em uma página HTML.|
-|Registro de evidência | <figure><img src="img/lista_usuario.png"> </figure> |
-|Registro de evidência | <figure><img src="img/dados_usuario.png"> </figure> | 
+|	Requisito Associado 	| RF-14 - O sistema deve permitir a execução de consultas SQL em um banco de dados e a formatação dos dados retornados para exibição em uma página HTML. |
+| Houve erro | Não, não houve erro. |
+| Correspondeu ao Esperado | Sim, o comportamento do sistema correspondeu aos requisitos. |
+| Registro de evidência | <figure><img src="img/lista_usuario.png" alt="Lista de Usuários"></figure> |
+| Registro de evidência | <figure><img src="img/dados_usuario.png" alt="Dados de Usuário"></figure> |
 
 ---
 
 ## Caso de Teste 004: Visualização de Relatório de Estoque
+<p> Testado por Victor Magalhães </p>
+<p> Criador da página: Michael Benyamin Gorenstein Brasil</p>
 
-| **Número do Caso de Teste** | CT-004 - Gestão de estoque |
-|-------------------------------|----------------------------|
-| **Pré-condições**             | Produtos cadastrados no sistema. Usuário autenticado como Analista de Estoque. |
-| **Procedimento**              | 1. Acessar o menu "Relatórios".<br>2. Selecionar "Relatório de Estoque".<br>3. Filtrar por categoria "Alimentos".<br>4. Clicar em "Gerar Relatório". |
-| **Dados de Entrada**          | Categoria: Alimentos |
-| **Resultado Esperado**        | Relatório exibido com a lista detalhada de produtos na categoria "Alimentos". |
-| **Resultado Obtido**          | O princípio de um relatório está sendo gerado, porém o sistema por ainda ser um protótipo, não possui o mapeamento de telas nem filtragem de dados. |
-| **Avaliação**                 | [Sucesso] |
-| **Evidência**                 | <figure><img src="img/tela gestao de estoque.png" alt="Tela de Gestão de Estoque"></figure><figure><img src="img/produtos_banco.png" alt="Produtos no Banco de Dados"></figure> |
-
+| **Caso de Teste** 	| CT-004 – Visualização de Relatório de Estoque 	|
+|:---:	|:---:	|
+|	Requisito Associado 	| RF-02 - O sistema deve permitir ao usuário visualizar relatórios de estoque com dados filtrados por categoria, com a possibilidade de geração de relatórios detalhados. |
+| Houve erro | Não, não houve erro. |
+| Correspondeu ao Esperado | Sim, o comportamento do sistema correspondeu aos requisitos. |
+| Registro de evidência | <figure><img src="img/tela gestao de estoque.png" alt="Tela de Gestão de Estoque"></figure> |
+| Registro de evidência | <figure><img src="img/produtos_banco.png" alt="Produtos no Banco de Dados"></figure> |
 

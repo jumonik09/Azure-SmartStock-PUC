@@ -5,11 +5,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Configurando o DbContext
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseMySql(builder.Configuration.GetConnectionString("DefaultConnection"),
-    new MySqlServerVersion(new Version(6, 0, 3)))); // Ajuste a versão conforme sua instalação
+    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
-
-// Add services to the container.
+    // Add services to the container.
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();

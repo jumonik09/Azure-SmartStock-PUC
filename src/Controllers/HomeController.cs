@@ -131,7 +131,7 @@ public class HomeController : Controller
             Produto produto = new Produto();
             produto.nome = modelo.nome;
             produto.categoria = modelo.categoria;
-            produto.ativo = true;
+            produto.ativo = 1;
             produto.fornecedor_id = 1;
             Console.WriteLine($"Dados convertidos a produtos: {produto.nome}, categoria: {produto.categoria}, ativo: {produto.ativo}, fornecedor_id: {produto.fornecedor_id}");
 
@@ -164,7 +164,7 @@ public class HomeController : Controller
             usuario.Cargo = modelo.Cargo;
             usuario.Email = modelo.Email;
             usuario.Senha = modelo.Senha;
-            usuario.Ativo = true;
+            usuario.Ativo = 2;
             usuario.Nivel = 1;
             Console.WriteLine($"Dados convertidos a usuario: {usuario.Nome}");
 
@@ -215,7 +215,49 @@ public class HomeController : Controller
         return View("~/Views/Home/FazerEdicaoGE.cshtml");
     }
 
+// GET: Home/Delete/5
+public async Task<IActionResult> Delete(int? id)
+{
+    if (id == null || _context.Produto == null)
+    {
+        return NotFound();
+    }
 
+    var produto = await _context.Produto
+        .FirstOrDefaultAsync(m => m.id == id);
+    if (produto == null)
+    {
+        return NotFound();
+    }
+
+    return View(produto);
+}
+
+
+[HttpPost, ActionName("Delete")]
+[ValidateAntiForgeryToken]
+public async Task<IActionResult> DeleteConfirmed(int id)
+{
+    if (_context.Produto == null)
+    {
+        return Problem("Entity set 'ApplicationDbContext.Produto' is null.");
+    }
+
+    var produto = await _context.Produto.FindAsync(id);
+    if (produto != null)
+    {
+        // Excluindo as dependências na tabela OrdemDeCompraProduto
+        var ordensDeCompraProduto = _context.OrdemDeCompraProduto
+                                              .Where(o => o.ProdutoId == id);
+        _context.OrdemDeCompraProduto.RemoveRange(ordensDeCompraProduto);
+
+        // Agora excluindo o produto
+        _context.Produto.Remove(produto);
+        await _context.SaveChangesAsync();
+    }
+
+    return RedirectToAction(nameof(Gestao_de_estoque));
+}
 
 
     public IActionResult ListagemDeUsuario()

@@ -7,7 +7,7 @@ namespace project.Models
         public int Id { get; set; }
         public DateTime DataCriacao { get; set; }
         public string? Status { get; set; }
-        public double? Total { get; set; }
+        public decimal? Total { get; set; }
         public int UsuarioId { get; set; }
         public int FornecedorId { get; set; }
         public Fornecedor? Fornecedor { get; set; }

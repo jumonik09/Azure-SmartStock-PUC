@@ -99,7 +99,7 @@ public class OrdemDeCompraController : Controller
         var usuario = int.Parse(form["usuario"]);
         var total = float.Parse(form["total"]);
 
-        var OrdemDeCompra = new OrdemDeCompra { DataCriacao = DateTime.Today, FornecedorId = fornecedor, Status = "0", UsuarioId = usuario, Total = total };
+        var OrdemDeCompra = new OrdemDeCompra { DataCriacao = DateTime.Today, FornecedorId = fornecedor, Status = "0", UsuarioId = usuario, Total = (decimal?)(total) };
         _context.OrdemDeCompra.Add(OrdemDeCompra);
 
         _context.SaveChanges();

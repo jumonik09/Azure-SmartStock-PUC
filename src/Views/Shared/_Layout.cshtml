@@ -83,6 +83,10 @@
                                 <li class="nav-item">
                                     <a class="nav-link active" aria-current="page" href="/OrdemDeCompra/OrdensDeCompra">Ordem de Compra</a>
                                 </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="/Estoque/SecaodeEstoque">Sessão de Estoque</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -124,7 +128,7 @@
                         @if (ViewContext.RouteData.Values["Action"].ToString() == "Index")
                         {
                             <div class="d-flex justify-content-center">
-                                <a class="btn btn-primary mx-2" href="/Home/Login" role="button"
+                                <a class="btn btn-primary mx-2" href="/Usuarios/Index" role="button"
                                     style="background-color: #8c52ff;">Login</a>
                                 <a class="btn btn-primary mx-2" href="/Home/CadastroDeUsuario" role="button"
                                     style="background-color: #8c52ff;">Sign in</a>

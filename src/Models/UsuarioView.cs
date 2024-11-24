@@ -17,7 +17,7 @@ public class UsuarioView
 
     [Display(Name = "Email:")]
     [Required(ErrorMessage = "Email é obrigatório.")]
-    public string Email { get; set; } //juteste
+    public string Email { get; set; } 
 
     [Display(Name = "Senha:")]
     [Required(ErrorMessage = "Senha é obrigatório.")]

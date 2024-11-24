@@ -169,3 +169,28 @@
 <figure>
   <img src="img/OrdemDeCompra/lista_ordem_compra_sucesso.png"
 </figure>
+
+# Página Seção de Estoque 
+
+|ID    | Descrição do Requisito  | Tela Seção de Estoque | |
+|------|-----------------------------------------|----|----|
+|RF-01|O sistema deve permitir o cadastro de produtos, incluindo atributos como nome, descrição, preço e quantidade em estoque.|  |  |
+|RNF-005| O sistema deve ser acessível para navegadores web comuns (Chrome, Firefox) sem necessidade de plugins extras. |  |  |
+|RNF-01| O sistema deve ter uma interface simples e fácil de usar, com design básico para facilitar a navegação para os funcionários da empresa.  |  | |
+|RF-02| O sistema deve permitir a visualização de uma lista detalhada de todos os produtos cadastrados. | | |
+|RF-04|O sistema deve remover a exclusão de produtos cadastrados. | |
+|RF-03|	O sistema deve permitir a edição de itens cadastrados.| | |<figure>
+  <img src="img/secao_de_estoque.png">
+</figure>
+
+<figure>
+  <img src="img/secaodeestoque.png">
+</figure<br>
+
+# Página de Login
+
+|ID    | Descrição do Requisito  | Tela Seção de Estoque | |
+|------|-----------------------------------------|----|----|
+|RF-08| O sistema deve permitir a autenticação e autorização de usuários para acesso ao sistema de gestão de estoque, com diferentes níveis de permissão para gestores e colaboradores|  |  |
+
+![image](https://github.com/user-attachments/assets/8388a0e6-a6b2-4f28-9d7b-1720a3277cdd)

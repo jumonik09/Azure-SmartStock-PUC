@@ -1,0 +1,176 @@
+@model IEnumerable<project.Models.Produto>
+
+@{
+    ViewData["Title"] = "Seção de Estoque";
+}
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/SecaoDeEstoque.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- Font Awesome -->
+</head>
+
+<body>
+    <header>
+        <h1>Seção de Estoque</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <h2>Adicionar Produto</h2>
+            <form id="createForm">
+                <label for="product-name">Nome do Produto:</label>
+                <input type="text" id="product-name" name="nome" required>
+
+                <label for="product-categoria">Categoria:</label>
+                <input type="text" id="product-categoria" name="categoria" required>
+
+                <label for="product-quantity">Quantidade:</label>
+                <input type="number" id="product-quantity" name="quantidade" required>
+
+                <label for="product-price">Preço:</label>
+                <input type="text" id="product-price" name="preco" required>
+
+                <button type="submit">Adicionar Produto</button>
+            </form>
+        </section>
+
+        <section class="inventory-section">
+            <h2>Estoque Atual</h2>
+            <table id="inventory-table" class="display">
+                <thead>
+                    <tr>
+                        <th>Nome do Produto</th>
+                        <th>Categoria</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script>
+        const table = $('#inventory-table').DataTable({
+            bFilter: false,
+            language: { url: 'https://cdn.datatables.net/plug-ins/1.11.3/i18n/pt_br.json' },
+            'colReorder': false,
+            'fixedHeader': false,
+            'order': [],
+            'paging': false,
+            'info': false
+        });
+
+        $('#createForm').on('submit', function (e) {
+            e.preventDefault();
+
+            const nome = $('#product-name').val();
+            const categoria = $('#product-categoria').val();
+            const quantidade = $('#product-quantity').val();
+            const preco = parseFloat($('#product-price').val().replace('R$', '').trim());  // Garantir que preço seja número
+
+            if (isNaN(preco)) {
+                alert("Preço inválido.");
+                return;
+            }
+
+            $.ajax({
+                url: '/estoque/adicionarProduto',
+                method: 'POST',
+                data: { nome, categoria, quantidade, preco },
+                success: function (response) {
+                    const rowId = 'row_' + response.id;
+                    table.row.add([
+                        response.nome,
+                        response.categoria,
+                        response.quantidade,
+                        'R$ ' + response.preco.toFixed(2),  // Exibir preço com "R$"
+                        `<button class="btn btn-warning editBtn"><i class="fas fa-pencil-alt"></i> Editar</button>
+                         <button class="btn btn-danger deleteBtn"><i class="fas fa-trash"></i> Excluir</button>`
+                    ]).draw();
+
+                    const row = table.row(':last').node();
+                    $(row).attr('id', rowId);
+
+                    $('#product-name').val('');
+                    $('#product-quantity').val('');
+                    $('#product-price').val('');
+                    $('#product-categoria').val('');
+                }
+            });
+        });
+
+        $('#inventory-table').on('click', '.editBtn', function () {
+            const row = $(this).closest('tr');
+            const rowData = table.row(row).data();
+
+            row.find('td').eq(0).html(`<input type="text" value="${rowData[0]}" class="form-control" />`);
+            row.find('td').eq(1).html(`<input type="text" value="${rowData[1]}" class="form-control" />`);
+            row.find('td').eq(2).html(`<input type="number" value="${rowData[2]}" class="form-control" />`);
+            row.find('td').eq(3).html(`<input type="text" value="${rowData[3].replace('R$', '').trim()}" class="form-control" />`);
+
+            row.find('td').eq(4).html('<button class="btn btn-success saveBtn">Salvar</button>');
+        });
+
+        $('#inventory-table').on('click', '.saveBtn', function () {
+            const row = $(this).closest('tr');
+            const nome = row.find('td').eq(0).find('input').val();
+            const categoria = row.find('td').eq(1).find('input').val();
+            const quantidade = row.find('td').eq(2).find('input').val();
+            const preco = parseFloat(row.find('td').eq(3).find('input').val().replace('R$', '').trim());
+            const id = row.attr('id').split('_')[1];
+
+            if (isNaN(preco)) {
+                alert("Preço inválido.");
+                return;
+            }
+
+            $.ajax({
+                url: '/estoque/editarProduto',
+                method: 'POST',
+                data: { id, nome, categoria, quantidade, preco },
+                success: function (response) {
+                    table.row(row).data([
+                        response.nome,
+                        response.categoria,
+                        response.quantidade,
+                        'R$ ' + response.preco.toFixed(2),
+                        `<button class="btn btn-warning editBtn"><i class="fas fa-pencil-alt"></i> Editar</button>
+                         <button class="btn btn-danger deleteBtn"><i class="fas fa-trash"></i> Excluir</button>`
+                    ]).draw();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Erro ao salvar as alterações:', error);
+                    alert('Ocorreu um erro ao salvar as alterações. Tente novamente.');
+                }
+            });
+        });
+
+        $('#inventory-table').on('click', '.deleteBtn', function () {
+            const row = $(this).closest('tr');
+            const id = row.attr('id').split('_')[1];
+
+            $.ajax({
+                url: '/estoque/excluirProduto',
+                method: 'POST',
+                data: { id },
+                success: function () {
+                    table.row(row).remove().draw();
+                },
+                error: function (xhr, status, error) {
+                    console.error('Erro ao excluir produto:', error);
+                    alert('Ocorreu um erro ao excluir o produto. Tente novamente.');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
